@@ -1,14 +1,14 @@
 repositories {
-	//mavenLocal()
-	//jcenter()
-	maven{url"http://artifactory.bancolombia.corp/gradlew/"}
+	mavenLocal()
+	jcenter()
+	//maven{url"http://artifactory.bancolombia.corp/gradlew/"}
 }
 
 buildscript {
     repositories {
-        //mavenLocal()
-        //jcenter()
-		maven{url"http://artifactory.bancolombia.corp/gradlew/"}
+        mavenLocal()
+        jcenter()
+		//maven{url"http://artifactory.bancolombia.corp/gradlew/"}
     }
     dependencies {
         classpath("net.serenity-bdd:serenity-gradle-plugin:1.9.9")
