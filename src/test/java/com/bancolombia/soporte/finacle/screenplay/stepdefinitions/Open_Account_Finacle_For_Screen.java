@@ -66,7 +66,7 @@ public class Open_Account_Finacle_For_Screen {
 			usuario.attemptsTo(Go_Account_Opening.solAccountOpening(dataAccountCDT, i));
 			usuario.attemptsTo(Open_Account.openAccount(dataAccountCDT, i));
 			utilidades.enterKey();
-			usuario.attemptsTo(Account_Number.saveAccount(i));
+			usuario.attemptsTo(Account_Number.saveAccount());
 
 		}
 	}

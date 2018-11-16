@@ -9,11 +9,11 @@ import net.serenitybdd.screenplay.actions.Click;
 public class Account_Number implements Task {
 
 	private String number;
-	private int i;
+	
 
-	public Account_Number(int i) {
+	public Account_Number() {
 		
-		this.i = i;
+		
 	}
 
 	@Override
@@ -30,9 +30,9 @@ public class Account_Number implements Task {
 		
 	}
 
-	public static Account_Number saveAccount(int i) {
+	public static Account_Number saveAccount() {
 
-		return new Account_Number(i);
+		return new Account_Number();
 
 	}
  
