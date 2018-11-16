@@ -1,20 +1,19 @@
 package com.bancolombia.soporte.finacle.screenplay.runners;
 
-import net.serenitybdd.cucumber.CucumberWithSerenity;
-
 import org.junit.runner.RunWith;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.SnippetType;
+import net.serenitybdd.cucumber.CucumberWithSerenity;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-		features="src/test/resources/com/bancolombia/soporte/finacle/features/open_cdt_phisical_for_screen.feature",
+		features="src/test/resources/com/bancolombia/soporte/finacle/features/open_cdt_phisical_web_services.feature",
 		glue="com.bancolombia.soporte.finacle.screenplay.stepdefinitions",
 		snippets=SnippetType.CAMELCASE,
-		tags="@AccountCDTPhisicalForScreen"
+		tags="@AccountCDTPhisicalForWebServices"
 )
 
-public class open_cdt_phisical_for_screen {
-
+public class OpenAccountFinacleWebServices {
+	
 }

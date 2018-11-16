@@ -21,7 +21,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Managed;
 
-public class open_cdt_phisical_for_screen_StepDefinitons {
+public class OpenCdtPhisicalForScreenStepDefinitons {
 
 	@Managed(driver = "iexplorer")
 	private WebDriver hisBrowser;
