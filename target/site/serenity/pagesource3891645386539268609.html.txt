@@ -1,0 +1,105 @@
+<HTML><HEAD>
+<META content=no-cache http-equiv=PRAGMA>
+<META content=no-cache,no-store http-equiv=Cache-Control>
+<META content=-1 http-equiv=Expires>
+<META content=text/html;charset=utf-8 http-equiv=Content-Type>
+<SCRIPT language=JavaScript>
+var dom_to_set = 'bancolombia.corp';
+var prodEnv = 'Y'; 
+var SSO = (dom_to_set != "") && true;
+if (SSO) {
+	document.domain = dom_to_set;
+}
+if(prodEnv == 'Y')
+{
+	document.oncontextmenu = function ()
+	{
+		return false;
+	}
+}
+</SCRIPT>
+
+<SCRIPT language=javascript src="LoginResourceRenderer/javascripts/102170_login_finbranchResource_INFENG.js"></SCRIPT>
+<LINK title="Finacle Stylesheet" rel=STYLESHEET type=text/css href="Renderer/stylesheets/10217_services.css">
+<SCRIPT language=javascript src="Renderer/javascripts/1021710870_login_common_functions.js"></SCRIPT>
+
+<SCRIPT language=javascript src="Renderer/javascripts/10217_fincore_link.js"></SCRIPT>
+
+<SCRIPT language=javascript src="Renderer/javascripts/1021710870_core_banking.js"> </SCRIPT>
+
+<SCRIPT language=javascript>
+
+window.history.forward(1);
+
+var lmlConst =
+{
+ACTION_CODE : 'actionCode'
+,AUTH_ID : 'authId'
+,AUTH_PASSWD : 'authPasswd'
+,AUTH_SRVC_TOK : 'authServTok'
+,CLIENT_NAME : 'clientName'
+,LANG_CODE : 'langCode'
+,SSO_SERVICE_NAME:'ssoServiceName'
+,SSO_SESS_ID : 'ssoSessId'
+,SSO_SRVC_TOK : 'ssoServTok'
+,USER_ID : 'userId'
+,USER_PASSWD : 'userPasswd'
+,BANK_ID : 'bankId'
+,HOME_BANK_ID : 'homeBankId'
+,HOME_BANK_ALIAS : 'homeBankAlias'
+,TIME_ZONE : 'timeZone'
+,FAB_DC_ID : 'FABDCId'
+,CALENDAR_BASE: 'calendarBase'
+,IP_ADDRESS : 'ipAddress'
+,LML_CHNGCONTEXT_EVT : 'lml_chngcontext'
+,GLOBAL_ADMIN_FLG : 'globalAdminFlg'
+}
+
+var finContextPath = "/finbranch";
+var rtId = 'b9psilm5rxon'; 
+var reqId = 'nf7qnayfi5b5';
+var finSessId = '';
+var fabSessId = '';
+var finSecTok = '';
+var fabSecTok = '';
+var homeMenuUrl = '';
+var nextAction = 0;
+var errArr = new Array(0);
+var loginLit = 'Login Status';
+var finLoginLit = 'Finacle Login Status';
+var fabLoginLit = 'FAB Login Status';
+var errMsgLit = 'Error Messages';
+var errLit = 'Error';
+var contLit = 'Do you want to continue?';
+var acptLit = 'Accept';
+var cnclLit = 'Cancel';
+var logoutLit = 'You have been successfully logged out of Finacle Core.';
+var chngContextLit = 'Change Context done Successfully';
+var finLoginStatLit = 'Successful';
+var fabLoginStatLit = 'Successful';
+var finalertDBInterval = '30';
+var finalertDisplayTime = '-1';
+var ipAddress = '';
+/*-- Finacle Lite release related changes --*/
+var finaclelitemode = 'N';
+var isFinacleLiteMode = false;
+var literalContext = '';
+var defaultLiteralContext = 'C';
+var isfinAlertReq  = true;
+var finCtxPath = "/finbranch";
+var iCalCount = 1;
+var calStringArr = new Array(1);
+
+            calStringArr[0] = '00';
+
+	
+
+
+</SCRIPT>
+</HEAD>
+<BODY class=cbody bgColor=#ffffff>
+<FORM class=cform method=post name=lmlform action=lmlServlet>
+<SCRIPT language=javascript>
+writeInputs();
+</SCRIPT>
+<INPUT type=hidden value=lml_login name=actionCode><INPUT type=hidden name=authId><INPUT type=hidden name=authPasswd><INPUT type=hidden name=authServTok><INPUT type=hidden value=LOCALHOST name=clientName><INPUT type=hidden value=INFENG name=langCode><INPUT type=hidden value=CoreServer name=ssoServiceName><INPUT type=hidden value=39e17549c7558ac1aacc40175c8e384a204f4b20 name=ssoSessId><INPUT type=hidden value=5d120295ceace076773d54019041fadd6480298318ab47336be1c828dc2590b41cd8d4e79f0f8bb022a4900ad39139aa0e57e5466386d58fe79c827ff266460787369d7962b0520d25a53c4188853c184e6fdbc9f71bd36f25869981b7861107316bdf886fcbd3fbbbffe763ac8d6b91c44473d33b977228a85b2baf9030610d name=ssoServTok><INPUT type=hidden value=USERCDT29 name=userId><INPUT type=hidden value=G name=calendarBase><INPUT type=hidden name=userPasswd><INPUT type=hidden value=1000 name=bankId><INPUT type=hidden value=1000 name=homeBankId><INPUT type=hidden value=BC name=homeBankAlias><INPUT type=hidden value=GMT name=timeZone><INPUT type=hidden value=BC name=FABDCId><INPUT type=hidden value=31302e32352e392e3633 name=ipAddress><INPUT type=hidden name=finsessionid><INPUT type=hidden name=fabsessionid><INPUT type=hidden name=finSecTok><INPUT type=hidden name=fabSecTok><INPUT type=hidden value=N name=globalAdminFlg><INPUT type=hidden value=b9psilm5rxon name=rtId><INPUT type=hidden value=nf7qnayfi5b5 name=reqId> </FORM></BODY></HTML>

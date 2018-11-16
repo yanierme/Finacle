@@ -1,0 +1,314 @@
+<HTML><HEAD><TITLE>Welcome to Finacle Core</TITLE><BASE href="https://wsfinaclecdtperf.bancolombia.corp:11111/finbranch/onsmainblank/">
+<META content=text/html;charset=utf-8 http-equiv=Content-Type>
+<META content=-1 http-equiv=PRAGMA>
+<META content=no-cache http-equiv=Cache-Control>
+<META content=-1 http-equiv=Expires>
+<SCRIPT language=javascript src="../LoginResourceRenderer/javascripts/102170_login_finbranchResource_INFENG.js"></SCRIPT>
+<LINK title="Finacle Stylesheet" rel=STYLESHEET type=text/css href="../Renderer/stylesheets/1000/10217_services.css">
+<SCRIPT language=javascript src="../Renderer/mtree/precArray.js"></SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_cust_evt.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_loc_evt.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/1021710870_core_banking.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_resource_functions.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/1021710870_login_common_functions.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_hotkeyprocessor_link.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_hotkeydata_link.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/props/1000/102170_onsmainblankprops.js"> </SCRIPT>
+
+<SCRIPT language=JavaScript>
+var dom_to_set = 'bancolombia.corp';
+var prodEnv = 'Y'; 
+var SSO = (dom_to_set != "") && true;
+if (SSO) {
+	document.domain = dom_to_set;
+}
+if(prodEnv == 'Y')
+{
+	document.oncontextmenu = function ()
+	{
+		return false;
+	}
+}
+</SCRIPT>
+
+<SCRIPT>
+var reqId = "1fushve3k5ee5";
+var rtId = "1t8zfvesd9jxy";
+var isPopup = "N";
+var reqIdChkByPass = "null";
+var silentPrntReqd = "N";
+var calbase = "00";
+var lowHijYear = 1300;
+var highHijYear = 1599;
+var CURR_GROUP_NAME= "onsmainblank";
+var localeCode= "DF";
+var encodeLst = "[]";
+var isEncodeReqd = "Y";
+var dateFormat = "00";
+var NumLocYears="0";
+var dateInputCal ="00";
+var DECIMAL_SEPARATOR = ',';
+var MANTISSA_SEPARATOR = '.';
+var LANGCODE = "INFENG";
+var finContextPath = "/finbranch";
+var crvContextPath = '/fincrv';
+var lastCalMappedDate = "";
+var iCalCount = 1;
+var iFeatureCount = 0;
+var FeatureStringArr = new Array(0);
+var calStringArr = new Array(1);
+var ContextSwitchDoneFrom = "";
+
+            calStringArr[0] = '00';
+
+
+
+var profileId  = '1000';
+var literalContext = 'C';
+var defaultLiteralContext = 'C';
+var dualFlg = "N"; 
+
+function checkIfSwitchEnabled(feature)
+{
+        for (var i=0; i<FeatureStringArr.length; i++)
+        {
+		if(feature === FeatureStringArr[i])
+			return true;
+        }
+	return false;	
+}
+
+function isFeatureEnabledFor(ftrString){
+                var e = false;
+                var x = ftrString.split(","); //loop thru the list of features 
+                for(var i = 0; i< x.length;i++)
+                {
+                   e = checkIfSwitchEnabled (x[i]); // find out if the current feature is enabled
+                   if (e) break;         // If any feature is enabled, that is enough.. return true.
+                }
+                return e;
+}
+
+
+if (LANGCODE == "ARABIC")
+{
+    document.write('<HTML dir=RTL></HTML>');
+}
+
+</SCRIPT>
+
+<META content=no-cache http-equiv=PRAGMA>
+<META content=no-cache,no-store http-equiv=Cache-Control>
+<META content=-1 http-equiv=Expires>
+<SCRIPT src="../Renderer/javascripts/1000/10217_timeout_link.js"></SCRIPT>
+
+<SCRIPT>
+window.history.forward(1);
+var timeid;
+var USERID = "USERCDT17";
+var USER_TIME_OUT = 23580000;
+
+fnSetTimers();
+enableTimers();
+
+</SCRIPT>
+</HEAD>
+<BODY onresize=adjustMenuDiv(); onkeyup="javascript:return fnKeyUpProcessor(event);" class=cbody onload=fnLoad(); onkeydown="javascript:return fnKeyDownProcessor(event);" leftMargin=0 topMargin=0>
+<FORM id=frmMain class=cform onsubmit="return false;" method=post action=../onsmainblank/onsmainblank_ctrl.jsp>
+<SCRIPT language=javascript src="../Renderer/custom/samples/custfetch/custom_functions.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="../Renderer/javascripts/jspjs/INFENG/102170_header_INFENG.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_header_link.js"></SCRIPT>
+
+<SCRIPT>
+
+
+var prodEnv = "Y"; 
+var isProdEnv  = "Y";
+var nonSSOLogin = false;
+var toPaintHeader = true; 
+if((typeof(isSSOLogin) != 'undefined')&&(typeof(isSSOLogin) != null)){
+   nonSSOLogin = isSSOLogin(); 
+} 
+if((typeof(paintHeader) != 'undefined')&&(typeof(paintHeader) != null)){ 
+   toPaintHeader = paintHeader(); 
+} 
+
+var enterKey = 13;
+var logTestCase = "";
+var currIp = "";
+var strBaseRef = "https://wsfinaclecdtperf.bancolombia.corp:11111";
+var sessionid = "O:3385";
+var sectok = "414ac1aeeb0e1a044777eb4843bb45e5";
+var fabsessionid = "";
+var finsessionid = "O:3385";
+var FinAvailFlg = "Y";
+var FabAvailFlg = "N";
+var headDate = getDateForDisplay("10 April, 2018", "10", "04", "2018");
+var headUserId = "USERCDT17";
+var headCtxSol = "BC000001";
+var crvBaseUrl = 'PBMDEBDFIN03:8888';
+var fabBaseUrl = '';
+var finBaseUrl = '';
+var userMenuId = '1000_GU_BT_693';
+var userMenuTreeObj = new MenuProperties();
+var userSCMenuTreeObj = new MenuShortCutProperties();
+userMenuTreeObj.setUsrMenuId(userMenuId);
+userMenuTreeObj.setMenuObj(userMenuTreeObj);
+userSCMenuTreeObj.setUsrSCMenuId(userMenuId);
+userSCMenuTreeObj.setMenuSCObj(userSCMenuTreeObj);
+var isAuditEnabled = false;
+var isBackGround = false;
+var bgParentGroup = '';
+var isCalledMenu = false;
+var crvAcctId = '';
+var crvCustId = '';
+var sGroupName = 'onsmainblank';
+var menuType = '';
+var mopId = '';
+var isLoggedInFin = false;
+var isLoggedInFab = false;
+var IS_ERROR_PAGE = false;
+var menuInfoDownloaded = false;
+var appLangCode = "INFENG";
+var isONSLogin = true;
+var finSecTok = "";
+var fabSecTok = "";
+var ssoAuthUrl = "https://WSFINACLECDTPERF.bancolombia.corp:11111/SSO/SSOServlet";
+var menuTitle = '';
+var isMenuShrtcutProt = 'N';
+var ipAddress = "10.25.153.154";
+var multiBankEnabled = "N";
+var isPortalCtxt =  "";
+var inPortal = false;
+var IsFinacleLite = "N";
+var Literal = "";
+
+userInfoUtil.setEffTenor("F");
+userInfoUtil.setContextSol("BC000001");
+
+
+inPortal 		= false;
+isAuditEnabled = false;
+isCalledMenu    =       false;
+gfkmCookie = '';
+mopId = 'HOME';
+menuType = '';
+
+isBackGround = false;
+userMenuTreeObj.setBgMode(isBackGround);
+bgParentGroup = '';
+iMemopad = 0;
+menuInfoDownloaded = false;
+downloadedLevel = 0;
+if (menuInfoDownloaded)
+{
+  for(i=2;i<=downloadedLevel;i++) 
+   { 
+           levelList = eval("finMenuLevel0"+i); 
+           finMenu = finMenu.concat(levelList); 
+   } 
+
+userMenuTreeObj.setMenuProps(USER_MENU_ID, finMenu, fabMenu, crvMenu, bgMenu, portalTabMenuArr, portalLhnAMenuArr, portalLhnBMenuArr, miscMenu);
+userSCMenuTreeObj.setMenuSCProps(USER_MENU_ID,normalONSMenu, fcfgMenu, icfgMenu, bcfgMenu,radfxMenu);
+}
+isLoggedInFin = true;
+isLoggedInFab = false;
+
+     writeLayer();
+	 hideMenuTreeForNonIE();
+
+</SCRIPT>
+
+<TABLE cellSpacing=0 cellPadding=0 width="100%" background=../Renderer/images/INFENG/toptile.gif border=0>
+<TBODY>
+<TR>
+<TD vAlign=top rowSpan=2 width="20%"><IMG src="../Renderer/images/INFENG/logo_new.gif"></TD>
+<TD vAlign=top width="80%" align=right>
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD style="BACKGROUND-IMAGE: url(../Renderer/images/INFENG/dotstile.gif); BACKGROUND-REPEAT: repeat-x" colSpan=12><SPACER width="1" height="1" type="block"></SPACER></TD></TR>
+<TR>
+<TD><IMG src="../Renderer/images/INFENG/arrow.gif" width=18 height=17></TD>
+<TD width=1><IMG src="../Renderer/images/INFENG/divider_topnavi.gif" width=1 height=17></TD>
+<TD width=1><IMG src="../Renderer/images/INFENG/divider_topnavi.gif" width=1 height=17></TD>
+<TD onmouseover="this.className=' bgTd ' " onmouseout="this.className=' topnavi_bottom ' " class=topnavi_bottom><A id=anc_html class=topnavi href="javascript:fnHtmlMenu();">Menu</A></TD>
+<TD width=1><IMG src="../Renderer/images/INFENG/divider_topnavi.gif" width=1 height=17></TD>
+<TD onmouseover="this.className=' bgTd ' " onmouseout="this.className=' topnavi_bottom ' " id=showmemoleftcurve class=topnavi_bottom><A id=anc_hdrm class=topnavi href="javascript:fnMenuHdr('showmemopad','false');">Show Memo Pad</A></TD>
+<TD width=1><IMG src="../Renderer/images/INFENG/divider_topnavi.gif" width=1 height=17></TD>
+<TD onmouseover="this.className=' bgTd ' " onmouseout="this.className=' topnavi_bottom ' " id=bgmenuleftcurve class=topnavi_bottom><A id=anc_mhdr class=topnavi href="javascript:fnMenuHdr('showbglist','true');">Background Menu</A></TD>
+<TD width=1><IMG src="../Renderer/images/INFENG/divider_topnavi.gif" width=1 height=17></TD>
+<TD onmouseover="this.className=' bgTd ' " onmouseout="this.className=' topnavi_bottom ' " class=topnavi_bottom><A id=anc_hcrnc class=topnavi href="javascript:showCrncyConverter();">CCY Converter</A></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD colSpan=2></TD></TR>
+<TR>
+<TD background=../Renderer/images/INFENG/bottomtile.gif colSpan=2>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD width="30%"><IMG border=0 src="../Renderer/images/INFENG/UBSI.gif" width=275 height=23></TD>
+<TD width="70%" align=right>
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD class=titletxt>
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD>10 April, 2018</TD>
+<TD class=textfieldspcms>|</TD>
+<TD>User&nbsp;&nbsp;USERCDT17</TD>
+<TD class=textfieldspcms>|</TD>
+<TD>BC000001</TD>
+<TD class=textfieldspcms>|</TD></TR></TBODY></TABLE></TD>
+<TD class=textlabelms>Menu Shortcut:</TD>
+<TD class=textfieldms><INPUT id=menuName class=textfieldfontms onkeydown="fnGo('',event)" style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#cccccc',EndColorStr='#ffffff')" maxLength=8 size=9 value=HCCS name=menuName><INPUT type=hidden name=bgMenuUrl></TD>
+<TD class=textfieldbtnms><INPUT onclick="fnGo('Go')" id=gotomenu class=buttonms type=button value=Go name=gotomenu>&nbsp;</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<DIV id=menutree_div style="HEIGHT: 484px; WIDTH: 263px; POSITION: absolute; LEFT: 0px; Z-INDEX: 1; TOP: 62px; VISIBILITY: visible" border="0">
+<TABLE id=mtitle_tab style="Z-INDEX: 1; VISIBILITY: visible" cellSpacing=0 cellPadding=1 width="100%" border=0>
+<TBODY>
+<TR>
+<TD bgColor=#9ab4cb width="57%" align=right>Menu</TD>
+<TD bgColor=#9ab4cb width="43%" align=right><IMG onclick=HIDE_menutree() style="CURSOR: hand" border=0 hspace=0 alt=Close src="../Renderer/images/INFENG/X.gif" width=15 height=14></TD></TR></TBODY></TABLE><IFRAME id=menutree style="Z-INDEX: 1; VISIBILITY: visible" height="100%" marginHeight=0 src="../arjspmorph/INFENG/sidepanel.jsp?rtId=1t8zfvesd9jxy" frameBorder=0 width="100%" marginWidth=0></IFRAME></DIV>
+<DIV id=cancelwait_div style="HEIGHT: 100px; WIDTH: 100px; POSITION: absolute; Z-INDEX: 0; VISIBILITY: hidden"><IFRAME id=cancelwait height="100%" marginHeight=0 src="javascript:false;" frameBorder=0 width="100%" name=cancelwait marginWidth=0 scrolling=no></IFRAME></DIV>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P align=right><IMG border=0 src="../Renderer/images/INFENG/welcome-ons.gif" width=455 height=73></IMG> 
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<SCRIPT language=javascript>
+window.history.forward(1);
+var greetings = "";
+var numRpts = 3567;
+var reportMsg = "The number of reports pending for printing ";
+writeHeader("onsmainblank");
+with(document)	{
+	if(!isEmptyObjValue(greetings))	{
+		write('<p align="right">' + greetings + '</p>');
+	}
+	if (parseInt(numRpts, 10) > 0)	{
+		write('<p align="right">' + reportMsg + numRpts + '</p>');
+	}
+	write('<input type="hidden" name="rtId" value="' + rtId + '" >'); 
+}
+
+function fnLoad()
+{
+    document.forms[0].menuName.focus();
+    fnHtmlMenu();
+}
+
+</SCRIPT>
+<INPUT id=actionCode type=hidden name=actionCode><INPUT type=hidden name=tabName><INPUT id=callMode type=hidden value=E name=callMode><INPUT type=hidden value=onsmainblank name=screenName><INPUT id=expldQryStr type=hidden name=expldQryStr><INPUT id=reqId type=hidden value=1fushve3k5ee5 name=reqId><INPUT id=rtId type=hidden value=1t8zfvesd9jxy name=rtId><INPUT id=reqIdChkByPass type=hidden value=null name=reqIdChkByPass><INPUT id=ContextSwitchDoneFrom type=hidden name=ContextSwitchDoneFrom>
+<P align=right>The number of reports pending for printing 3567</P><INPUT type=hidden value=1t8zfvesd9jxy name=rtId> </FORM></BODY></HTML>

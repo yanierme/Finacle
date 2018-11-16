@@ -1,0 +1,169 @@
+<HTML><HEAD><TITLE>Error Page</TITLE><BASE href="https://wsfinaclecdtperf.bancolombia.corp:11111/finbranch/arjspmorph/">
+<META content=text/html;charset=utf-8 http-equiv=Content-Type>
+<SCRIPT language=javascript src="../Renderer/javascripts/1021710870_finbranchResource_INFENG.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/10217_hotkeyprocessor_link.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1021710870_login_common_functions.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1021710870_common_functions.js"> </SCRIPT>
+<LINK title="Finacle Stylesheet" rel=STYLESHEET type=text/css href="../Renderer/stylesheets/10217_services.css">
+<SCRIPT language=javascript src="../Renderer/javascripts/10217_cust_evt.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1021710870_core_banking.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/10217_resource_functions.js"> </SCRIPT>
+
+<SCRIPT language=JavaScript>
+var dom_to_set = 'bancolombia.corp';
+var prodEnv = 'Y'; 
+var SSO = (dom_to_set != "") && true;
+if (SSO) {
+	document.domain = dom_to_set;
+}
+if(prodEnv == 'Y')
+{
+	document.oncontextmenu = function ()
+	{
+		return false;
+	}
+}
+</SCRIPT>
+
+<SCRIPT>
+var reqId = "dt8ouecj0i6z";
+var rtId = "1rj6ytw1ul11e";
+var isPopup = "N";
+var reqIdChkByPass = "null";
+var silentPrntReqd = "N";
+var calbase = "00";
+var lowHijYear = 1300;
+var highHijYear = 1599;
+var CURR_GROUP_NAME= "onsmainblank";
+var localeCode= "";
+var encodeLst = "[]";
+var isEncodeReqd = "Y";
+var dateFormat = "00";
+var NumLocYears="0";
+var dateInputCal ="00";
+var DECIMAL_SEPARATOR = '.';
+var MANTISSA_SEPARATOR = ',';
+var LANGCODE = "INFENG";
+var finContextPath = "/finbranch";
+var crvContextPath = '/null';
+var lastCalMappedDate = "";
+var iCalCount = 1;
+var iFeatureCount = 0;
+var FeatureStringArr = new Array(0);
+var calStringArr = new Array(1);
+var ContextSwitchDoneFrom = "";
+
+            calStringArr[0] = '00';
+
+
+
+var profileId  = 'NOPROFILE';
+var literalContext = 'C';
+var defaultLiteralContext = 'C';
+var dualFlg = "N"; 
+
+function checkIfSwitchEnabled(feature)
+{
+        for (var i=0; i<FeatureStringArr.length; i++)
+        {
+		if(feature === FeatureStringArr[i])
+			return true;
+        }
+	return false;	
+}
+
+function isFeatureEnabledFor(ftrString){
+                var e = false;
+                var x = ftrString.split(","); //loop thru the list of features 
+                for(var i = 0; i< x.length;i++)
+                {
+                   e = checkIfSwitchEnabled (x[i]); // find out if the current feature is enabled
+                   if (e) break;         // If any feature is enabled, that is enough.. return true.
+                }
+                return e;
+}
+
+
+if (LANGCODE == "ARABIC")
+{
+    document.write('<HTML dir=RTL></HTML>');
+}
+
+</SCRIPT>
+
+<META content=no-cache http-equiv=PRAGMA>
+<META content=no-cache,no-store http-equiv=Cache-Control>
+<META content=-1 http-equiv=Expires>
+<SCRIPT src="../Renderer/javascripts/10217_timeout_link.js"></SCRIPT>
+
+<SCRIPT>
+window.history.forward(1);
+var timeid;
+var USERID = "";
+var USER_TIME_OUT = 1800000;
+
+fnSetTimers();
+enableTimers();
+
+</SCRIPT>
+
+<SCRIPT language=javascript>
+function fnLoad() {
+	frmObj = document.forms[0];
+	initFocusHandler();
+	if (frmObj.Close != undefined) frmObj.Close.focus();
+}
+
+function fnCloseWindow()
+{
+	handleWindowDisplay(finConst.DISPLAYPARENT);
+}
+</SCRIPT>
+</HEAD>
+<BODY onkeyup=fnKeyUpProcessor(event); class=cbody onload=fnLoad(); onkeydown=fnKeyDownProcessor(event);>
+<FORM class=cform onsubmit="return false;"><SPAN class=cform>
+<SCRIPT language=javascript>
+var isONSLogin = true; 
+writeHeader("arjspmorph");
+</SCRIPT>
+<INPUT id=actionCode type=hidden name=actionCode><INPUT type=hidden name=tabName><INPUT id=callMode type=hidden value=E name=callMode><INPUT type=hidden value=arjspmorph name=screenName><INPUT id=expldQryStr type=hidden name=expldQryStr><INPUT id=reqId type=hidden value=dt8ouecj0i6z name=reqId><INPUT id=rtId type=hidden value=1rj6ytw1ul11e name=rtId><INPUT id=reqIdChkByPass type=hidden value=null name=reqIdChkByPass><INPUT id=ContextSwitchDoneFrom type=hidden name=ContextSwitchDoneFrom> 
+<TABLE class=ctable cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=page-heading>Error occurred in displaying the page</TD></TR></TBODY></TABLE>
+<TABLE class=ctable cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR class=rowspacing>
+<TD colSpan=2>&nbsp;</TD></TR></TBODY></TABLE>
+<TABLE class=ctable cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD>
+<TABLE class=outertable cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=activetab1 width="20%">Error</TD>
+<TD class=activetab3 width="80%">&nbsp;</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE class=table cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD>
+<TABLE class=innertable cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR class=textfielddisplaylabel1 vAlign=middle>
+<TD>
+<TABLE class=resultpage cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD colSpan=2><FONT face="Arial, Helvetica, sans-serif">
+<SCRIPT language=Javascript>document.write(jsUtil.encodeChar('Service Not Available'))</SCRIPT>
+Service Not Available</FONT></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></SPAN></FORM></BODY></HTML>

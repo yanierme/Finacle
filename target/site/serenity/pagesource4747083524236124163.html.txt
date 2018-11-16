@@ -1,0 +1,1197 @@
+<HTML><HEAD><TITLE>Scheme Details</TITLE><BASE href="https://wsfinaclecdtperf.bancolombia.corp:11111/finbranch/tusch/">
+<META content=text/html;charset=utf-8 http-equiv=Content-Type>
+<META content=-1 http-equiv=PRAGMA>
+<META content=no-cache http-equiv=Cache-Control>
+<META content=-1 http-equiv=Expires>
+<SCRIPT language=javascript src="../Renderer/javascripts/102170_finbranchResource_INFENG.js"> </SCRIPT>
+<LINK title="Finacle Stylesheet" rel=STYLESHEET type=text/css href="../Renderer/stylesheets/1000/10217_services.css">
+<SCRIPT language=javascript src="https://wsfinaclecdtperf.bancolombia.corp:11111/finbranch/MenuRenderer/mtree/1000_GU_BT_693_INFENG_FIN_LEVEL01.js"></SCRIPT>
+
+<SCRIPT language=javascript src="https://wsfinaclecdtperf.bancolombia.corp:11111/finbranch/MenuRenderer/mtree/1000_GU_BT_693_INFENG_SC_FIN.js"></SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/mtree/precArray.js"></SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_cust_evt.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_loc_evt.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/1021710870_core_banking.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_resource_functions.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/1021710870_login_common_functions.js"> </SCRIPT>
+
+<SCRIPT language=JavaScript>
+var dom_to_set = 'bancolombia.corp';
+var prodEnv = 'Y'; 
+var SSO = (dom_to_set != "") && true;
+if (SSO) {
+	document.domain = dom_to_set;
+}
+if(prodEnv == 'Y')
+{
+	document.oncontextmenu = function ()
+	{
+		return false;
+	}
+}
+</SCRIPT>
+
+<SCRIPT>
+var reqId = "fj9qyvxjvs6";
+var rtId = "1f3s299knv583";
+var isPopup = "N";
+var reqIdChkByPass = "null";
+var silentPrntReqd = "N";
+var calbase = "00";
+var lowHijYear = 1300;
+var highHijYear = 1599;
+var CURR_GROUP_NAME= "tusch";
+var localeCode= "DF";
+var encodeLst = "[]";
+var isEncodeReqd = "Y";
+var dateFormat = "00";
+var NumLocYears="0";
+var dateInputCal ="00";
+var DECIMAL_SEPARATOR = ',';
+var MANTISSA_SEPARATOR = '.';
+var LANGCODE = "INFENG";
+var finContextPath = "/finbranch";
+var crvContextPath = '/fincrv';
+var lastCalMappedDate = "";
+var iCalCount = 1;
+var iFeatureCount = 0;
+var FeatureStringArr = new Array(0);
+var calStringArr = new Array(1);
+var ContextSwitchDoneFrom = "";
+
+            calStringArr[0] = '00';
+
+
+
+var profileId  = '1000';
+var literalContext = 'C';
+var defaultLiteralContext = 'C';
+var dualFlg = "N"; 
+
+function checkIfSwitchEnabled(feature)
+{
+        for (var i=0; i<FeatureStringArr.length; i++)
+        {
+		if(feature === FeatureStringArr[i])
+			return true;
+        }
+	return false;	
+}
+
+function isFeatureEnabledFor(ftrString){
+                var e = false;
+                var x = ftrString.split(","); //loop thru the list of features 
+                for(var i = 0; i< x.length;i++)
+                {
+                   e = checkIfSwitchEnabled (x[i]); // find out if the current feature is enabled
+                   if (e) break;         // If any feature is enabled, that is enough.. return true.
+                }
+                return e;
+}
+
+
+if (LANGCODE == "ARABIC")
+{
+    document.write('<HTML dir=RTL></HTML>');
+}
+
+</SCRIPT>
+
+<META content=no-cache http-equiv=PRAGMA>
+<META content=no-cache,no-store http-equiv=Cache-Control>
+<META content=-1 http-equiv=Expires>
+<SCRIPT language=JavaScript src="../Renderer/javascripts/jspjs/INFENG/102170_tuschdet_INFENG.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_cust_functions.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/1021710870_common_functions.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/lists/1000/10217_showAccountIdList.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/lists/1000/10217_showAgentList.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/lists/1000/10217_showEmplList.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_menuLayer.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/lists/1000/10217_showRefCode.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/lists/1000/10217_getEvtIdList.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_hotkeyprocessor_link.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_hotkeydata_link.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/tusch/1000/10217_tuschdet_link.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/tusch/1000/1021710870_tuschdet_glink.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/1021710870_core_banking.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/props/1000/102170_tuschprops.js"> </SCRIPT>
+</HEAD>
+<BODY onresize=adjustMenuDiv(); onkeyup="javascript:return tuschdet_ONKEYUP2(this,event);" class=cbody onload="javascript:return tuschdet_ONLOAD3(this,document.forms[0]);" onkeydown="javascript:return tuschdet_ONKEYDOWN1(this,event);" leftMargin=0 topMargin=0>
+<FORM method=post name=tusch action=../tusch/tusch_ctrl.jsp><SPAN class=cform>
+<SCRIPT src="../Renderer/javascripts/1000/10217_timeout_link.js"></SCRIPT>
+
+<SCRIPT>
+window.history.forward(1);
+var timeid;
+var USERID = "USERCDT29";
+var USER_TIME_OUT = 23580000;
+
+fnSetTimers();
+enableTimers();
+
+</SCRIPT>
+
+<SCRIPT language=Javascript>
+var BODDate = "10-04-2018";
+var sMode = "A";
+var parentGroup ="tuacop";
+var sShowTDAddnlFields = "";
+var depCrncy = "COP";
+var sMissedContribBasis = "F";
+var sMissedContribAllowed = "0";
+var sIslamicFlg           = "";
+var sAddtnlCalBase   = "";
+var sLocDepPerdMths      = "0";
+var sLocDepPerdDays       = "0";
+var acctOpenMode       = 'Normal';
+</SCRIPT>
+
+<SCRIPT>
+
+	var valueDate = '10-04-2018';
+	var depAmt = '40000000,00';
+	var depPerdMths = '3';
+	var depPerdDays = '0';
+	var maturityAmt = '0,00';
+	var outflowMultipleAmt = '0,00';
+	var repayAcct = '';
+	var repayAcctCrncy = '';
+	var repayAcctSol = '';
+	var repayAcctName = '';
+	var agentEmpInd = '';
+	var agentEmpCode = '';
+	var interestRate = '0';
+	var recoverIntFlg = 'N';
+	var lienOnMaturityFlg = 'N';
+	var nomineeFlg = 'N';
+	var nomineePrintFlg = 'N';
+	var safeCustodyFlg = 'N';
+	var printReceiptFlg = 'Y';
+	var maturityDate = '10-07-2018';
+	var installmentBasis = 'F';
+	var fixedInstallmentAmt = '0,00';
+	var nrmlInstallmentPcnt = '0,000000';
+	var maxMissedContribAllwd = '0';
+	var totalNoOfMissContrib = '0';
+	var regenFlowFlg = '';
+	var penaltyChargeCode = '';
+	var graceDays = '0';
+	var irregularStatus = '';
+	var irregularStatusDate = '';
+	var acctStatus = '';
+	var acctStatusDate = '';
+	var userId = 'USERCDT29';
+	var format = 'Million';
+	var groupName = 'tusch';
+	var dormApplicableToTd = '';
+	var sPopUpExceptionWindow = 'false' ;
+	var sReferralMode = '' ;
+
+</SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/custom/samples/custfetch/custom_functions.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="../Renderer/javascripts/jspjs/INFENG/102170_header_INFENG.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_header_link.js"></SCRIPT>
+
+<SCRIPT>
+
+
+var prodEnv = "Y"; 
+var isProdEnv  = "Y";
+var nonSSOLogin = false;
+var toPaintHeader = true; 
+if((typeof(isSSOLogin) != 'undefined')&&(typeof(isSSOLogin) != null)){
+   nonSSOLogin = isSSOLogin(); 
+} 
+if((typeof(paintHeader) != 'undefined')&&(typeof(paintHeader) != null)){ 
+   toPaintHeader = paintHeader(); 
+} 
+
+var enterKey = 13;
+var logTestCase = "";
+var currIp = "";
+var strBaseRef = "https://wsfinaclecdtperf.bancolombia.corp:11111";
+var sessionid = "O:3497";
+var sectok = "eba5a8fcef4b495e9750e7c474e174cd";
+var fabsessionid = "";
+var finsessionid = "O:3497";
+var FinAvailFlg = "Y";
+var FabAvailFlg = "N";
+var headDate = getDateForDisplay("10 April, 2018", "10", "04", "2018");
+var headUserId = "USERCDT29";
+var headCtxSol = "BC000001";
+var crvBaseUrl = 'PBMDEBDFIN03:8888';
+var fabBaseUrl = '';
+var finBaseUrl = '';
+var userMenuId = '1000_GU_BT_693';
+var userMenuTreeObj = new MenuProperties();
+var userSCMenuTreeObj = new MenuShortCutProperties();
+userMenuTreeObj.setUsrMenuId(userMenuId);
+userMenuTreeObj.setMenuObj(userMenuTreeObj);
+userSCMenuTreeObj.setUsrSCMenuId(userMenuId);
+userSCMenuTreeObj.setMenuSCObj(userSCMenuTreeObj);
+var isAuditEnabled = false;
+var isBackGround = false;
+var bgParentGroup = '';
+var isCalledMenu = false;
+var crvAcctId = '';
+var crvCustId = '';
+var sGroupName = 'tusch';
+var menuType = '';
+var mopId = '';
+var isLoggedInFin = false;
+var isLoggedInFab = false;
+var IS_ERROR_PAGE = false;
+var menuInfoDownloaded = false;
+var appLangCode = "INFENG";
+var isONSLogin = true;
+var finSecTok = "";
+var fabSecTok = "";
+var ssoAuthUrl = "https://WSFINACLECDTPERF.bancolombia.corp:11111/SSO/SSOServlet";
+var menuTitle = '';
+var isMenuShrtcutProt = 'N';
+var ipAddress = "10.25.153.154";
+var multiBankEnabled = "N";
+var isPortalCtxt =  "";
+var inPortal = false;
+var IsFinacleLite = "N";
+var Literal = "";
+
+userInfoUtil.setEffTenor("F");
+userInfoUtil.setContextSol("BC000001");
+
+
+inPortal 		= false;
+isAuditEnabled = false;
+isCalledMenu    =       false;
+gfkmCookie = '';
+mopId = 'HOAACTU';
+menuType = '';
+
+menuTitle = 'Account Opening-Top Up Deposits';
+
+isBackGround = false;
+userMenuTreeObj.setBgMode(isBackGround);
+bgParentGroup = '';
+iMemopad = 0;
+menuInfoDownloaded = true;
+downloadedLevel = 1;
+if (menuInfoDownloaded)
+{
+  for(i=2;i<=downloadedLevel;i++) 
+   { 
+           levelList = eval("finMenuLevel0"+i); 
+           finMenu = finMenu.concat(levelList); 
+   } 
+
+userMenuTreeObj.setMenuProps(USER_MENU_ID, finMenu, fabMenu, crvMenu, bgMenu, portalTabMenuArr, portalLhnAMenuArr, portalLhnBMenuArr, miscMenu);
+userSCMenuTreeObj.setMenuSCProps(USER_MENU_ID,normalONSMenu, fcfgMenu, icfgMenu, bcfgMenu,radfxMenu);
+}
+isLoggedInFin = true;
+isLoggedInFab = false;
+
+     writeLayer();
+	 hideMenuTreeForNonIE();
+
+</SCRIPT>
+
+<TABLE cellSpacing=0 cellPadding=0 width="100%" background=../Renderer/images/INFENG/toptile.gif border=0>
+<TBODY>
+<TR>
+<TD vAlign=top rowSpan=2 width="20%"><IMG style="CURSOR: hand" src="../Renderer/images/INFENG/logo_new.gif"></TD>
+<TD vAlign=top width="80%" align=right>
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD style="BACKGROUND-IMAGE: url(../Renderer/images/INFENG/dotstile.gif); BACKGROUND-REPEAT: repeat-x" colSpan=12><SPACER width="1" height="1" type="block"></SPACER></TD></TR>
+<TR>
+<TD><IMG style="CURSOR: hand" src="../Renderer/images/INFENG/arrow.gif" width=18 height=17></TD>
+<TD width=1><IMG style="CURSOR: hand" src="../Renderer/images/INFENG/divider_topnavi.gif" width=1 height=17></TD>
+<TD width=1><IMG style="CURSOR: hand" src="../Renderer/images/INFENG/divider_topnavi.gif" width=1 height=17></TD>
+<TD onmouseover="this.className=' bgTd ' " onmouseout="this.className=' topnavi_bottom ' " class=topnavi_bottom><A id=anc_html class=topnavi style="CURSOR: hand" href="javascript:fnHtmlMenu();">Menu</A></TD>
+<TD width=1><IMG style="CURSOR: hand" src="../Renderer/images/INFENG/divider_topnavi.gif" width=1 height=17></TD>
+<TD onmouseover="this.className=' bgTd ' " onmouseout="this.className=' topnavi_bottom ' " id=showmemoleftcurve class=topnavi_bottom><A id=anc_hdrm class=topnavi style="CURSOR: hand" href="javascript:fnMenuHdr('showmemopad','false');">Show Memo Pad</A></TD>
+<TD width=1><IMG style="CURSOR: hand" src="../Renderer/images/INFENG/divider_topnavi.gif" width=1 height=17></TD>
+<TD onmouseover="this.className=' bgTd ' " onmouseout="this.className=' topnavi_bottom ' " id=bgmenuleftcurve class=topnavi_bottom><A id=anc_mhdr class=topnavi style="CURSOR: hand" href="javascript:fnMenuHdr('showbglist','true');">Background Menu</A></TD>
+<TD width=1><IMG style="CURSOR: hand" src="../Renderer/images/INFENG/divider_topnavi.gif" width=1 height=17></TD>
+<TD onmouseover="this.className=' bgTd ' " onmouseout="this.className=' topnavi_bottom ' " class=topnavi_bottom><A id=anc_hcrnc class=topnavi style="CURSOR: hand" href="javascript:showCrncyConverter();">CCY Converter</A></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD colSpan=2></TD></TR>
+<TR>
+<TD background=../Renderer/images/INFENG/bottomtile.gif colSpan=2>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD width="30%"><IMG style="CURSOR: hand" border=0 src="../Renderer/images/INFENG/UBSI.gif" width=275 height=23></TD>
+<TD width="70%" align=right>
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD class=titletxt>
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD>10 April, 2018</TD>
+<TD class=textfieldspcms>|</TD>
+<TD>User&nbsp;&nbsp;USERCDT29</TD>
+<TD class=textfieldspcms>|</TD>
+<TD>BC000001</TD>
+<TD class=textfieldspcms>|</TD></TR></TBODY></TABLE></TD>
+<TD class=textlabelms>Menu Shortcut:</TD>
+<TD class=textfieldms><INPUT id=menuName class=textfieldfontms onkeydown="fnGo('',event)" style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" maxLength=8 size=9 name=menuName><INPUT type=hidden name=bgMenuUrl></TD>
+<TD class=textfieldbtnms><INPUT onclick="fnGo('Go')" id=gotomenu class=buttonms type=button value=Go name=gotomenu>&nbsp;</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<DIV id=menutree_div style="WIDTH: 263px; POSITION: absolute; LEFT: 0px; Z-INDEX: -1; TOP: 62px; VISIBILITY: hidden" border="0">
+<TABLE id=mtitle_tab style="Z-INDEX: -1; VISIBILITY: hidden" cellSpacing=0 cellPadding=1 width="100%" border=0>
+<TBODY>
+<TR>
+<TD bgColor=#9ab4cb width="57%" align=right>Menu</TD>
+<TD bgColor=#9ab4cb width="43%" align=right><IMG onclick=HIDE_menutree() style="CURSOR: hand" border=0 hspace=0 alt=Close src="../Renderer/images/INFENG/X.gif" width=15 height=14></TD></TR></TBODY></TABLE><IFRAME id=menutree style="Z-INDEX: -1; VISIBILITY: hidden" height="100%" marginHeight=0 src="javascript:false;" frameBorder=0 width="100%" marginWidth=0></IFRAME></DIV>
+<DIV id=cancelwait_div style="HEIGHT: 100px; WIDTH: 100px; POSITION: absolute; Z-INDEX: 0; VISIBILITY: hidden"><IFRAME id=cancelwait height="100%" marginHeight=0 src="javascript:false;" frameBorder=0 width="100%" name=cancelwait marginWidth=0 scrolling=no></IFRAME></DIV>
+<TABLE class=ctable cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=page-heading colSpan=5>
+<SCRIPT>jsUtil.htmlEncode('Account Opening - Top Up Deposits')</SCRIPT>
+Account Opening - Top Up Deposits&nbsp;</TD></TR>
+<TR>
+<TD class=textlabel>&nbsp;&nbsp;&nbsp; Function :</TD>
+<TD class=textfielddisplaylabel>
+<SCRIPT>jsUtil.htmlEncode('ADD')</SCRIPT>
+ADD</TD></TR>
+<TR>
+<TD class=textlabel>&nbsp;&nbsp;&nbsp; CIF ID :</TD>
+<TD class=textfielddisplaylabel>
+<SCRIPT>jsUtil.htmlEncode('20000000074012')</SCRIPT>
+20000000074012 -
+<SCRIPT>jsUtil.htmlEncode('CARLSON')</SCRIPT>
+ CARLSON</TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>&nbsp;&nbsp;&nbsp; Master A/c. No. :</TD>
+<TD class=textfielddisplaylabel>
+<SCRIPT>jsUtil.htmlEncode('')</SCRIPT>
+-
+<SCRIPT>jsUtil.htmlEncode('')</SCRIPT>
+ </TD></TR>
+<TR>
+<TD class=textlabel>&nbsp;&nbsp;&nbsp; CCY :</TD>
+<TD class=textfielddisplaylabel>
+<SCRIPT>jsUtil.htmlEncode('COP')</SCRIPT>
+COP</TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>&nbsp;&nbsp;&nbsp; Scheme Code :</TD>
+<TD class=textfielddisplaylabel>
+<SCRIPT>jsUtil.htmlEncode('FI3')</SCRIPT>
+FI3 -
+<SCRIPT>jsUtil.htmlEncode('CDT  T FIJA NO CAPITALIZABLE  90- 119')</SCRIPT>
+ CDT T FIJA NO CAPITALIZABLE 90- 119</TD></TR>
+<TR>
+<TD class=textlabel>&nbsp;&nbsp;&nbsp; General Ledger Subhead Code :</TD>
+<TD class=textfielddisplaylabel>
+<SCRIPT>jsUtil.htmlEncode('F1ZDX')</SCRIPT>
+F1ZDX -
+<SCRIPT>jsUtil.htmlEncode('CDT EMIT MENOS DE 6 MESES')</SCRIPT>
+ CDT EMIT MENOS DE 6 MESES</TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>&nbsp;&nbsp;&nbsp; Permanent A/c. ID :</TD>
+<TD class=textfielddisplaylabel>
+<SCRIPT>jsUtil.htmlEncode('')</SCRIPT>
+</TD></TR>
+<TR>
+<TD class=textlabel>&nbsp;&nbsp;&nbsp; Pool Code :</TD>
+<TD class=textfielddisplaylabel>
+<SCRIPT>jsUtil.htmlEncode('')</SCRIPT>
+-
+<SCRIPT>jsUtil.htmlEncode('')</SCRIPT>
+ </TD></TR></TBODY></TABLE>
+<SCRIPT language=javascript>
+function cancelDlgOnBack(sMode)
+{
+	if(sMode == "V" || sMode == "I" || sMode == "X")
+	{
+		return true;
+	}
+	else
+	{
+		if((confirm(finbranchResArr.get("FAT000925"))==true))
+		{
+			return true;
+		}
+	}
+	return false;
+}
+</SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/jspjs/INFENG/102170_tuacop_tuacopTabResource_INFENG.js"></SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_tabgen_link.js"></SCRIPT>
+
+<SCRIPT language=javascript>
+    var verticalTabPosition = 139;
+    var tabResourceDetails = [
+["tugen","FTT000123","N","FHK000007","2","N","1","N","G"],
+["tuint","FTT000141","N","FHK000009","2","N","2","N","I"],
+["tusch","FTT000233","N","FHK000019","2","N","2","N","S"],
+["tuflw","FTT000120","N","FHK000006","2","N","0","N","F"],
+["turen","FTT000218","N","FHK000023","2","N","1","N","W"],
+["tunominationdetails","FTT000175","Y","FHK000014","2","N","0","N","N"],
+["turelatedpartydetails","FTT000215","Y","FHK000012","2","Y","1","N","L"],
+["tumiscodes","FTT000168","Y","FHK000013","2","N","0","N","M"],
+["tupymtdet","FTT000188","N","FHK000016","1","N","0","N","P"],
+["tuotherdetails","FTT000181","Y","FHK000015","1","N","0","N","O"],
+["tudocumentdetails","FTT000091","Y","FHK000004","1","N","0","N","D"],
+["tutds","FTT000131","N","FHK000001","1","N","0","N","A"],
+["errordetails","FTT000102","N","FHK000018","1","N","0","N","R"],
+["tutran","FTT000260","Y","FHK000003","1","N","0","N","C"]
+];
+    convertTabLiterals(tabResourceDetails, jstabResArr);
+    var DynaTabGen = new DynaTabGenClass("tusch", false);
+    DynaTabGen.writeHtmlTabString(tabResourceDetails, verticalTabPosition);
+</SCRIPT>
+
+<DIV id=hTab style="POSITION: absolute; VISIBILITY: hidden">
+<TABLE class=htable cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR>
+<TD vAlign=top>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=activetab4><INPUT id="hdnChktumiscodes " class=check style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" type=checkbox name=hdnChktumiscodes><SPAN class=accesskey>M</SPAN>IS Codes</A></TD>
+<TD class=activetab5><SPAN class=accesskey>P</SPAN>ayment Instructions</A></TD>
+<TD class=activetab5><INPUT id="hdnChktuotherdetails " class=check style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" type=checkbox name=hdnChktuotherdetails><SPAN class=accesskey>O</SPAN>thers</A></TD>
+<TD class=activetab5><INPUT id="hdnChktudocumentdetails " class=check style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" type=checkbox name=hdnChktudocumentdetails><SPAN class=accesskey>D</SPAN>ocument</A></TD>
+<TD class=activetab5>Imp<SPAN class=accesskey>a</SPAN>ct On TDS</A></TD>
+<TD class=activetab5><INPUT id="hdnChkturelatedpartydetails " class=check style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" CHECKED type=checkbox name=hdnChkturelatedpartydetails>Re<SPAN class=accesskey>l</SPAN>ated Party</A></TD>
+<TD class=activetab5><INPUT id="hdnChktutran " class=check style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" type=checkbox name=hdnChktutran>Transa<SPAN class=accesskey>c</SPAN>tion</A></TD></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD vAlign=top>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=activetab><SPAN class=accesskey>G</SPAN>eneral</A></TD>
+<TD class=activetab3><SPAN class=accesskey>I</SPAN>nterest &amp; Tax</A></TD>
+<TD class=activetab2><SPAN class=accesskey>S</SPAN>cheme</A></TD>
+<TD class=activetab3><SPAN class=accesskey>F</SPAN>low</A></TD>
+<TD class=activetab3>Rene<SPAN class=accesskey>w</SPAN>al&amp;Closure</A></TD>
+<TD class=activetab3><INPUT id="hdnChktunominationdetails " class=check style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" type=checkbox name=hdnChktunominationdetails><SPAN class=accesskey>N</SPAN>omination</A></TD></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD vAlign=top>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV>
+<DIV id=sTab class=ctable align=left width="100%" border="0" cellpadding="0" cellspacing="0" <table><TR><TD valign="top">
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=activetab4><INPUT id="chktumiscodes " class=check style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" type=checkbox name=chktumiscodes>&nbsp;<A onclick=" return getStatus('Y','tumiscodes')" onmouseover=displayHand(this) id=tumiscodes style="CURSOR: hand"><SPAN class=accesskey>M</SPAN>IS Codes</A></TD>
+<TD class=activetab5>&nbsp;<A onclick=" return getStatus('N','tupymtdet')" onmouseover=displayHand(this) id=tupymtdet style="CURSOR: hand"><SPAN class=accesskey>P</SPAN>ayment Instructions</A></TD>
+<TD class=activetab5><INPUT id="chktuotherdetails " class=check style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" type=checkbox name=chktuotherdetails>&nbsp;<A onclick=" return getStatus('Y','tuotherdetails')" onmouseover=displayHand(this) id=tuotherdetails style="CURSOR: hand"><SPAN class=accesskey>O</SPAN>thers</A></TD>
+<TD class=activetab5><INPUT id="chktudocumentdetails " class=check style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" type=checkbox name=chktudocumentdetails>&nbsp;<A onclick=" return getStatus('Y','tudocumentdetails')" onmouseover=displayHand(this) id=tudocumentdetails style="CURSOR: hand"><SPAN class=accesskey>D</SPAN>ocument</A></TD>
+<TD class=activetab5>&nbsp;<A onclick=" return getStatus('N','tutds')" onmouseover=displayHand(this) id=tutds style="CURSOR: hand">Imp<SPAN class=accesskey>a</SPAN>ct On TDS</A></TD>
+<TD class=activetab5><INPUT id="chkturelatedpartydetails " class=check style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" CHECKED type=checkbox name=chkturelatedpartydetails>&nbsp;<A onclick=" return getStatus('Y','turelatedpartydetails')" onmouseover=displayHand(this) id=turelatedpartydetails style="CURSOR: hand">Re<SPAN class=accesskey>l</SPAN>ated Party</A></TD>
+<TD class=activetab5><INPUT id="chktutran " class=check style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" type=checkbox name=chktutran>&nbsp;<A onclick=" return getStatus('Y','tutran')" onmouseover=displayHand(this) id=tutran style="CURSOR: hand">Transa<SPAN class=accesskey>c</SPAN>tion</A></TD></TD></TR></TBODY></TABLE></TD></TR><TR><TD valign="top">
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=activetab>&nbsp;<A onclick=" return getStatus('N','tugen')" onmouseover=displayHand(this) id=tugen style="CURSOR: hand"><SPAN class=accesskey>G</SPAN>eneral</A></TD>
+<TD class=activetab3>&nbsp;<A onclick=" return getStatus('N','tuint')" onmouseover=displayHand(this) id=tuint style="CURSOR: hand"><SPAN class=accesskey>I</SPAN>nterest &amp; Tax</A></TD>
+<TD class=activetab2>&nbsp;<A onclick=" return getStatus('N','tusch')" onmouseover=displayHand(this) id=tusch style="CURSOR: hand"><SPAN class=accesskey>S</SPAN>cheme</A></TD>
+<TD class=activetab3>&nbsp;<A onclick=" return getStatus('N','tuflw')" onmouseover=displayHand(this) id=tuflw style="CURSOR: hand"><SPAN class=accesskey>F</SPAN>low</A></TD>
+<TD class=activetab3>&nbsp;<A onclick=" return getStatus('N','turen')" onmouseover=displayHand(this) id=turen style="CURSOR: hand">Rene<SPAN class=accesskey>w</SPAN>al&amp;Closure</A></TD>
+<TD class=activetab3><INPUT id="chktunominationdetails " class=check style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" type=checkbox name=chktunominationdetails>&nbsp;<A onclick=" return getStatus('Y','tunominationdetails')" onmouseover=displayHand(this) id=tunominationdetails style="CURSOR: hand"><SPAN class=accesskey>N</SPAN>omination</A></TD></TD></TR></TBODY></TABLE></TD></TR><TR><TD valign="top">
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR></TD></TR></TBODY></TABLE></TD></TR>
+<SCRIPT language=javascript> tfkmResource = {"CAG|FORM" : "fkmResourceOnCAG" ,"CAI|FORM" : "fkmResourceOnCAI" ,"CAS|FORM" : "fkmResourceOnCAS" ,"CAF|FORM" : "fkmResourceOnCAF" ,"CAW|FORM" : "fkmResourceOnCAW" ,"CAN|FORM" : "fkmResourceOnCAN" ,"CAM|FORM" : "fkmResourceOnCAM" ,"CAP|FORM" : "fkmResourceOnCAP" ,"CAO|FORM" : "fkmResourceOnCAO" ,"CAD|FORM" : "fkmResourceOnCAD" ,"CAA|FORM" : "fkmResourceOnCAA" ,"CAL|FORM" : "fkmResourceOnCAL" ,"CAC|FORM" : "fkmResourceOnCAC" }; function fkmResourceOnCAG() { getStatus("N","tugen"); } function fkmResourceOnCAI() { getStatus("N","tuint"); } function fkmResourceOnCAS() { getStatus("N","tusch"); } function fkmResourceOnCAF() { getStatus("N","tuflw"); } function fkmResourceOnCAW() { getStatus("N","turen"); } function fkmResourceOnCAN() { getStatus("Y","tunominationdetails"); } function fkmResourceOnCAM() { getStatus("Y","tumiscodes"); } function fkmResourceOnCAP() { getStatus("N","tupymtdet"); } function fkmResourceOnCAO() { getStatus("Y","tuotherdetails"); } function fkmResourceOnCAD() { getStatus("Y","tudocumentdetails"); } function fkmResourceOnCAA() { getStatus("N","tutds"); } function fkmResourceOnCAL() { getStatus("Y","turelatedpartydetails"); } function fkmResourceOnCAC() { getStatus("Y","tutran"); }   function goToNextTab() { getStatus('tusch','tuflw');  }   function goToPrevTab() {getStatus('tusch','tuint');  } </SCRIPT>
+
+<SCRIPT language=Javascript>
+var dispUsrInfoLLSize = 0;
+var dispErrLLSize = 0;
+</SCRIPT>
+
+<SCRIPT language=javascript>
+printBlock1();
+</SCRIPT>
+<INPUT id=actionCode type=hidden name=actionCode><INPUT type=hidden name=tabName><INPUT id=callMode type=hidden value=E name=callMode><INPUT type=hidden value=tuschdet name=screenName><INPUT id=expldQryStr type=hidden name=expldQryStr><INPUT id=reqId type=hidden value=fj9qyvxjvs6 name=reqId><INPUT id=rtId type=hidden value=1f3s299knv583 name=rtId><INPUT id=reqIdChkByPass type=hidden value=null name=reqIdChkByPass><INPUT id=ContextSwitchDoneFrom type=hidden name=ContextSwitchDoneFrom><INPUT id=valueDate type=hidden value=10-04-2018 name=tusch.valueDate fmnd="Y" fdt="fdate" vFldId="valueDate_ui" mneb1="N"><INPUT id=maturityDate type=hidden value=10-07-2018 name=tusch.maturityDate fmnd="N" fdt="fdate" vFldId="maturityDate_ui" mneb1="N"><INPUT id=acctStatusDate type=hidden name=tusch.acctStatusDate fmnd="N" fdt="fdate" vFldId="acctStatusDate_ui" mneb1="N"><INPUT id=irregularStatusDate type=hidden name=tusch.irregularStatusDate fmnd="N" fdt="fdate" vFldId="irregularStatusDate_ui" mneb1="N"><INPUT type=hidden name=submitform><INPUT type=hidden value=tusch name=pagename><INPUT type=hidden name=bodDate><INPUT type=hidden name=solId><INPUT type=hidden name=depType><INPUT type=hidden name=regenFlowFlg><INPUT type=hidden value=N name=isTranVstRqd><INPUT type=hidden name=maxMissedContribBasis><INPUT type=hidden name=dormApplicableToTd><TR><TD> 
+<TABLE class=table cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD>
+<TABLE class=innertable cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD>
+<TABLE class=innertabletop cellSpacing=0 cellPadding=0 width="100%" align=center border=0 name="TABLE1">
+<TBODY>
+<TR>
+<TD><SPACER width="1" height="1" type="block"></SPACER></TD>
+<TD><SPACER width="1" height="1" type="block"></SPACER></TD>
+<TD><SPACER width="1" height="1" type="block"></SPACER></TD>
+<TD><SPACER width="1" height="1" type="block"></SPACER></TD>
+<TD><SPACER width="1" height="1" type="block"></SPACER></TD>
+<TD align=right><A id=sLnk1 style="CURSOR: hand; Z-INDEX: 1000" href="javascript:locShowHelpFile();" target=_self><IMG style="CURSOR: hand" border=0 src="../Renderer/images/INFENG/help.gif" hotKeyId="finHelp"></A></TD></TR>
+<TR>
+<TD class=textlabel>A/c. Opening Mode
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT disabled id=acctOpenMode class=label style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" maxLength=8 size=8 value=Normal name=tusch.acctOpenMode enabled fmnd="N" fds="Y" fblk="defaultFblk1" fdt="default" fmb="N"></TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>Value Date
+<SCRIPT>setMandatory("Y");</SCRIPT>
+<FONT color=red size=+0>&nbsp;*</FONT></TD>
+<TD class=textfield><INPUT onchange="javascript:return tuschdet_ONCHANGE4(this,this,this);" onblur="javascript:return custom_ONBLUR('tuschdet',this);" id=valueDate_ui class=textfieldfont style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#cccccc',EndColorStr='#ffffff')" readOnly maxLength=10 value=10-04-2018 name=tusch.valueDate_ui hotKeyId="calender1" enabled fmnd="Y" fblk="defaultFblk1" fdt="uidate" fmb="N" mnebl="false"><A id=sLnk2 style="CURSOR: hand; DISPLAY: none" href="javascript:openDate(document.forms[0].valueDate_ui,BODDate)"><IMG style="CURSOR: hand" border=0 alt=Date src="../images/INFENG/calender.gif" width=24 align=absMiddle height=19 hotKeyId="calender1"></IMG></A></TD></TR>
+<TR>
+<TD class=textlabel>Initial Deposit Amt. (IDA)
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT onchange="javascript:return tuschdet_ONCHANGE6(this,document.forms[0].depAmt);" onblur="javascript:return tuschdet_ONBLUR5(this,format,document.forms[0].depAmt,depCrncy,'N');" id=depAmt class=textfieldfont style="TEXT-ALIGN: right; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" maxLength=24 value=40.000.000,00 name=tusch.depAmt enabled fmnd="N" fblk="defaultFblk1" fdt="amount" fmb="N"></TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>Installment Basis
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfielddisplaylabel><INPUT onclick="javascript:return tuschdet_ONCLICK7(this);" id=installmentBasis style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" CHECKED type=radio value=F name=tusch.installmentBasis enabled fmnd="N" fblk="defaultFblk1" fdt="default" fmb="N">Fixed<INPUT onclick="javascript:return tuschdet_ONCLICK8(this);" id=installmentBasis style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" type=radio value=P name=tusch.installmentBasis enabled fmnd="N" fblk="defaultFblk1" fdt="default" fmb="N">Pcnt</TD></TR>
+<TR>
+<TD class=textlabel>Installment Amt.
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT onchange="javascript:return custom_ONCHANGE('tuschdet',this);" onblur="javascript:return tuschdet_ONBLUR11(this,format,document.forms[0].fixedInstallmentAmt,depCrncy,'N');" id=fixedInstallmentAmt class=textfieldfont style="TEXT-ALIGN: right; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" maxLength=24 value=0,00 name=tusch.fixedInstallmentAmt enabled fmnd="N" fblk="defaultFblk1" fdt="amount" fmb="N"></TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>Installment Amt. as Pcnt. of IDA
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT onchange="javascript:return tuschdet_ONCHANGE12(this);" disabled onblur="javascript:return custom_ONBLUR('tuschdet',this);" id=nrmlInstallmentPcnt class=textfieldfont style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" maxLength=5 value=0,00 name=tusch.nrmlInstallmentPcnt enabled fmnd="N" fblk="defaultFblk1" fdt="fpcnt" fmb="N"></TD></TR>
+<TR>
+<TD class=textlabel>Deposit Period (MM/DD)
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT onchange="javascript:return tuschdet_ONCHANGE13(this,document.forms[0].depPerdMths);" id=depPerdMths class=twotextfieldnoicon style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff'); DISPLAY: none" readOnly maxLength=3 size=3 value=3 name=tusch.depPerdMths enabled fmnd="N" fblk="defaultFblk1" fdt="fpzint" fmb="N">&nbsp;<INPUT onchange="javascript:return tuschdet_ONCHANGE14(this,document.forms[0].depPerdDays);" id=depPerdDays class=twotextfieldnoicon style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff'); DISPLAY: none" readOnly maxLength=3 size=3 value=0 name=tusch.depPerdDays enabled fmnd="N" fblk="defaultFblk1" fdt="fpzint" fmb="N"></TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=columnwidth>&nbsp;</TD></TR>
+<TR>
+<TD class=textlabel>Maturity Date
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT onchange="javascript:return tuschdet_ONCHANGE15(this,this,this);" onblur="javascript:return custom_ONBLUR('tuschdet',this);" id=maturityDate_ui class=textfieldfont style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" readOnly maxLength=10 value=10-07-2018 name=tusch.maturityDate_ui hotKeyId="search1" enabled fmnd="N" fblk="defaultFblk1" fdt="uidate" fmb="N" mnebl="false"><A id=sLnk3 style="CURSOR: hand; DISPLAY: none" href="javascript:openDate(document.forms[0].maturityDate_ui,BODDate)"><IMG style="CURSOR: hand" border=0 alt=Date src="../images/INFENG/calender.gif" width=24 align=absMiddle height=19 hotKeyId="calender2"></IMG></A></TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>Maturity Value
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT onchange="javascript:return tuschdet_ONCHANGE17(this,document.forms[0].maturityAmt);" onblur="javascript:return tuschdet_ONBLUR16(this,format,document.forms[0].maturityAmt,depCrncy,'N');" id=maturityAmt class=textfieldfont style="TEXT-ALIGN: right; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" readOnly maxLength=24 size=24 value=0,00 name=tusch.maturityAmt enabled fmnd="N" fblk="defaultFblk1" fdt="amount" fmb="N"></TD></TR>
+<TR>
+<TD class=textlabel>Break Deposit in Multiples Of
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT onblur="javascript:return tuschdet_ONBLUR18(this,format,document.forms[0].outflowMultipleAmt,depCrncy,'N');" id=outflowMultipleAmt class=textfieldfont style="TEXT-ALIGN: right; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" maxLength=24 size=24 value=0,00 name=tusch.outflowMultipleAmt enabled fmnd="N" fblk="defaultFblk1" fdt="amount" fmb="N"></TD>
+<TD></TD>
+<TD class=columnwidth>&nbsp;</TD></TR>
+<TR>
+<TD class=textlabel>Repay A/c. ID
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield colSpan=4><INPUT onchange="javascript:return tuschdet_ONCHANGE19(this,this,'repayAcctName','repayAcctSol','repayAcctCrncy',true,'VALACCTID');" id=repayAcct class=textfieldfont style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" maxLength=16 name=tusch.repayAcct hotKeyId="search1" enabled fmnd="N" fblk="defaultFblk1" fdt="default" fmb="N">&nbsp;<A id=sLnk5 style="CURSOR: hand" href="Javascript:showAccountIdList(document.forms[0].repayAcct,document.forms[0].repayAcctSol,document.forms[0].repayAcctName,'F',document.forms[0].repayAcctCrncy,document.forms[0].depCrncy)" target=_self><IMG style="CURSOR: hand" border=0 src="../Renderer/images/INFENG/search_icon.gif" width=16 height=17 hotKeyId="search1"></IMG></A><INPUT disabled id=repayAcctCrncy class=label style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" maxLength=3 size=5 name=tusch.repayAcctCrncy fds="Y" fblk="defaultFblk1" fdt="default"><INPUT disabled id=repayAcctSol class=label style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" maxLength=8 size=10 name=tusch.repayAcctSol fds="Y" fblk="defaultFblk1" fdt="default"><INPUT disabled id=repayAcctName class=label style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" maxLength=20 size=25 name=tusch.repayAcctName fds="Y" fblk="defaultFblk1" fdt="default"></TD></TR>
+<TR>
+<TD class=textlabel>Agent/Employee Code
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield colSpan=4><INPUT onclick="javascript:return tuschdet_ONCLICK20(this);" id=agentEmpInd style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" CHECKED type=radio value="" name=tusch.agentEmpInd enabled fmnd="N" fblk="defaultFblk1" fdt="default" fmb="N">None<INPUT onclick="javascript:return tuschdet_ONCLICK21(this);" id=agentEmpInd style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" type=radio value=A name=tusch.agentEmpInd enabled fmnd="N" fblk="defaultFblk1" fdt="default" fmb="N">Agent<INPUT onclick="javascript:return tuschdet_ONCLICK22(this);" id=agentEmpInd style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" type=radio value=E name=tusch.agentEmpInd enabled fmnd="N" fblk="defaultFblk1" fdt="default" fmb="N">Employee</TD></TR>
+<TR>
+<TD class=columnwidth>&nbsp;</TD>
+<TD><INPUT onchange="javascript:return custom_ONCHANGE('tuschdet',this);" disabled onblur="javascript:return custom_ONBLUR('tuschdet',this);" id=agentEmpCode class=textfieldfont style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" maxLength=10 size=10 name=tusch.agentEmpCode hotKeyId="search2" enabled fmnd="N" fblk="defaultFblk1" fdt="default" fmb="N">&nbsp;<A id=sLnk6 style="CURSOR: hand; DISPLAY: none" href="Javascript:showAgentEmpCode(document.forms[0].agentEmpCode,'F')" target=_self><IMG style="CURSOR: hand" border=0 src="../Renderer/images/INFENG/search_icon.gif" width=16 height=17 hotKeyId="search2"></IMG></A></TD></TR>
+<TR>
+<TD class=textlabel>Total Interest</TD>
+<TD class=textfield><INPUT disabled id=interestRate class=label style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" maxLength=8 size=8 value=0 name=tusch.interestRate fds="Y" fblk="defaultFblk1" fdt="default"></TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>Max No. of Missed Contributions Allowed/Missed
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT id=maxMissedContribAllwd class=twotextfieldnoicon style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" maxLength=3 size=3 value=0 name=tusch.maxMissedContribAllwd enabled fmnd="N" fblk="defaultFblk1" fdt="fint" fmb="N">&nbsp;<INPUT disabled id=totalNoOfMissContrib class=twotextfieldnoicon style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" maxLength=3 size=3 value=0 name=tusch.totalNoOfMissContrib enabled fmnd="N" fblk="defaultFblk1" fdt="fint" fmb="N"></TD></TR>
+<SCRIPT language=javascript>
+printBlock2();
+</SCRIPT>
+
+<TR>
+<TD class=textlabel>Penalty Charge Code
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT onchange="javascript:return custom_ONCHANGE('tuschdet',this);" onblur="javascript:return custom_ONBLUR('tuschdet',this);" id=penaltyChargeCode class=textfieldfont style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" maxLength=25 name=tusch.penaltyChargeCode hotKeyId="search3" enabled fmnd="N" fblk="defaultFblk1" fdt="default" fmb="N">&nbsp;<A id=sLnk8 style="CURSOR: hand" href="Javascript:getEvtIdList(document.forms[0].penaltyChargeCode,'ctrl','F','','N','Y','TUPEN')" target=_self><IMG style="CURSOR: hand" border=0 src="../Renderer/images/INFENG/search_icon.gif" width=16 height=17 hotKeyId="search3"></IMG></A></TD></TR>
+<TR class=innertabletop1>
+<TD class=rowspacing colSpan=5><SPACER width="10" height="10" type="block"></SPACER></TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=columnwidth>&nbsp;</TD></TR>
+<TR>
+<TD class=textlabel>A/c. Information</TD>
+<TR>
+<TR class=innertabletop1>
+<TD class=textlabel>Recover Interest on Tax Deducted
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfielddisplaylabel><INPUT id=recoverIntFlg style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" type=radio value=Y name=tusch.recoverIntFlg enabled fmnd="N" fblk="defaultFblk1" fdt="default" fmb="N">Yes<INPUT id=recoverIntFlg style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" CHECKED type=radio value=N name=tusch.recoverIntFlg enabled fmnd="N" fblk="defaultFblk1" fdt="default" fmb="N">No</TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>Regularize Lien on Maturity
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfielddisplaylabel><INPUT id=lienOnMaturityFlg style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" type=radio value=Y name=tusch.lienOnMaturityFlg enabled fmnd="N" fblk="defaultFblk1" fdt="default" fmb="N">Yes<INPUT id=lienOnMaturityFlg style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" CHECKED type=radio value=N name=tusch.lienOnMaturityFlg enabled fmnd="N" fblk="defaultFblk1" fdt="default" fmb="N">No</TD></TR></TR>
+<TR class=innertabletop1>
+<TD class=textlabel>Nomination
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfielddisplaylabel><INPUT onclick="javascript:return tuschdet_ONCLICK25(this);" id=nomineeFlg style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" type=radio value=Y name=tusch.nomineeFlg enabled fmnd="N" fblk="defaultFblk1" fdt="default" fmb="N">Yes<INPUT onclick="javascript:return tuschdet_ONCLICK26(this);" id=nomineeFlg style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" CHECKED type=radio value=N name=tusch.nomineeFlg enabled fmnd="N" fblk="defaultFblk1" fdt="default" fmb="N">No</TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>Print Nominee on Receipt
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfielddisplaylabel><INPUT disabled id=nomineePrintFlg style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" type=radio value=Y name=tusch.nomineePrintFlg enabled fmnd="N" fblk="defaultFblk1" fdt="default" fmb="N">Yes<INPUT disabled id=nomineePrintFlg style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" CHECKED type=radio value=N name=tusch.nomineePrintFlg enabled fmnd="N" fblk="defaultFblk1" fdt="default" fmb="N">No</TD></TR>
+<TR class=innertabletop1>
+<TD class=textlabel>Safe Custody
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfielddisplaylabel><INPUT id=safeCustodyFlg style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" type=radio value=Y name=tusch.safeCustodyFlg enabled fmnd="N" fblk="defaultFblk1" fdt="default" fmb="N">Yes<INPUT id=safeCustodyFlg style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" CHECKED type=radio value=N name=tusch.safeCustodyFlg enabled fmnd="N" fblk="defaultFblk1" fdt="default" fmb="N">No</TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>Print Receipt
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfielddisplaylabel><INPUT id=printReceiptFlg style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" CHECKED type=radio value=Y name=tusch.printReceiptFlg enabled fmnd="N" fblk="defaultFblk1" fdt="default" fmb="N">Yes<INPUT id=printReceiptFlg style="FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" type=radio value=N name=tusch.printReceiptFlg enabled fmnd="N" fblk="defaultFblk1" fdt="default" fmb="N">No</TD></TR>
+<TR>
+<TD class=rowspacingbottom colSpan=5></TD></TR></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR><BR><INPUT type=hidden value=~custIntCode|FIS|FI3|~tugendet|10-04-2018|~tuintdet|4,8|~tuschdet|4,8|3|0|10-07-2018|10-04-2018|90|4,8|4.8|4.907|.004|30|FIS| name=customData> <BASE href="https://wsfinaclecdtperf.bancolombia.corp:11111/finbranch/custom/jsp">
+<META content=no-cache http-equiv=PRAGMA>
+<META content=no-cache http-equiv=Cache-Control>
+<META content=-1 http-equiv=Expires><LINK title="Finacle Stylesheet" rel=STYLESHEET type=text/css href="../Renderer/stylesheets/1000/10217_services.css">
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/1021710870_finbranchResource_INFENG.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_cust_evt.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_dynamic_combo.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_cust_functions.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/1021710870_login_common_functions.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/1021710870_common_functions.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_multirec_link.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_hotkeyprocessor_link.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_menuLayer.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/1021710870_core_banking.js"> </SCRIPT>
+
+<SCRIPT language=JavaScript>
+var dom_to_set = 'bancolombia.corp';
+var prodEnv = 'Y'; 
+var SSO = (dom_to_set != "") && true;
+if (SSO) {
+	document.domain = dom_to_set;
+}
+if(prodEnv == 'Y')
+{
+	document.oncontextmenu = function ()
+	{
+		return false;
+	}
+}
+</SCRIPT>
+
+<SCRIPT src="../Renderer/javascripts/1000/10217_timeout_link.js"></SCRIPT>
+
+<SCRIPT>
+window.history.forward(1);
+var timeid;
+var USERID = "USERCDT29";
+var USER_TIME_OUT = 23580000;
+
+fnSetTimers();
+enableTimers();
+
+</SCRIPT>
+<!-- Importing all packages requires -->
+<SCRIPT language=javascript src="../Renderer/javascripts/custom_functions.js"></SCRIPT>
+
+<SCRIPT language=javaScript src="../Renderer/javascripts/jspjs/INFENG/102170_tuschdet_INFENG.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/custom/1000/javascripts/jspjs/INFENG/102170_customResource_INFENG.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/custom/1000/javascripts/custHide.js"></SCRIPT>
+
+<SCRIPT language=javascript>
+
+
+if(mopId == "HOAACTU" || mopId == "hoaactu" || mopId=="HACMTU" || mopId=="hacmtu")
+{
+	with(document)
+	{
+		write('<table class="ctable" cellspacing="0" cellpadding="0" width="100%" border="0" > ');
+		write('<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableborder">');
+		write('<tr>');
+		write('<td>');
+		write('<table width="100%" border="0" cellpadding="0" cellspacing="0" class="innertable">');
+		write('<tr class="innertabletop">');
+		write('<td colspan="5" class="rowspacing"><spacer type="block" width="1" height="1"></spacer>');
+		write('<tr>');
+		write('</tr>');
+		write('<tr>');
+		write('<td class="textlabel"> '+ customJspResArr.get("CTUA016503") + ' ');
+		write('<font color="red">*');
+		write('</font>');
+		write('<td class="textfield"> <input id="cTenureDays" type="text" class="textfieldfont" size="25" maxlength="5" style="TEXT-ALIGN:right" onBlur="javascript:return cust_tuschdet_ONBLUR1(this)">&nbsp;');
+		write('</td>');
+		write('<td class="columnwidth">&nbsp;</td>');		
+		if(mopId == "HOAACTU" || mopId == "hoaactu")
+		{
+			write('<td class="textlabel"> '+ customJspResArr.get("CTUA016505") + ' ');
+			write('<font color="red">*');
+			write('</font>');
+			write('<td class="textfield"> <input id="cIntRate" type="text" class="textfieldfont" size="25" maxlength="9" style="TEXT-ALIGN:right" onBlur="javascript:return cust_tuschdet_ONBLUR1(this)">&nbsp;');
+			write('</td>');
+		}
+		write('</tr>');
+		write('<tr>');
+		write('<td class="textlabel"> '+ customJspResArr.get("CTUA016520") + ' ');
+		write('<td class="textfield"> <input id="custIPF" type="text" class="textfieldfont" size="25" maxlength="5" style="TEXT-ALIGN:right" onBlur="javascript:return cust_tuschdet_ONBLUR2(this)">&nbsp;');
+		write('</td>');
+		write('<td class="columnwidth">&nbsp;</td>');
+		write('<td class="textlabel">');
+		write('<td class="textfield">');
+		write('</tr>');
+		write('<tr>');
+		write('</tr>');
+		write('</td>');
+		write('</tr>');
+		write('</table>');
+		write('</td>');
+		write('</tr>');
+		write('</table>');
+		write('</table>');
+		write('<br>');
+		write('<td class="textlabel">');
+		write('<input type="hidden" name="custAcctOpenDate" id="custAcctOpenDate" value ="">');
+		write('<input type="hidden" name="nomRate" id="nomRate" value ="">');
+		write('<input type="hidden" name="effRate" id="effRate" value ="">');
+		write('<input type="hidden" name="factor" id="factor" value="">');
+		write('<input type="hidden" name="custAcctPrefIntCr" id="custAcctPrefIntCr" value="">');
+		write('<input type="hidden" name="custIntRateCode" id="custIntRateCode" value="">');
+		write('</td>');
+	}
+}
+
+
+
+
+function tuschdet_post_ONLOAD()
+{
+	
+	custHide.removeFieldByLabel('Dep. Period (MM/DD)');
+	hideImage("depPerdMths");
+	hideImage("depPerdDays");
+
+	if(mopId=="HACMTU" || mopId=="hacmtu")
+	{
+		frm = document.forms[0];
+		var tempPageName = frm.screenName.value;
+		frm.screenName.value = "custTenureIPFDet";
+		getFieldsFromCustomData("cTenureDays","custIPF");
+		frm.screenName.value = tempPageName;
+		frm.cTenureDays.readOnly = true;
+		frm.custIPF.readOnly = true;
+	}
+
+
+	if(mopId == "HOAACTU" || mopId == "hoaactu")
+	{
+
+		frm = document.forms[0];
+		var sSchmCode = 'FI3';
+		var sCrncyCode = 'COP';
+		var sAmtFormat = 'Million';
+		frm.depPerdMths.readOnly = true;
+		frm.depPerdDays.readOnly = true;
+		frm.maturityDate_ui.readOnly = true;
+		frm.valueDate_ui.readOnly = true;
+		hideImage("sLnk2");
+		hideImage("sLnk3");
+		frm.nomineeFlg[1].checked = true;
+		chkNomPrntFlg();
+		getFieldsFromCustomData("custAcctPrefIntCr","depPerdMths","depPerdDays","maturityDate_ui","custAcctOpenDate","cTenureDays","cIntRate","nomRate","effRate","factor","custIPF","custIntRateCode");
+		var tempPageName = frm.screenName.value;
+		frm.screenName.value = "tugendet";
+		getFieldsFromCustomData("custAcctOpenDate");
+		frm.screenName.value = "custIntCode";
+		getFieldsFromCustomData("custIntRateCode");
+		frm.screenName.value = "tugendet";
+		getFieldsFromCustomData("valueDate_ui");
+		frm.screenName.value = tempPageName;
+
+
+
+		if(frm.maturityDate_ui.value!="")
+		{
+			cust_populateMatDate();
+
+			if(frm.cIntRate.value!="")
+			{
+				cust_populateRates();
+				
+			}
+		}
+
+		if(frm.cIntRate.value=="")
+		{
+			frm.cIntRate.value = "0";
+		}
+	
+	}
+}
+
+
+function tuschdet_pre_TAB_SWITCH()
+{
+
+	if(mopId == "HOAACTU" || mopId == "hoaactu")
+	{
+		
+		var frm = document.forms[0];
+
+		if (fnIsNull(frm.cTenureDays.value) || frm.cTenureDays.value <= 0 || ((fnIsNull(frm.cIntRate.value) || frm.cIntRate.value <= 0) && (frm.custIntRateCode.value!="DTF" && frm.custIntRateCode.value!="IPC" && frm.custIntRateCode.value!="IBR")))
+		{
+			alert(customJspResArr.get("CTUA016507"));
+			return false;
+		}
+		cust_populateRates();
+	
+		setFieldsToCustomData("custAcctPrefIntCr","depPerdMths","depPerdDays","maturityDate_ui","custAcctOpenDate","cTenureDays","cIntRate","nomRate","effRate","factor","custIPF","custIntRateCode");
+				
+	}
+}
+
+
+function tuschdet_pre_ONCLICK(obj)
+{
+	if(mopId == "HOAACTU" || mopId == "hoaactu")
+	{
+		if((obj.id=="Submit") || (obj.id=="Validate")) 
+		{
+			var frm = document.forms[0];			
+
+			if (fnIsNull(frm.cTenureDays.value) || frm.cTenureDays.value <= 0 || ((fnIsNull(frm.cIntRate.value) || frm.cIntRate.value <= 0) && (frm.custIntRateCode.value!="DTF" && frm.custIntRateCode.value!="IPC" && frm.custIntRateCode.value!="IBR")))
+			{
+				alert(customJspResArr.get("CTUA016507"));
+				return false;
+			}
+		
+			cust_populateRates();
+			setFieldsToCustomData("custAcctPrefIntCr","depPerdMths","depPerdDays","maturityDate_ui","custAcctOpenDate","cTenureDays","cIntRate","nomRate","effRate","factor","custIPF","custIntRateCode");
+
+		}
+
+		if(obj.id=="Submit")
+		{
+			alert(customJspResArr.get("CTUA016518"));
+			return false;
+		}
+
+	}
+}
+
+
+/******************************************************************************
+Function Name		: cust_tuschdet_ONBLUR1()
+Description		: Sets the maturityDate, depPerdMths, depPerdDays
+Input Values		: obj
+Output Values		: None
+Calling Function	: None
+Called Function		: None
+*******************************************************************************/
+
+function cust_tuschdet_ONBLUR1(obj)
+{
+	if(mopId == "HOAACTU" || mopId == "hoaactu")
+	{
+
+		var frm = document.forms[0];
+
+		if(obj.id == "cTenureDays")
+		{
+			if (!fnIsNull(obj.value)) 
+			{
+				var locNum = getValInStdFormat(obj.value);
+				if ((isNaN(locNum)) || (locNum.indexOf(DEF_DECIMAL_SEPARATOR) != -1)) 
+				{
+					if (valSwitch)
+					{
+						switchCalArr[1] = finbranchResArr.get("FAT000201");
+					}
+					else
+					{
+						alert(finbranchResArr.get("FAT000201"));
+						obj.focus();
+						return false;
+					}
+				}
+			}
+			else
+			{
+				return true;
+			}
+
+			if(parseInt(frm.cTenureDays.value%30)!=0)
+			{
+				frm.custIPF.value=frm.cTenureDays.value;
+				frm.custIPF.readOnly = true;
+			}
+			else
+			{
+				frm.custIPF.readOnly = false;
+			}			
+
+			if (!fnIsNull(frm.custAcctOpenDate.value))
+			{
+				 cust_populateMatDate();
+			}
+
+
+			if((frm.cIntRate.value!="") && (frm.cIntRate.value > 0))
+			{
+				 cust_populateRates();
+			}
+		}
+
+		if(obj.id == "cIntRate")
+		{
+			if (fnIsNull(frm.cTenureDays.value) || (frm.cTenureDays.value < 0))
+			{	
+				frm.cIntRate.value = "";
+				alert(customJspResArr.get("CTUA016508"));
+				frm.cTenureDays.focus();
+				return false;
+			
+			}		
+
+			if (!fnIsNull(obj.value))
+			{
+				var locPcnt = getValInStdFormat(obj.value);
+				var chk = (isNaN(locPcnt) || locPcnt.indexOf(" ") != -1 || parseFloat(locPcnt)>100) || (parseFloat(locPcnt) < 0);
+
+				if (chk)
+				{
+					if (valSwitch)
+					{
+						switchCalArr[1] = finbranchResArr.get("FAT000167");
+					}
+					else
+					{
+						alert(finbranchResArr.get("FAT000167"));
+						obj.focus();
+						return false;
+					}
+				}        
+			}
+			
+			if(!fnIsNull(obj.value))
+			{
+				 cust_populateRates();
+		
+			}
+
+
+		}
+	}
+	return true;
+}
+
+function cust_populateMatDate()
+{
+	if(mopId == "HOAACTU" || mopId == "hoaactu")
+	{
+
+		var sSchmCode = 'FI3';
+		var sCrncyCode = 'COP';
+		var sAmtFormat = 'Million';
+
+		var inputNameValues = "acctOpenDate|"+frm.custAcctOpenDate.value+"|tenureDays|"+frm.cTenureDays.value
+		inputNameValues += "|schmCode|"+sSchmCode+"|crncyCode|"+sCrncyCode
+		var outputNames = "custMaturityDate|custDepPerdMths|custDepPerdDays";
+		var scrName = "td_maturityDateCalc.scr";
+		var retVal = fnExecuteScript(inputNameValues,outputNames,scrName,false);
+		var valueFromScript = retVal.split('|');
+		if(valueFromScript[0] != "F")
+		{
+			if(valueFromScript[0] == "custMaturityDate")
+			{
+				document.forms[0].maturityDate_ui.value = valueFromScript[1];
+			}
+			if(valueFromScript[2] == "custDepPerdMths")
+			{
+				document.forms[0].depPerdMths.value = valueFromScript[3];
+			}
+			if(valueFromScript[4] == "custDepPerdDays")
+			{
+				document.forms[0].depPerdDays.value = valueFromScript[5];
+			}
+
+		}
+		else
+		{
+			if(valueFromScript[2] == "minDays")
+			{
+				var minDays = valueFromScript[3];
+			}
+			if(valueFromScript[4] == "maxDays")
+			{
+				var maxDays = valueFromScript[5];
+			}
+			var s = customJspResArr.get("CTUA016509")+"\n"+customJspResArr.get("CTUA016514")+minDays+", "+customJspResArr.get("CTUA016515")+maxDays
+			alert(s);
+			frm.cTenureDays.value = "";
+			frm.cTenureDays.focus();
+			return false;
+		}
+	}
+}
+
+
+
+function cust_populateRates()
+{ 
+	if(mopId == "HOAACTU" || mopId == "hoaactu")
+	{
+
+		var sSchmCode = 'FI3';
+		var sCrncyCode = 'COP';
+		var sAmtFormat = 'Million';
+
+		var inputNameValues = "openingDate|"+frm.custAcctOpenDate.value+"|tenureDays|"+frm.cTenureDays.value
+		inputNameValues += "|schmCode|"+sSchmCode+"|crncyCode|"+sCrncyCode+"|maturityDate|"+frm.maturityDate_ui.value
+		inputNameValues += "|custIntRate|"+frm.cIntRate.value+"|custIPF|"+frm.custIPF.value
+		var outputNames = "acctPrefIntCr|nomRate|effRate|factor";
+		var scrName = "td_frontEndCalcInt.scr";
+		var retVal = fnExecuteScript(inputNameValues,outputNames,scrName,false);
+		var valueFromScript = retVal.split('|');
+		if(valueFromScript[1]=="F")
+		{
+			alert(valueFromScript[3]);
+			frm.cIntRate.focus();
+			return false;
+		}
+		else
+		{
+			document.forms[0].custAcctPrefIntCr.value = getValInCustomFormat(valueFromScript[3]);
+			document.forms[0].nomRate.value = valueFromScript[5];
+			document.forms[0].effRate.value = valueFromScript[7];
+			document.forms[0].factor.value = valueFromScript[9];
+		}
+	}
+}
+
+
+function cust_tuschdet_ONBLUR2(obj)
+{
+	if(mopId == "HOAACTU" || mopId == "hoaactu")
+	{
+
+		var frm = document.forms[0];	
+		if (!fnIsNull(obj.value)) 
+		{
+			if (fnIsNull(frm.cTenureDays.value) || (frm.cTenureDays.value < 0))
+			{	
+				frm.custIPF.value="";
+				alert(customJspResArr.get("CTUA016508"));
+				frm.cTenureDays.focus();
+				return false;
+			
+			}	
+
+			var locNum = getValInStdFormat(obj.value);
+			if (((isNaN(locNum)) || (locNum.indexOf(DEF_DECIMAL_SEPARATOR) != -1) || (parseFloat(locNum) <= 0))) 
+			{
+				if (valSwitch)
+				   {
+							switchCalArr[1] = finbranchResArr.get("FAT000202");
+				}
+				else
+				{					
+					alert(finbranchResArr.get("FAT000202"));
+					obj.focus();
+					return false;
+				}
+			}
+
+			if(!fnValidateSpecialChars(obj))
+			{
+				return false;
+			}
+		
+			if(parseInt(obj.value)>parseInt(document.forms[0].cTenureDays.value))
+			{
+				alert(customJspResArr.get("CTUA016524"));
+				obj.focus();
+				return false;
+			}
+		
+		}
+
+		cust_tuschdet_ONBLUR1(document.forms[0].cIntRate);
+	}
+}
+
+
+</SCRIPT>
+
+<TABLE class=ctable cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY></TBODY></TABLE>
+<TABLE class=tableborder cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD>
+<TABLE class=innertable cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR class=innertabletop>
+<TD class=rowspacing colSpan=5><SPACER width="1" height="1" type="block"></SPACER>
+<TR></TR>
+<TR>
+<TD class=textlabel>Tenure in Days <FONT color=red>*</FONT>
+<TD class=textfield><INPUT onblur="javascript:return cust_tuschdet_ONBLUR1(this)" id=cTenureDays class=textfieldfont style="TEXT-ALIGN: right; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" maxLength=5 size=25 value=90>&nbsp;</TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>Fixed/Spread Interest Rate <FONT color=red>*</FONT>
+<TD class=textfield><INPUT onblur="javascript:return cust_tuschdet_ONBLUR1(this)" id=cIntRate class=textfieldfont style="TEXT-ALIGN: right; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" maxLength=9 size=25 value=4,8>&nbsp;</TD></TR>
+<TR>
+<TD class=textlabel>Int. Payout Frequency (Days) 
+<TD class=textfield><INPUT onblur="javascript:return cust_tuschdet_ONBLUR2(this)" id=custIPF class=textfieldfont style="TEXT-ALIGN: right; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#ffffff')" maxLength=5 size=25 value=30>&nbsp;</TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>
+<TD class=textfield></TD>
+<TR></TR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TABLE><BR><TD class=textlabel><INPUT id=custAcctOpenDate type=hidden value=10-04-2018 name=custAcctOpenDate><INPUT id=nomRate type=hidden value=4.8 name=nomRate><INPUT id=effRate type=hidden value=4.907 name=effRate><INPUT id=factor type=hidden value=.004 name=factor><INPUT id=custAcctPrefIntCr type=hidden value=4,8 name=custAcctPrefIntCr><INPUT id=custIntRateCode type=hidden value=FIS name=custIntRateCode></TD>
+<SCRIPT language=JavaScript>
+		printFooterBlock();
+	</SCRIPT>
+ 
+<DIV class=ctable><INPUT onclick="javascript:return tuschdet_ONCLICK27(this,document.forms[0].Submit);" id=Submit class=button type=button value=Submit name=Submit hotKeyId="Submit">&nbsp;<INPUT onclick="javascript:return tuschdet_ONCLICK28(this,document.forms[0].Validate);" id=Validate class=button type=button value=Validate name=Validate hotKeyId="Validate">&nbsp;<INPUT onclick="javascript:return tuschdet_ONCLICK29(this,document.forms[0].Cancel);" id=Cancel class=button type=button value=Cancel name=Cancel hotKeyId="Cancel">&nbsp; </DIV></SPAN></FORM></DIV></BODY></HTML>

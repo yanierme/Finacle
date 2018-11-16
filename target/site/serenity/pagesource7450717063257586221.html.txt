@@ -1,0 +1,241 @@
+<HTML><HEAD><TITLE>Warning and Exception Dialog</TITLE><BASE href="https://wsfinaclecdtperf.bancolombia.corp:11111/finbranch/arjspmorph/">
+<META content=text/html;charset=utf-8 http-equiv=Content-Type>
+<META content=-1 http-equiv=PRAGMA>
+<META content=no-cache http-equiv=Cache-Control>
+<META content=-1 http-equiv=Expires>
+<SCRIPT language=javascript src="../Renderer/javascripts/102170_finbranchResource_INFENG.js"> </SCRIPT>
+<LINK title="Finacle Stylesheet" rel=STYLESHEET type=text/css href="../Renderer/stylesheets/1000/10217_services.css">
+<SCRIPT language=javascript src="https://wsfinaclecdtperf.bancolombia.corp:11111/finbranch/MenuRenderer/mtree/1000_GU_BT_693_INFENG_FIN_LEVEL01.js"></SCRIPT>
+
+<SCRIPT language=javascript src="https://wsfinaclecdtperf.bancolombia.corp:11111/finbranch/MenuRenderer/mtree/1000_GU_BT_693_INFENG_SC_FIN.js"></SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/mtree/precArray.js"></SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_cust_evt.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_loc_evt.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/1021710870_core_banking.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_resource_functions.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/1021710870_login_common_functions.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/1021710870_common_functions.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_hotkeyprocessor_link.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_hotkeydata_link.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/lists/1000/10217_showSearcher.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/lists/1000/10217_showUserIdWorkClassList.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/lists/1000/10217_showRefUserIdList.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/lists/1000/10217_showRefCodeFromMorph.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/arjspmorph/1000/10217_excp_popup_screen_link.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/arjspmorph/1000/10217_excp_popup_screen_glink.js"> </SCRIPT>
+
+<SCRIPT language=JavaScript>
+var dom_to_set = 'bancolombia.corp';
+var prodEnv = 'Y'; 
+var SSO = (dom_to_set != "") && true;
+if (SSO) {
+	document.domain = dom_to_set;
+}
+if(prodEnv == 'Y')
+{
+	document.oncontextmenu = function ()
+	{
+		return false;
+	}
+}
+</SCRIPT>
+
+<SCRIPT>
+var reqId = "kq53dq8dvrye";
+var rtId = "14cwscyza1abw";
+var isPopup = "Y";
+var reqIdChkByPass = "null";
+var silentPrntReqd = "N";
+var calbase = "00";
+var lowHijYear = 1300;
+var highHijYear = 1599;
+var CURR_GROUP_NAME= "errordetails";
+var localeCode= "DF";
+var encodeLst = "[]";
+var isEncodeReqd = "Y";
+var dateFormat = "00";
+var NumLocYears="0";
+var dateInputCal ="00";
+var DECIMAL_SEPARATOR = ',';
+var MANTISSA_SEPARATOR = '.';
+var LANGCODE = "INFENG";
+var finContextPath = "/finbranch";
+var crvContextPath = '/fincrv';
+var lastCalMappedDate = "";
+var iCalCount = 1;
+var iFeatureCount = 0;
+var FeatureStringArr = new Array(0);
+var calStringArr = new Array(1);
+var ContextSwitchDoneFrom = "";
+
+            calStringArr[0] = '00';
+
+
+
+var profileId  = '1000';
+var literalContext = 'C';
+var defaultLiteralContext = 'C';
+var dualFlg = "N"; 
+
+function checkIfSwitchEnabled(feature)
+{
+        for (var i=0; i<FeatureStringArr.length; i++)
+        {
+		if(feature === FeatureStringArr[i])
+			return true;
+        }
+	return false;	
+}
+
+function isFeatureEnabledFor(ftrString){
+                var e = false;
+                var x = ftrString.split(","); //loop thru the list of features 
+                for(var i = 0; i< x.length;i++)
+                {
+                   e = checkIfSwitchEnabled (x[i]); // find out if the current feature is enabled
+                   if (e) break;         // If any feature is enabled, that is enough.. return true.
+                }
+                return e;
+}
+
+
+if (LANGCODE == "ARABIC")
+{
+    document.write('<HTML dir=RTL></HTML>');
+}
+
+</SCRIPT>
+
+<META content=no-cache http-equiv=PRAGMA>
+<META content=no-cache,no-store http-equiv=Cache-Control>
+<META content=-1 http-equiv=Expires>
+<SCRIPT language=JavaScript>
+			var isOldArch = "N";
+		</SCRIPT>
+
+<SCRIPT language=JavaScript>
+
+var referralflag;
+var CHAR_NULL_TYPE;
+var FRONT_END_ERR_TYPE;
+var returnObjId				= "submitform";
+var iJSErrSize				= 1;
+var errCode					= new Array(iJSErrSize);
+var type					= new Array(iJSErrSize);
+var errDesc					= new Array(iJSErrSize);
+var authMatrixId			= new Array(iJSErrSize);
+var matrixIdsList			= new Array(iJSErrSize);
+var pTranMtrxIdListWithDup	= new Array(iJSErrSize);
+var partTranMatrixIdsList	= new Array(iJSErrSize);
+var remarks			= "";
+var remCode			= "";
+var validationFlag			= "";
+var index 			= "0";
+var sUserId			= "USERCDT29";
+var	sMaxWorkClass	= "";
+var isDispOnly 		= "N";
+var RefEnabled     		= "";
+var REMOTE_OVERRIDE     = 'R';
+var LOCAL_OVERRIDE      = 'L';
+var BOTH_REMOTE_LOCAL   = 'B';
+
+</SCRIPT>
+
+<SCRIPT language=JavaScript>
+		var userIdList  =  new Array("1");
+	</SCRIPT>
+
+<SCRIPT language=JavaScript>
+				userIdList[0] = "";
+			</SCRIPT>
+
+<SCRIPT language=JavaScript>
+       	errCode[0]  = "CP2";
+       	type[0]     = "E";
+        authMatrixId[0] = "";
+	</SCRIPT>
+
+<SCRIPT language=JavaScript>
+			errDesc[0]  = "DEFAULT INTEREST PARAMETERS CHANGED";
+		</SCRIPT>
+
+<SCRIPT language=JavaScript>
+
+    referralflag        = 'false';
+    CHAR_NULL_TYPE      = '';
+    FRONT_END_ERR_TYPE  = 'X';
+    GroupName           = 'tuacop';
+    sMaxWorkClass       = "0";
+    RefEnabled          = 'N';
+    LocalOverrideRequired   = 'true';
+    httpSSOUrl          = 'https://WSFINACLECDTPERF.bancolombia.corp:11111/SSO/SSOServlet';
+    secureSSOUrl        = 'https://WSFINACLECDTPERF.bancolombia.corp:11111/SSO/SSOServlet';	
+	var custErrClass = "";
+	var custErrCodeClass = "";
+</SCRIPT>
+
+<SCRIPT src="../Renderer/javascripts/1000/10217_timeout_link.js"></SCRIPT>
+
+<SCRIPT>
+window.history.forward(1);
+var timeid;
+var USERID = "USERCDT29";
+var USER_TIME_OUT = 23580000;
+
+fnSetTimers();
+enableTimers();
+
+</SCRIPT>
+
+<SCRIPT>
+
+	var sPopUpExceptionWindow = 'false' ;
+
+</SCRIPT>
+
+<SCRIPT language=JavaScript src="../Renderer/javascripts/jspjs/INFENG/102170_excp_popup_screen_INFENG.js"> </SCRIPT>
+</HEAD>
+<BODY onkeyup=fnKeyUpProcessor(event) class=cbody onload=fnOnLoad() onkeydown=fnKeyDownProcessor(event)>
+<FORM class=cform name=excp_popup_screen action=../arjspmorph/INFENG/excp_popup_screen.jsp target=excp_popup_screen><SPAN class=cform>
+<SCRIPT language=Javascript>
+var dispUsrInfoLLSize = 0;
+var dispErrLLSize = 0;
+</SCRIPT>
+
+<SCRIPT language=JavaScript>
+		showErrors();
+	</SCRIPT>
+
+<TABLE class=ctable cellSpacing=0 cellPadding=0 border=2>
+<TBODY>
+<TR class=ccaption>
+<TD width="25%" align=left>&nbsp;&nbsp;Type</TD>
+<TD width="25%" align=left>&nbsp;&nbsp;Error Code</TD>
+<TD width="60%" align=left>&nbsp;&nbsp;Description</TD></TR>
+<TR>
+<TD class="text_excp_CP2 text_excp textfieldfont" width="20%" align=left>Exception</TD>
+<TD class="text_excp_CP2 text_excp textfieldfont" width="20%" align=left>CP2</TD>
+<TD class="text_excp_CP2 text_excp textfieldfont" width="60%" align=left>DEFAULT INTEREST PARAMETERS CHANGED</TD></TR></TBODY></TABLE>
+<TABLE>
+<TBODY>
+<TR>
+<TD colSpan=3 align=center><INPUT onclick="return fnChoice('Submit')" id=accept class=button type=button value=Accept hotKeyId="Go"><INPUT onclick="return fnChoice('Cancel')" id=cancel class=button type=button value=Cancel hotKeyId="Cancel"></TD></TR></TBODY></TABLE>
+<SCRIPT language=JavaScript>
+	arjspmorphFooter();
+</SCRIPT>
+<INPUT id=rtId type=hidden value=14cwscyza1abw name=rtId><INPUT id=reqId type=hidden value=kq53dq8dvrye name=reqId> </FORM></SPAN></BODY></HTML>

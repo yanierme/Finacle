@@ -1,0 +1,83 @@
+<HTML><HEAD><TITLE>Error Page</TITLE>
+<META content=INFENG http-equiv=Content-Language>
+<META content=text/html;charset=utf-8 http-equiv=Content-Type>
+<SCRIPT>
+var pageDomain = 'bancolombia.corp';
+</SCRIPT>
+
+<SCRIPT type=text/javascript src="javascripts/ssodomain.js"></SCRIPT>
+
+<SCRIPT type=text/javascript src="javascripts/SSOUIProperties_INFENG.js"></SCRIPT>
+
+<SCRIPT>
+var errMsg;
+var imgFile = 'logo.gif';
+
+function setPageFocus()
+{
+	try{
+		document.getElementById("error_link").focus();
+	}catch(e){
+		//ignore
+	}
+}
+
+function goToLoginPage()
+{
+	var docClientApp = window.parent.appletFrame.document.ClientApp;
+	
+	if(41 == docClientApp.getErrorCode() && 
+		"YES" == docClientApp.isSelfResetEnabled() && 
+		confirm(SSOJSResourceBundle.SELF_RESET_LOGIN))
+	{
+		docClientApp.setUserResetConfirmation("YES");
+        document.location.replace("../SSOServlet?CALLTYPE=GET_RESET_LOGIN_PAGE&LCLANG=INFENG");
+	}
+    else
+    {
+	document.location.replace("../SSOServlet?CALLTYPE=GET_LOGIN_PAGE&LCLANG=INFENG");
+    }
+    //document.location.replace("../SSOServlet?CALLTYPE=GET_LOGIN_PAGE&LCLANG=INFENG");
+}
+</SCRIPT>
+<LINK rel=stylesheet href="finacle.css"></HEAD>
+<BODY onfocus=setPageFocus();return; id=body class=cbody leftMargin=0 rightMargin=0 topMargin=0>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" background=images/toptile.gif border=0>
+<TBODY>
+<TR>
+<SCRIPT>
+    	document.write('<td width="27%" height="22"><img src="images/'+imgFile+'" vspace="0" hspace="0" border="0"></td>');    
+  	</SCRIPT>
+
+<TD height=22 width="27%"><IMG border=0 hspace=0 src="images/logo.gif"></TD></TR></TBODY></TABLE><BR>
+<TABLE class=ctable cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD>
+<TABLE class=tableborder cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR vAlign=top>
+<TD>
+<TABLE class=innertable cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR class=rowspacing>
+<TD height=5><SPACER width="1" height="1" type="block"></SPACER></TD></TR>
+<TR>
+<TD align=right>
+<TABLE class=resultpage cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD width="3%"><A tabIndex=0 id=error_link><IMG title="Error occured. User is already logged in." name=errorDetails alt="Error occured. User is already logged in." src="images/error.gif" width=19 align=right height=17></A> </TD><!-- display message received from server-->
+<TD width="97%"><FONT face="Arial, Helvetica, sans-serif">
+<SCRIPT>
+			  
+			   errMsg = window.parent.appletFrame.document.ClientApp.getErrorMessage()
+			   
+			   document.write(errMsg);
+			   document.images['errorDetails'].alt="Error occured." + " " +errMsg;
+			   document.images['errorDetails'].title="Error occured." + " " +errMsg; 
+			   </SCRIPT>
+User is already logged in. </FONT></TD></TR></TBODY></TABLE></TD></TR>
+<TR class=rowspacing>
+<TD height=5><SPACER width="1" height="1" type="block"></SPACER></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<DIV class=ctable><INPUT onclick=goToLoginPage() class=button type=submit value=Login name=Submit2> </DIV></BODY></HTML>

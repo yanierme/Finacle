@@ -1,0 +1,72 @@
+<HTML><HEAD><TITLE>Single Sign on Login Page</TITLE>
+<META content=INFENG http-equiv=Content-Language>
+<META content=text/html;charset=utf-8 http-equiv=Content-Type>
+<SCRIPT>
+var pageDomain = 'bancolombia.corp';
+</SCRIPT>
+<LINK rel=stylesheet href="ui/login.css">
+<SCRIPT type=text/javascript src="ui/javascripts/sso.js"></SCRIPT>
+
+<SCRIPT type=text/javascript src="ui/javascripts/ssodomain.js"></SCRIPT>
+
+<SCRIPT type=text/javascript src="ui/javascripts/SSOLogin_INFENG.js"></SCRIPT>
+
+<SCRIPT type=text/javascript src="ui/javascripts/ssoappletutils.js"></SCRIPT>
+
+<SCRIPT type=text/javascript src="ui/javascripts/login.js"></SCRIPT>
+
+<SCRIPT type=text/javascript src="ui/javascripts/tfaAuth.js"></SCRIPT>
+
+<SCRIPT>
+
+setSSOResourceBundle(SSOJSResourceBundle);
+setLoginStatus();
+setGlobals(true, 5);
+//SSOUtils.log(1, " SSO:isAppletMode="+isAppletMode);
+var isTablet = "";
+
+function populateUserAndSetPwdFocus()
+{
+	isTablet = (navigator.userAgent.match(/Android|iPhone/i)==null)?"N":"Y";
+
+	document.loginForm.TABLET_FLG.value=isTablet;
+	
+	var docClientApp = window.parent.appletFrame.document.ClientApp;
+	if(docClientApp && docClientApp.isActive())
+    {
+
+        if ("YES" ==  docClientApp.getUserResetConfirmation())
+        {
+
+            document.loginForm.usertxt.value = docClientApp.getUserName();
+            document.loginForm.usertxt.readOnly = true;
+            document.loginForm.passtxt.focus();
+        }
+    }
+
+}
+</SCRIPT>
+</HEAD>
+<BODY onload=setFormFocus();populateUserAndSetPwdFocus();>
+<FORM method=post name=desktopForm action=SSODeskTopServlet autocomplete="off"><INPUT type=hidden name=SERVICE_TOKEN> <INPUT type=hidden name=USER_ID> <INPUT type=hidden name=SESSION_ID> <INPUT type=hidden name=LCLANG> <INPUT type=hidden name=IS_CHANGE_PWD_REQ> </FORM>
+<DIV align=center>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<TABLE height=378 cellSpacing=0 cellPadding=0 width=626 background=ui/images/loginbg.gif border=0>
+<TBODY>
+<TR height=350 vAlign=bottom>
+<TD width=168>&nbsp; </TD>
+<TD>
+<FORM method=post name=loginForm action=SSOServlet autocomplete="off">
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR height=35 vAlign=top>
+<TD width="15%" align=left><SPAN class=loginpassword>User ID</SPAN> </TD>
+<TD><INPUT onchange=this.value=this.value.toUpperCase() id=usertxt class=txtbox maxLength=15 size=15 name=usertxt> </TD></TR>
+<TR height=35 vAlign=top>
+<TD align=left><SPAN class=loginpassword>Password</SPAN> </TD>
+<TD><INPUT onkeypress="var keyCode = (event.which) ? event.which : event.keyCode; if(keyCode == '13') {login(document.loginForm, document.desktopForm); } " id=passtxt class=txtbox maxLength=80 size=17 type=password value="" name=passtxt autocomplete="off"> <INPUT onclick="login(document.loginForm, document.desktopForm)" id=Submit class=loginbutton type=button value=Login name=Submit> </TD></TR></TBODY></TABLE><INPUT type=hidden value=INFENG name=langCode> <INPUT id=buffer type=hidden name=buffer> <INPUT type=hidden value=AUTH name=CALLTYPE> <INPUT type=hidden value=LDAP_AUTH name=AUTH_TYPE> <INPUT type=hidden name=REQ_TYPE> <INPUT type=hidden name=SESSION_ID> <!-- TODO : Enable below 2 for Auth and TFA scenario --><INPUT type=hidden value=false> <INPUT type=hidden name=TFA_DATA> <INPUT type=hidden name=REQUEST_TOKEN> <INPUT type=hidden name=RESPONSE_TOKEN> <INPUT type=hidden name=USER_ID> <INPUT type=hidden name=USER_PW> <INPUT type=hidden value=N name=TABLET_FLG> <INPUT type=hidden name=RESET_FLAG> </FORM></TD></TR>
+<TR>
+<TD width=168>&nbsp; </TD>
+<TD class=basetext style="FONT-SIZE: 0.66em; FONT-FAMILY: Arial">Copyright� 2007-2008 Infosys Limited. All rights reserved. <A href="javascript:openFinacleLink()">www.finacle.com</A> </TD></TR></TBODY></TABLE></DIV></BODY></HTML>

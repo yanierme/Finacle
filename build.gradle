@@ -1,0 +1,45 @@
+repositories {
+	//mavenLocal()
+	//jcenter()
+	maven{url"http://artifactory.bancolombia.corp/gradlew/"}
+}
+
+buildscript {
+    repositories {
+        //mavenLocal()
+        //jcenter()
+		maven{url"http://artifactory.bancolombia.corp/gradlew/"}
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:1.9.9")
+    }
+}
+
+apply plugin: "java"
+apply plugin: "eclipse"
+apply plugin: "idea"
+apply plugin: "net.serenity-bdd.aggregator"
+
+
+dependencies{
+testCompile 'net.serenity-bdd:serenity-core:1.9.9'
+testCompile 'net.serenity-bdd:serenity-junit:1.9.9'
+testCompile 'junit:junit:4.12'
+testCompile 'org.assertj:assertj-core:1.7.0'
+testCompile 'org.slf4j:slf4j-simple:1.7.7'
+testCompile group: 'org.apache.poi', name: 'poi', version: '4.0.0'
+
+
+compile 'net.serenity-bdd:serenity-core:1.9.9'
+compile 'net.serenity-bdd:serenity-junit:1.9.9'
+compile 'junit:junit:4.12'
+compile 'net.serenity-bdd:serenity-cucumber:1.9.8'
+compile 'net.serenity-bdd:serenity-screenplay:1.9.9'
+compile 'net.serenity-bdd:serenity-screenplay-webdriver:1.9.9'
+compile group: 'org.apache.poi', name: 'poi', version: '4.0.0'
+// https://mvnrepository.com/artifact/motiva/wait-for
+compile group: 'motiva', name: 'wait-for', version: '0.3.0'
+
+
+}
+gradle.startParameter.continueOnFailure = true

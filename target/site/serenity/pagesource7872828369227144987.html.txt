@@ -1,0 +1,1114 @@
+<HTML><HEAD><TITLE>Related Party Details</TITLE><BASE href="https://wsfinaclecdtperf.bancolombia.corp:11111/finbranch/turelatedpartydetails/">
+<META content=text/html;charset=utf-8 http-equiv=Content-Type>
+<META content=-1 http-equiv=PRAGMA>
+<META content=no-cache http-equiv=Cache-Control>
+<META content=-1 http-equiv=Expires>
+<SCRIPT language=javascript src="../Renderer/javascripts/102170_finbranchResource_INFENG.js"> </SCRIPT>
+<LINK title="Finacle Stylesheet" rel=STYLESHEET type=text/css href="../Renderer/stylesheets/1000/10217_services.css">
+<SCRIPT language=javascript src="https://wsfinaclecdtperf.bancolombia.corp:11111/finbranch/MenuRenderer/mtree/1000_GU_BT_693_INFENG_FIN_LEVEL01.js"></SCRIPT>
+
+<SCRIPT language=javascript src="https://wsfinaclecdtperf.bancolombia.corp:11111/finbranch/MenuRenderer/mtree/1000_GU_BT_693_INFENG_SC_FIN.js"></SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/mtree/precArray.js"></SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_cust_evt.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_loc_evt.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/1021710870_core_banking.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_resource_functions.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/1021710870_login_common_functions.js"> </SCRIPT>
+
+<SCRIPT language=JavaScript>
+var dom_to_set = 'bancolombia.corp';
+var prodEnv = 'Y'; 
+var SSO = (dom_to_set != "") && true;
+if (SSO) {
+	document.domain = dom_to_set;
+}
+if(prodEnv == 'Y')
+{
+	document.oncontextmenu = function ()
+	{
+		return false;
+	}
+}
+</SCRIPT>
+
+<SCRIPT>
+var reqId = "um389fpv6gg9";
+var rtId = "11dcb8rnfwgbt";
+var isPopup = "N";
+var reqIdChkByPass = "null";
+var silentPrntReqd = "N";
+var calbase = "00";
+var lowHijYear = 1300;
+var highHijYear = 1599;
+var CURR_GROUP_NAME= "turelatedpartydetails";
+var localeCode= "DF";
+var encodeLst = "[]";
+var isEncodeReqd = "Y";
+var dateFormat = "00";
+var NumLocYears="0";
+var dateInputCal ="00";
+var DECIMAL_SEPARATOR = ',';
+var MANTISSA_SEPARATOR = '.';
+var LANGCODE = "INFENG";
+var finContextPath = "/finbranch";
+var crvContextPath = '/fincrv';
+var lastCalMappedDate = "";
+var iCalCount = 1;
+var iFeatureCount = 0;
+var FeatureStringArr = new Array(0);
+var calStringArr = new Array(1);
+var ContextSwitchDoneFrom = "";
+
+            calStringArr[0] = '00';
+
+
+
+var profileId  = '1000';
+var literalContext = 'C';
+var defaultLiteralContext = 'C';
+var dualFlg = "N"; 
+
+function checkIfSwitchEnabled(feature)
+{
+        for (var i=0; i<FeatureStringArr.length; i++)
+        {
+		if(feature === FeatureStringArr[i])
+			return true;
+        }
+	return false;	
+}
+
+function isFeatureEnabledFor(ftrString){
+                var e = false;
+                var x = ftrString.split(","); //loop thru the list of features 
+                for(var i = 0; i< x.length;i++)
+                {
+                   e = checkIfSwitchEnabled (x[i]); // find out if the current feature is enabled
+                   if (e) break;         // If any feature is enabled, that is enough.. return true.
+                }
+                return e;
+}
+
+
+if (LANGCODE == "ARABIC")
+{
+    document.write('<HTML dir=RTL></HTML>');
+}
+
+</SCRIPT>
+
+<META content=no-cache http-equiv=PRAGMA>
+<META content=no-cache,no-store http-equiv=Cache-Control>
+<META content=-1 http-equiv=Expires>
+<SCRIPT language=JavaScript src="../Renderer/javascripts/jspjs/INFENG/102170_turelatedparty_details_INFENG.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_cust_functions.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/1021710870_common_functions.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_menuLayer.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/1021710870_core_banking.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_hotkeyprocessor_link.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_hotkeydata_link.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/turelatedpartydetails/1000/10217_turelatedparty_details_link.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/turelatedpartydetails/1000/1021710870_turelatedparty_details_glink.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/props/1000/102170_turelatedpartydetailsprops.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/lists/1000/10217_showCustId.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/lists/1000/10217_showRefCode.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/lists/1000/10217_showSearcher.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/lists/1000/10217_showAppLangCodes.js"> </SCRIPT>
+</HEAD>
+<BODY onresize=adjustMenuDiv(); onkeyup="javascript:return turelatedparty_details_ONKEYUP2(this,event);" class=cbody onload="javascript:return turelatedparty_details_ONLOAD3(this,document.forms[0]);" onkeydown="javascript:return turelatedparty_details_ONKEYDOWN1(this,event);" leftMargin=0 topMargin=0>
+<FORM method=post action=../turelatedpartydetails/turelatedpartydetails_ctrl.jsp><SPAN class=cform>
+<SCRIPT src="../Renderer/javascripts/1000/10217_timeout_link.js"></SCRIPT>
+
+<SCRIPT>
+window.history.forward(1);
+var timeid;
+var USERID = "USERCDT17";
+var USER_TIME_OUT = 23580000;
+
+fnSetTimers();
+enableTimers();
+
+</SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/custom/samples/custfetch/custom_functions.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="../Renderer/javascripts/jspjs/INFENG/102170_header_INFENG.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_header_link.js"></SCRIPT>
+
+<SCRIPT>
+
+
+var prodEnv = "Y"; 
+var isProdEnv  = "Y";
+var nonSSOLogin = false;
+var toPaintHeader = true; 
+if((typeof(isSSOLogin) != 'undefined')&&(typeof(isSSOLogin) != null)){
+   nonSSOLogin = isSSOLogin(); 
+} 
+if((typeof(paintHeader) != 'undefined')&&(typeof(paintHeader) != null)){ 
+   toPaintHeader = paintHeader(); 
+} 
+
+var enterKey = 13;
+var logTestCase = "";
+var currIp = "";
+var strBaseRef = "https://wsfinaclecdtperf.bancolombia.corp:11111";
+var sessionid = "O:3559";
+var sectok = "0dc7490c6877c6d0491e0e3e94d7230b";
+var fabsessionid = "";
+var finsessionid = "O:3559";
+var FinAvailFlg = "Y";
+var FabAvailFlg = "N";
+var headDate = getDateForDisplay("10 April, 2018", "10", "04", "2018");
+var headUserId = "USERCDT17";
+var headCtxSol = "BC000001";
+var crvBaseUrl = 'PBMDEBDFIN03:8888';
+var fabBaseUrl = '';
+var finBaseUrl = '';
+var userMenuId = '1000_GU_BT_693';
+var userMenuTreeObj = new MenuProperties();
+var userSCMenuTreeObj = new MenuShortCutProperties();
+userMenuTreeObj.setUsrMenuId(userMenuId);
+userMenuTreeObj.setMenuObj(userMenuTreeObj);
+userSCMenuTreeObj.setUsrSCMenuId(userMenuId);
+userSCMenuTreeObj.setMenuSCObj(userSCMenuTreeObj);
+var isAuditEnabled = false;
+var isBackGround = false;
+var bgParentGroup = '';
+var isCalledMenu = false;
+var crvAcctId = '';
+var crvCustId = '';
+var sGroupName = 'turelatedpartydetails';
+var menuType = '';
+var mopId = '';
+var isLoggedInFin = false;
+var isLoggedInFab = false;
+var IS_ERROR_PAGE = false;
+var menuInfoDownloaded = false;
+var appLangCode = "INFENG";
+var isONSLogin = true;
+var finSecTok = "";
+var fabSecTok = "";
+var ssoAuthUrl = "https://WSFINACLECDTPERF.bancolombia.corp:11111/SSO/SSOServlet";
+var menuTitle = '';
+var isMenuShrtcutProt = 'N';
+var ipAddress = "10.25.153.154";
+var multiBankEnabled = "N";
+var isPortalCtxt =  "";
+var inPortal = false;
+var IsFinacleLite = "N";
+var Literal = "";
+
+userInfoUtil.setEffTenor("F");
+userInfoUtil.setContextSol("BC000001");
+
+
+inPortal 		= false;
+isAuditEnabled = false;
+isCalledMenu    =       false;
+gfkmCookie = '';
+mopId = 'HOAACTU';
+menuType = '';
+
+menuTitle = 'Account Opening-Top Up Deposits';
+
+isBackGround = false;
+userMenuTreeObj.setBgMode(isBackGround);
+bgParentGroup = '';
+iMemopad = 0;
+menuInfoDownloaded = true;
+downloadedLevel = 1;
+if (menuInfoDownloaded)
+{
+  for(i=2;i<=downloadedLevel;i++) 
+   { 
+           levelList = eval("finMenuLevel0"+i); 
+           finMenu = finMenu.concat(levelList); 
+   } 
+
+userMenuTreeObj.setMenuProps(USER_MENU_ID, finMenu, fabMenu, crvMenu, bgMenu, portalTabMenuArr, portalLhnAMenuArr, portalLhnBMenuArr, miscMenu);
+userSCMenuTreeObj.setMenuSCProps(USER_MENU_ID,normalONSMenu, fcfgMenu, icfgMenu, bcfgMenu,radfxMenu);
+}
+isLoggedInFin = true;
+isLoggedInFab = false;
+
+     writeLayer();
+	 hideMenuTreeForNonIE();
+
+</SCRIPT>
+
+<TABLE cellSpacing=0 cellPadding=0 width="100%" background=../Renderer/images/INFENG/toptile.gif border=0>
+<TBODY>
+<TR>
+<TD vAlign=top rowSpan=2 width="20%"><IMG style="CURSOR: hand" src="../Renderer/images/INFENG/logo_new.gif"></TD>
+<TD vAlign=top width="80%" align=right>
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD style="BACKGROUND-IMAGE: url(../Renderer/images/INFENG/dotstile.gif); BACKGROUND-REPEAT: repeat-x" colSpan=12><SPACER width="1" height="1" type="block"></SPACER></TD></TR>
+<TR>
+<TD><IMG style="CURSOR: hand" src="../Renderer/images/INFENG/arrow.gif" width=18 height=17></TD>
+<TD width=1><IMG style="CURSOR: hand" src="../Renderer/images/INFENG/divider_topnavi.gif" width=1 height=17></TD>
+<TD width=1><IMG style="CURSOR: hand" src="../Renderer/images/INFENG/divider_topnavi.gif" width=1 height=17></TD>
+<TD onmouseover="this.className=' bgTd ' " onmouseout="this.className=' topnavi_bottom ' " class=topnavi_bottom><A id=anc_html class=topnavi style="CURSOR: hand" href="javascript:fnHtmlMenu();">Menu</A></TD>
+<TD width=1><IMG style="CURSOR: hand" src="../Renderer/images/INFENG/divider_topnavi.gif" width=1 height=17></TD>
+<TD onmouseover="this.className=' bgTd ' " onmouseout="this.className=' topnavi_bottom ' " id=showmemoleftcurve class=topnavi_bottom><A id=anc_hdrm class=topnavi style="CURSOR: hand" href="javascript:fnMenuHdr('showmemopad','false');">Show Memo Pad</A></TD>
+<TD width=1><IMG style="CURSOR: hand" src="../Renderer/images/INFENG/divider_topnavi.gif" width=1 height=17></TD>
+<TD onmouseover="this.className=' bgTd ' " onmouseout="this.className=' topnavi_bottom ' " id=bgmenuleftcurve class=topnavi_bottom><A id=anc_mhdr class=topnavi style="CURSOR: hand" href="javascript:fnMenuHdr('showbglist','true');">Background Menu</A></TD>
+<TD width=1><IMG style="CURSOR: hand" src="../Renderer/images/INFENG/divider_topnavi.gif" width=1 height=17></TD>
+<TD onmouseover="this.className=' bgTd ' " onmouseout="this.className=' topnavi_bottom ' " class=topnavi_bottom><A id=anc_hcrnc class=topnavi style="CURSOR: hand" href="javascript:showCrncyConverter();">CCY Converter</A></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD colSpan=2></TD></TR>
+<TR>
+<TD background=../Renderer/images/INFENG/bottomtile.gif colSpan=2>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD width="30%"><IMG style="CURSOR: hand" border=0 src="../Renderer/images/INFENG/UBSI.gif" width=275 height=23></TD>
+<TD width="70%" align=right>
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD class=titletxt>
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD>10 April, 2018</TD>
+<TD class=textfieldspcms>|</TD>
+<TD>User&nbsp;&nbsp;USERCDT17</TD>
+<TD class=textfieldspcms>|</TD>
+<TD>BC000001</TD>
+<TD class=textfieldspcms>|</TD></TR></TBODY></TABLE></TD>
+<TD class=textlabelms>Menu Shortcut:</TD>
+<TD class=textfieldms><INPUT id=menuName class=textfieldfontms onkeydown="fnGo('',event)" maxLength=8 size=9 name=menuName><INPUT type=hidden name=bgMenuUrl></TD>
+<TD class=textfieldbtnms><INPUT onclick="fnGo('Go')" id=gotomenu class=buttonms type=button value=Go name=gotomenu>&nbsp;</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<DIV id=menutree_div style="WIDTH: 263px; POSITION: absolute; LEFT: 0px; Z-INDEX: -1; TOP: 62px; VISIBILITY: hidden" border="0">
+<TABLE id=mtitle_tab style="Z-INDEX: -1; VISIBILITY: hidden" cellSpacing=0 cellPadding=1 width="100%" border=0>
+<TBODY>
+<TR>
+<TD bgColor=#9ab4cb width="57%" align=right>Menu</TD>
+<TD bgColor=#9ab4cb width="43%" align=right><IMG onclick=HIDE_menutree() style="CURSOR: hand" border=0 hspace=0 alt=Close src="../Renderer/images/INFENG/X.gif" width=15 height=14></TD></TR></TBODY></TABLE><IFRAME id=menutree style="Z-INDEX: -1; VISIBILITY: hidden" height="100%" marginHeight=0 src="javascript:false;" frameBorder=0 width="100%" marginWidth=0></IFRAME></DIV>
+<DIV id=cancelwait_div style="HEIGHT: 100px; WIDTH: 100px; POSITION: absolute; Z-INDEX: 0; VISIBILITY: hidden"><IFRAME id=cancelwait height="100%" marginHeight=0 src="javascript:false;" frameBorder=0 width="100%" name=cancelwait marginWidth=0 scrolling=no></IFRAME></DIV>
+<SCRIPT language=JavaScript>
+var noConfirm	= false;
+var valReq		= true; 
+var sTmplMode 	= "null";
+var sTmplFuncCode   = "null";
+var lShowLImage = "false";
+var bMnemonic	= false;	
+var sParent	= "tuacop";
+</SCRIPT>
+
+<SCRIPT language=Javascript>
+	var NewFlg = "false";
+	var FocusField = "";
+	var sCrncyCode = "COP";
+	var BODDate = '10-04-2018'
+	var currPos = "0";
+	var iTotalSize = "1";
+	var sMode = "A";
+	var parentGroup     = "tuacop";
+	var bRefInq = "";
+	var sRefSubmit = "";
+	var precision = '2';
+	var format = 'Million';
+	var multiRecName = 'acctJointHolderList';
+	var sMasterAcctNumber = "";
+	var crncyCode = "COP";
+    var sIslamicFlg     ="";
+	
+	function setDefault()
+	{
+
+		var  objForm   = document.forms[0];
+		initFocusHandler();
+		fnConvertZeroesAndSpacesToBlank();
+        if (sIslamicFlg!="Y")
+            {
+				fnPopulateControlValues();
+			}
+		else
+			{
+
+				fnPopulateControlValuesCond();
+			}
+		
+		if(objForm.addressType.value == "JCADD" ||
+					objForm.addressType.value == "PCADD")
+			{
+					objForm.addressType.value = "";
+			}
+		if(objForm.phoneType.value == "JCADD" ||
+						objForm.phoneType.value == "PCADD")
+			{
+				objForm.phoneType.value = "";
+			}
+		if(objForm.emailType.value == "JCADD" ||
+						objForm.emailType.value == "PCADD")
+		{
+				objForm.emailType.value = "";
+		}
+
+		fnSetCheckboxCtrl(objForm);
+		
+		var setFocusOn = "";
+	
+		function fnConvertZeroesAndSpacesToBlank()
+		{
+			despMode = (despMode == " ")?"":despMode;
+		}
+
+		fnDisableFormControls(sMode, document.forms[0], 14);
+		showImage("sLnk1");
+		if(bRefInq == 'true')
+		{
+			fnDisableFormDataControls("I",document.forms[0], 14);
+		}
+		if(sRefSubmit == 'true')
+		{
+			fnDisableFormControls("V",document.forms[0], 14);
+		}
+	
+		//document.forms[0].customerId.focus();
+
+        setValue("relnType","M");
+        // setValue("despMode","");
+
+		fnDisplayZeroAmtAsBlank();
+		formatAmountToMillionOrLakh(format, document.forms[0].amount,precision, "N");
+		if( (sMode == 'V' && bRefInq=='true')) objForm.Back.focus();
+		else if( (sMode == 'V') || (sMode == 'X') ) objForm.Submit.focus();
+		else if(sMode == 'I') objForm.Back.focus();
+		else if(delFlg == 'Y')
+		fnDisableFieldsBasedOnDelFlg(objForm);
+		if(delFlg == 'Y')
+        {
+         fnDisableOnFlag(objForm);
+         frm.delFlg.disabled = false;
+         hideImage("sLnk5");
+         hideImage("sLnk7");
+         hideImage("sLnk8");
+         hideImage("sLnk9");
+        }
+		if(FocusField != "") 
+		{
+			fnSelectField(groupName,FocusField);
+		}
+		if("M" == "M")
+		{
+			disableFields("relnType","relnCode","chkdelFlg","startDate","endDate","amount","customerId","custTitle","customerName","despMode");
+			hideImage("sLnk2");	
+			hideImage("sLnk4");
+			hideImage("sLnk5");
+			hideImage("sLnk9");
+			hideImage("sLnk12");
+			hideImage("sLnk13");
+			//hideImage("sLnk14");
+			//hideImage("sLnk10");
+			
+		}
+		if(!("G" == "M")) 
+		{
+			disableFields("guarantorLiabPcnt","guarantorLiabSeq");
+		}
+		
+		//document.forms[0].relnCode.focus();
+	    /* Setting Focus on  Address Email phone Types */
+	    if(setFocusOn == "addressType"){
+		    setFocusOn ="";
+		    document.forms[0].addressType.focus();
+		}
+	    else if(setFocusOn == "emailType"){
+		    setFocusOn ="";
+		    document.forms[0].emailType.focus();
+		}
+	    else if(setFocusOn == "phoneType"){
+		    setFocusOn ="";
+		    document.forms[0].phoneType.focus();
+		}
+		else if(objForm.relnType.value !='M'){
+        	setFocusOn ="";
+        	if(("M" != relnType)  && ((sMode != 'V')  && (sMode != 'X')  && (sMode != 'I')))
+        	{
+            	objForm.relnType.focus();
+        	}
+    	}
+	    //Reset the setFocus value in the ARJSPCURR
+	    
+
+		if (!fnIsNull (sMasterAcctNumber))
+		{
+			fnDisableOnFlag(objForm);
+		}						
+		checkRadio(document.forms[0].printAcctStmt,printAcctStmt);
+        checkRadio(document.forms[0].printAdvStndOrd,printAdvStndOrd);
+        checkRadio(document.forms[0].printDepNotice,printDepNotice);
+        checkRadio(document.forms[0].printLoanNotice,printLoanNotice);
+        checkRadio(document.forms[0].xcldCombStmt,xcldCombStmt);
+		checkRadio(document.forms[0].FAmarkHoldTax,FAmarkHoldTax);
+
+		if (sIslamicFlg!="Y")
+        {
+            checkRadio(objForm.intcertPrintFlg,intcertPrintFlg);
+            checkRadio(objForm.intAdvFlg,intAdvFlg);
+        }
+        if (sIslamicFlg =="Y")
+        {
+            checkRadio(objForm.profitcertPrintFlg,profitcertPrintFlg);
+        }
+		if(sMode == 'V')		
+		{					
+			document.getElementById(multiRecName +'_AddNew').disabled =true;		
+		}
+		fnEnableDisableFATCAFields();
+	}
+
+function fnPopulateControlValuesCond()
+{
+
+var frm = document.forms[0];
+
+	frm.despMode.value = despMode;
+    frm.relnCode.value = relnCode;
+    frm.desigCode.value = desigCode;
+    frm.customerId.value = customerId;
+    frm.custTitle.value = custTitle;
+    frm.customerName.value = customerName;
+    frm.custAddrLine1.value = custAddrLine1;
+    frm.custCityCode.value = custCityCode;
+    frm.custAddrLine2.value = custAddrLine2;
+    frm.custStateCode.value = custStateCode;
+    frm.custPostalCode.value = custPostalCode;
+    frm.custCntryCode.value = custCntryCode;
+    frm.custPhNum.value = custPhNum;
+    frm.custTelexNum.value = custTelexNum;
+    frm.custFaxNum.value = custFaxNum;
+    frm.custEmailId.value = custEmailId;
+    frm.amount.value = amount;
+    frm.remarks.value = remarks;
+    frm.relnType.value = relnType;
+    frm.cityName.value = cityName;
+    frm.stateName.value = stateName;
+    frm.cntryName.value = cntryName;
+    frm.printAcctStmt.value = printAcctStmt;
+    frm.printAdvStndOrd.value = printAdvStndOrd;
+    frm.printDepNotice.value = printDepNotice;
+    frm.printLoanNotice.value = printLoanNotice;
+    frm.xcldCombStmt.value = xcldCombStmt;
+    frm.delFlg.value = delFlg;
+	frm.startDate.value = startDate;
+    frm.endDate.value = endDate;
+    frm.relnDesc.value = relnDesc;
+    frm.desigDesc.value = desigDesc;
+    frm.addressType.value = addressType;
+    frm.addressTypeDesc.value = addressTypeDesc;
+	frm.prefLangCode.value = prefLangCode;
+	frm.prefLangCodeDesc.value = prefLangCodeDesc;
+	frm.prefRemarks.value = prefRemarks;
+	frm.phoneType.value = phoneType;
+    frm.phoneTypeDesc.value = phoneTypeDesc;
+    frm.emailType.value = emailType;
+    frm.emailTypeDesc.value = emailTypeDesc;
+    frm.profitcertPrintFlg.value = profitcertPrintFlg;
+	if ((sReferralMode == 'I') || (sReferralMode == 'S')){
+        fnDisableFormDataControls('V',frm,0);
+    }
+}
+function fnDisableOnFlag(objForm)
+{
+ frm = objForm;
+ frm.despMode.disabled = true;
+ frm.relnCode.disabled = true;
+ frm.desigCode.disabled = true;
+ frm.customerId.disabled = true;
+ frm.custTitle.disabled = true;
+ frm.customerName.disabled = true;
+ frm.custAddrLine1.disabled = true;
+ frm.custCityCode.disabled = true;
+ frm.custAddrLine2.disabled = true;
+ frm.custAddrLine3.disabled = true;
+ frm.custStateCode.disabled = true;
+ frm.custPostalCode.disabled = true;
+ frm.custCntryCode.disabled = true;
+ frm.custPhNum.disabled = true;
+ frm.custTelexNum.disabled = true;
+ frm.custFaxNum.disabled = true;
+ frm.custEmailId.disabled = true;
+ frm.amount.disabled = true;
+ frm.remarks.disabled = true;
+ frm.relnType.disabled = true;
+ frm.cityName.disabled = true;
+ frm.stateName.disabled = true;
+ frm.cntryName.disabled = true;
+ frm.addressType.disabled = true;
+ frm.prefLangCode.disabled = true;
+ frm.phoneType.disabled = true;
+ frm.emailType.disabled = true;
+ fnEnableDisableRadioButtons(frm.printAcctStmt,'D');
+ fnEnableDisableRadioButtons(frm.printAdvStndOrd,'D');
+ fnEnableDisableRadioButtons(frm.printDepNotice,'D');
+ fnEnableDisableRadioButtons(frm.printLoanNotice,'D');
+ fnEnableDisableRadioButtons(frm.intcertPrintFlg,'D');
+ fnEnableDisableRadioButtons(frm.intAdvFlg,'D');
+ fnEnableDisableRadioButtons(frm.xcldCombStmt,'D');
+ frm.delFlg.disabled = true;
+ frm.startDate.disabled = true;
+ frm.endDate.disabled = true;
+ frm.relnDesc.disabled = true;
+ frm.desigDesc.disabled = true;
+ hideAnchors();
+}
+
+</SCRIPT>
+
+<SCRIPT>
+
+	var despMode = '';
+	var relnCode = '';
+	var desigCode = '';
+	var customerId = '20000000074012';
+	var custTitle = '1000';
+	var customerName = 'CARLSON';
+	var custAddrLine1 = 'NA';
+	var custCityCode = 'NA';
+	var custAddrLine2 = '';
+	var custStateCode = 'NA';
+	var custPostalCode = 'NA';
+	var custCntryCode = 'CO';
+	var custPhNum = '';
+	var custTelexNum = '';
+	var custFaxNum = '';
+	var custEmailId = '';
+	var amount = '0';
+	var remarks = '';
+	var guarantorLiabPcnt = '0,000000';
+	var guarantorLiabSeq = '';
+	var relnType = 'M';
+	var cityName = 'NO APLICA';
+	var stateName = 'NO APLICA';
+	var cntryName = 'COLOMBIA';
+	var FAmarkHoldTax = '';
+	var FAcountryCode = '';
+	var FAcountryName = '';
+	var FAforeignAccTaxPcnt = '0,000000';
+	var FATaxRepStatus = '';
+	var FATaxRepStatusDesc = '';
+	var FAlastTaxRepDate = '';
+	var FAnextTaxRepDate = '';
+	var FAfreecode1 = '';
+	var FAfreecode1Desc = '';
+	var FAfreecode2 = '';
+	var FAfreecode2Desc = '';
+	var FAfreeText = '';
+	var printAcctStmt = 'Y';
+	var printAdvStndOrd = 'Y';
+	var printDepNotice = 'Y';
+	var printLoanNotice = 'Y';
+	var intcertPrintFlg = 'Y';
+	var intAdvFlg = 'Y';
+	var xcldCombStmt = 'Y';
+	var delFlg = 'N';
+	var startDate = '';
+	var endDate = '';
+	var relnDesc = '';
+	var desigDesc = '';
+	var addressType = 'Mailing';
+	var addressTypeDesc = 'Mailing';
+	var phoneType = '';
+	var phoneTypeDesc = '';
+	var emailType = '';
+	var emailTypeDesc = '';
+	var profitcertPrintFlg = '';
+	var prefLangCode = 'es_ES';
+	var prefLangCodeDesc = '';
+	var prefRemarks = '';
+	var custAddrLine3 = '';
+	var sPrntDtGroupName = 'turelatedpartydetails';
+	var sGroupName = 'turelatedpartydetails';
+	var bShowSubmit = 'true';
+	var bShowSaveTemplate = 'false';
+	var bShowValidate = 'true';
+	var bShowAccept = 'false';
+	var bShowDelete = 'false';
+	var bShowBack = 'true';
+	var iRecNum = '1';
+	var str = 'Page 1 of 1 ';
+	var parentGroup = 'tuacop';
+	var userId = 'USERCDT17';
+	var groupName = 'turelatedpartydetails';
+	var serialNo2 = '';
+	var sPopUpExceptionWindow = 'false' ;
+	var sReferralMode = '' ;
+
+</SCRIPT>
+
+<TABLE class=ctable cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=page-heading colSpan=5>
+<SCRIPT>jsUtil.htmlEncode('Account Opening - Top Up Deposits')</SCRIPT>
+Account Opening - Top Up Deposits&nbsp;</TD></TR>
+<TR>
+<TD class=textlabel>&nbsp;&nbsp;&nbsp; Function :</TD>
+<TD class=textfielddisplaylabel>
+<SCRIPT>jsUtil.htmlEncode('ADD')</SCRIPT>
+ADD</TD></TR>
+<TR>
+<TD class=textlabel>&nbsp;&nbsp;&nbsp; CIF ID :</TD>
+<TD class=textfielddisplaylabel>
+<SCRIPT>jsUtil.htmlEncode('20000000074012')</SCRIPT>
+20000000074012 -
+<SCRIPT>jsUtil.htmlEncode('CARLSON')</SCRIPT>
+ CARLSON</TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>&nbsp;&nbsp;&nbsp; Master A/c. No. :</TD>
+<TD class=textfielddisplaylabel>
+<SCRIPT>jsUtil.htmlEncode('')</SCRIPT>
+-
+<SCRIPT>jsUtil.htmlEncode('')</SCRIPT>
+ </TD></TR>
+<TR>
+<TD class=textlabel>&nbsp;&nbsp;&nbsp; CCY :</TD>
+<TD class=textfielddisplaylabel>
+<SCRIPT>jsUtil.htmlEncode('COP')</SCRIPT>
+COP</TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>&nbsp;&nbsp;&nbsp; Scheme Code :</TD>
+<TD class=textfielddisplaylabel>
+<SCRIPT>jsUtil.htmlEncode('FI3')</SCRIPT>
+FI3 -
+<SCRIPT>jsUtil.htmlEncode('CDT  T FIJA NO CAPITALIZABLE  90- 119')</SCRIPT>
+ CDT T FIJA NO CAPITALIZABLE 90- 119</TD></TR>
+<TR>
+<TD class=textlabel>&nbsp;&nbsp;&nbsp; General Ledger Subhead Code :</TD>
+<TD class=textfielddisplaylabel>
+<SCRIPT>jsUtil.htmlEncode('F1ZDX')</SCRIPT>
+F1ZDX -
+<SCRIPT>jsUtil.htmlEncode('CDT EMIT MENOS DE 6 MESES')</SCRIPT>
+ CDT EMIT MENOS DE 6 MESES</TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>&nbsp;&nbsp;&nbsp; Permanent A/c. ID :</TD>
+<TD class=textfielddisplaylabel>
+<SCRIPT>jsUtil.htmlEncode('')</SCRIPT>
+</TD></TR>
+<TR>
+<TD class=textlabel>&nbsp;&nbsp;&nbsp; Pool Code :</TD>
+<TD class=textfielddisplaylabel>
+<SCRIPT>jsUtil.htmlEncode('')</SCRIPT>
+-
+<SCRIPT>jsUtil.htmlEncode('')</SCRIPT>
+ </TD></TR></TBODY></TABLE>
+<SCRIPT language=javascript>
+function cancelDlgOnBack(sMode)
+{
+	if(sMode == "V" || sMode == "I" || sMode == "X")
+	{
+		return true;
+	}
+	else
+	{
+		if((confirm(finbranchResArr.get("FAT000925"))==true))
+		{
+			return true;
+		}
+	}
+	return false;
+}
+</SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/jspjs/INFENG/102170_tuacop_tuacopTabResource_INFENG.js"></SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_tabgen_link.js"></SCRIPT>
+
+<SCRIPT language=javascript>
+    var verticalTabPosition = 139;
+    var tabResourceDetails = [
+["tugen","FTT000123","N","FHK000007","2","N","1","N","G"],
+["tuint","FTT000141","N","FHK000009","2","N","1","N","I"],
+["tusch","FTT000233","N","FHK000019","2","N","1","N","S"],
+["tuflw","FTT000120","N","FHK000006","2","N","0","N","F"],
+["turen","FTT000218","N","FHK000023","2","N","0","N","W"],
+["tunominationdetails","FTT000175","Y","FHK000014","2","N","0","N","N"],
+["turelatedpartydetails","FTT000215","Y","FHK000012","2","Y","1","N","L"],
+["tumiscodes","FTT000168","Y","FHK000013","2","N","0","N","M"],
+["tupymtdet","FTT000188","N","FHK000016","1","N","0","N","P"],
+["tuotherdetails","FTT000181","Y","FHK000015","1","N","0","N","O"],
+["tudocumentdetails","FTT000091","Y","FHK000004","1","N","0","N","D"],
+["tutds","FTT000131","N","FHK000001","1","N","0","N","A"],
+["errordetails","FTT000102","N","FHK000018","1","N","0","N","R"],
+["tutran","FTT000260","Y","FHK000003","1","N","0","N","C"]
+];
+    convertTabLiterals(tabResourceDetails, jstabResArr);
+    var DynaTabGen = new DynaTabGenClass("turelatedpartydetails", false);
+    DynaTabGen.writeHtmlTabString(tabResourceDetails, verticalTabPosition);
+</SCRIPT>
+
+<DIV id=hTab style="POSITION: absolute; VISIBILITY: hidden">
+<TABLE class=htable cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR>
+<TD vAlign=top>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=activetab4><SPAN class=accesskey>G</SPAN>eneral</A></TD>
+<TD class=activetab5><SPAN class=accesskey>I</SPAN>nterest &amp; Tax</A></TD>
+<TD class=activetab5><SPAN class=accesskey>S</SPAN>cheme</A></TD>
+<TD class=activetab5><SPAN class=accesskey>F</SPAN>low</A></TD>
+<TD class=activetab5>Rene<SPAN class=accesskey>w</SPAN>al&amp;Closure</A></TD>
+<TD class=activetab5><INPUT id="hdnChktunominationdetails " class=check type=checkbox name=hdnChktunominationdetails><SPAN class=accesskey>N</SPAN>omination</A></TD></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD vAlign=top>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=activetab><INPUT id="hdnChktumiscodes " class=check type=checkbox name=hdnChktumiscodes><SPAN class=accesskey>M</SPAN>IS Codes</A></TD>
+<TD class=activetab3><SPAN class=accesskey>P</SPAN>ayment Instructions</A></TD>
+<TD class=activetab3><INPUT id="hdnChktuotherdetails " class=check type=checkbox name=hdnChktuotherdetails><SPAN class=accesskey>O</SPAN>thers</A></TD>
+<TD class=activetab3><INPUT id="hdnChktudocumentdetails " class=check type=checkbox name=hdnChktudocumentdetails><SPAN class=accesskey>D</SPAN>ocument</A></TD>
+<TD class=activetab3>Imp<SPAN class=accesskey>a</SPAN>ct On TDS</A></TD>
+<TD class=activetab2><INPUT id="hdnChkturelatedpartydetails " class=check CHECKED type=checkbox name=hdnChkturelatedpartydetails>Re<SPAN class=accesskey>l</SPAN>ated Party</A></TD>
+<TD class=activetab3><INPUT id="hdnChktutran " class=check type=checkbox name=hdnChktutran>Transa<SPAN class=accesskey>c</SPAN>tion</A></TD></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD vAlign=top>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV>
+<DIV id=sTab class=ctable align=left width="100%" border="0" cellpadding="0" cellspacing="0" <table><TR><TD valign="top">
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=activetab4>&nbsp;<A onclick=" return getStatus('N','tugen')" onmouseover=displayHand(this) id=tugen style="CURSOR: hand"><SPAN class=accesskey>G</SPAN>eneral</A></TD>
+<TD class=activetab5>&nbsp;<A onclick=" return getStatus('N','tuint')" onmouseover=displayHand(this) id=tuint style="CURSOR: hand"><SPAN class=accesskey>I</SPAN>nterest &amp; Tax</A></TD>
+<TD class=activetab5>&nbsp;<A onclick=" return getStatus('N','tusch')" onmouseover=displayHand(this) id=tusch style="CURSOR: hand"><SPAN class=accesskey>S</SPAN>cheme</A></TD>
+<TD class=activetab5>&nbsp;<A onclick=" return getStatus('N','tuflw')" onmouseover=displayHand(this) id=tuflw style="CURSOR: hand"><SPAN class=accesskey>F</SPAN>low</A></TD>
+<TD class=activetab5>&nbsp;<A onclick=" return getStatus('N','turen')" onmouseover=displayHand(this) id=turen style="CURSOR: hand">Rene<SPAN class=accesskey>w</SPAN>al&amp;Closure</A></TD>
+<TD class=activetab5><INPUT id="chktunominationdetails " class=check type=checkbox name=chktunominationdetails>&nbsp;<A onclick=" return getStatus('Y','tunominationdetails')" onmouseover=displayHand(this) id=tunominationdetails style="CURSOR: hand"><SPAN class=accesskey>N</SPAN>omination</A></TD></TD></TR></TBODY></TABLE></TD></TR><TR><TD valign="top">
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=activetab><INPUT id="chktumiscodes " class=check type=checkbox name=chktumiscodes>&nbsp;<A onclick=" return getStatus('Y','tumiscodes')" onmouseover=displayHand(this) id=tumiscodes style="CURSOR: hand"><SPAN class=accesskey>M</SPAN>IS Codes</A></TD>
+<TD class=activetab3>&nbsp;<A onclick=" return getStatus('N','tupymtdet')" onmouseover=displayHand(this) id=tupymtdet style="CURSOR: hand"><SPAN class=accesskey>P</SPAN>ayment Instructions</A></TD>
+<TD class=activetab3><INPUT id="chktuotherdetails " class=check type=checkbox name=chktuotherdetails>&nbsp;<A onclick=" return getStatus('Y','tuotherdetails')" onmouseover=displayHand(this) id=tuotherdetails style="CURSOR: hand"><SPAN class=accesskey>O</SPAN>thers</A></TD>
+<TD class=activetab3><INPUT id="chktudocumentdetails " class=check type=checkbox name=chktudocumentdetails>&nbsp;<A onclick=" return getStatus('Y','tudocumentdetails')" onmouseover=displayHand(this) id=tudocumentdetails style="CURSOR: hand"><SPAN class=accesskey>D</SPAN>ocument</A></TD>
+<TD class=activetab3>&nbsp;<A onclick=" return getStatus('N','tutds')" onmouseover=displayHand(this) id=tutds style="CURSOR: hand">Imp<SPAN class=accesskey>a</SPAN>ct On TDS</A></TD>
+<TD class=activetab2><INPUT id="chkturelatedpartydetails " class=check CHECKED type=checkbox name=chkturelatedpartydetails>&nbsp;<A onclick=" return getStatus('Y','turelatedpartydetails')" onmouseover=displayHand(this) id=turelatedpartydetails style="CURSOR: hand">Re<SPAN class=accesskey>l</SPAN>ated Party</A></TD>
+<TD class=activetab3><INPUT id="chktutran " class=check type=checkbox name=chktutran>&nbsp;<A onclick=" return getStatus('Y','tutran')" onmouseover=displayHand(this) id=tutran style="CURSOR: hand">Transa<SPAN class=accesskey>c</SPAN>tion</A></TD></TD></TR></TBODY></TABLE></TD></TR><TR><TD valign="top">
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR></TD></TR></TBODY></TABLE></TD></TR>
+<SCRIPT language=javascript> tfkmResource = {"CAM|FORM" : "fkmResourceOnCAM" ,"CAP|FORM" : "fkmResourceOnCAP" ,"CAO|FORM" : "fkmResourceOnCAO" ,"CAD|FORM" : "fkmResourceOnCAD" ,"CAA|FORM" : "fkmResourceOnCAA" ,"CAL|FORM" : "fkmResourceOnCAL" ,"CAC|FORM" : "fkmResourceOnCAC" ,"CAG|FORM" : "fkmResourceOnCAG" ,"CAI|FORM" : "fkmResourceOnCAI" ,"CAS|FORM" : "fkmResourceOnCAS" ,"CAF|FORM" : "fkmResourceOnCAF" ,"CAW|FORM" : "fkmResourceOnCAW" ,"CAN|FORM" : "fkmResourceOnCAN" }; function fkmResourceOnCAM() { getStatus("Y","tumiscodes"); } function fkmResourceOnCAP() { getStatus("N","tupymtdet"); } function fkmResourceOnCAO() { getStatus("Y","tuotherdetails"); } function fkmResourceOnCAD() { getStatus("Y","tudocumentdetails"); } function fkmResourceOnCAA() { getStatus("N","tutds"); } function fkmResourceOnCAL() { getStatus("Y","turelatedpartydetails"); } function fkmResourceOnCAC() { getStatus("Y","tutran"); } function fkmResourceOnCAG() { getStatus("N","tugen"); } function fkmResourceOnCAI() { getStatus("N","tuint"); } function fkmResourceOnCAS() { getStatus("N","tusch"); } function fkmResourceOnCAF() { getStatus("N","tuflw"); } function fkmResourceOnCAW() { getStatus("N","turen"); } function fkmResourceOnCAN() { getStatus("Y","tunominationdetails"); }   function goToNextTab() { getStatus('turelatedpartydetails','tutran');  }   function goToPrevTab() {getStatus('turelatedpartydetails','tutds');  } </SCRIPT>
+
+<SCRIPT language=Javascript>
+var dispUsrInfoLLSize = 0;
+var dispErrLLSize = 0;
+</SCRIPT>
+
+<SCRIPT language=javascript>
+printBlock1();
+</SCRIPT>
+<INPUT id=actionCode type=hidden name=actionCode><INPUT type=hidden name=tabName><INPUT id=callMode type=hidden value=E name=callMode><INPUT type=hidden value=turelatedparty_details name=screenName><INPUT id=expldQryStr type=hidden name=expldQryStr><INPUT id=reqId type=hidden value=um389fpv6gg9 name=reqId><INPUT id=rtId type=hidden value=11dcb8rnfwgbt name=rtId><INPUT id=reqIdChkByPass type=hidden value=null name=reqIdChkByPass><INPUT id=ContextSwitchDoneFrom type=hidden name=ContextSwitchDoneFrom><INPUT id=startDate type=hidden name=turelatedpartydetails.startDate fmnd="N" fdt="fdate" vFldId="startDate_ui" mneb1="N"><INPUT id=endDate type=hidden name=turelatedpartydetails.endDate fmnd="N" fdt="fdate" vFldId="endDate_ui" mneb1="N"><INPUT id=IsPageEmpty type=hidden value=false name=turelatedpartydetails.acctJointHolderList.IsPageEmpty><INPUT type=hidden name=check><INPUT id=RecNo type=hidden name=turelatedpartydetails.acctJointHolderList.RecNo><INPUT type=hidden name=FocusField><INPUT id=ErrLLName type=hidden name=turelatedpartydetails.acctJointHolderList.ErrLLName><INPUT id=ConfirmChoice type=hidden name=turelatedpartydetails.acctJointHolderList.ConfirmChoice><INPUT id=direction type=hidden name=turelatedpartydetails.acctJointHolderList.direction><INPUT type=hidden name=submitform><INPUT type=hidden value=turelatedpartydetails name=pagename><INPUT id=delFlg type=hidden value=N name=turelatedpartydetails.delFlg><INPUT type=hidden value=0 name=turelatedpartydetails.serialNo><INPUT id=bodDate type=hidden name=turelatedpartydetails.bodDate>
+<TABLE class=table cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD>
+<TABLE class=innertable cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD vAlign=top>
+<TABLE class=innertabletop1 cellSpacing=0 cellPadding=0 width="100%" border=0 name="TABLE1">
+<TBODY>
+<TR>
+<TD><SPACER width="1" height="1" type="block"></SPACER></TD>
+<TD><SPACER width="1" height="1" type="block"></SPACER></TD>
+<TD><SPACER width="1" height="1" type="block"></SPACER></TD>
+<TD><SPACER width="1" height="1" type="block"></SPACER></TD>
+<TD align=right>
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD></TD>
+<TD width="99%"><SPACER width="1" height="1" type="block"></SPACER></TD>
+<TD align=right><A id=sLnk1 style="CURSOR: hand; Z-INDEX: 1000" href="javascript:locShowHelpFile();" target=_self><IMG style="CURSOR: hand" border=0 src="../Renderer/images/INFENG/help.gif" hotKeyId="finHelp"></IMG></A></TD></TR></TBODY></TABLE></TD></TR>
+<SCRIPT type=text/javascript src="../Renderer/javascripts/multirec_link.js"></SCRIPT>
+
+<SCRIPT type=text/javascript>
+   var literalObj = new Array("Add","Record","of","to","Go to the previous record.","Go to the next record.");
+   var acctJointHolderListTable = new PageMultiRec("0",1, "A", "turelatedpartydetails", "acctJointHolderList", "",false);
+</SCRIPT>
+
+<TR class=subhdrbg>
+<TD vAlign=middle colSpan=2>&nbsp;&nbsp; <INPUT id=acctJointHolderList_AddNew class=button1 type=button value=Add name=acctJointHolderList_AddNew fblk="acctJointHolderList"> </TD>
+<TD vAlign=middle colSpan=3 align=right>
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD width="99%">&nbsp;</TD>
+<TD><IMG id=acctJointHolderList_PrevRec style="CURSOR: hand" name=acctJointHolderList_PrevRec alt="Go to the previous record." vspace=1 src="../Renderer/images/INFENG/arrowpre.gif" width=7 align=middle height=14 hotKeyId="Up" fblk="acctJointHolderList">&nbsp;&nbsp;</TD>
+<TD style="WHITE-SPACE: nowrap">Record&nbsp; <INPUT id=acctJointHolderList_LowLimit class=textfieldcode style="VERTICAL-ALIGN: middle" maxLength=4 value=1 name=acctJointHolderList_LowLimit hotKeyId="LowLimit" fblk="acctJointHolderList"> of 1&nbsp;&nbsp; </TD>
+<TD><IMG id=acctJointHolderList_NextRec style="CURSOR: hand" name=acctJointHolderList_NextRec alt="Go to the next record." vspace=1 src="../Renderer/images/INFENG/arrownext.gif" width=7 align=middle height=14 hotKeyId="Down" fblk="acctJointHolderList">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD></TR></TBODY></TABLE></TD></TR><INPUT id=serialNo type=hidden value=0 name=turelatedpartydetails.serialNo>
+<SCRIPT language=javascript>
+printBlock2();
+</SCRIPT>
+ 
+<TR>
+<TD class=textlabel>Relation Type
+<SCRIPT>setMandatory("Y");</SCRIPT>
+<FONT color=red size=+0>&nbsp;*</FONT></TD>
+<TD class=textfield><SELECT onchange="Javascript:return turelatedparty_details_ONCHANGE4(this);" disabled id=relnType class=listboxfont name=turelatedpartydetails.relnType enabled fmnd="Y" fblk="defaultFblk2" fdt="default" fmb="N"><OPTION value="">Select</OPTION><OPTION value=A>A - Authorized Signatory</OPTION><OPTION value=C>C - Co-Obligant</OPTION><OPTION value=D>D - DSA</OPTION><OPTION value=G>G - Guarantor</OPTION><OPTION value=H>H - Legal Heir</OPTION><OPTION value=J>J - Joint Holder</OPTION><OPTION value=L>L - Letter of Authority</OPTION><OPTION selected value=M>M - Main</OPTION><OPTION value=O>O - Others</OPTION><OPTION value=P>P - Power of Attorney</OPTION><OPTION value=S>S - Portfolio Statement</OPTION><OPTION value=V>V - LHV Hirer</OPTION></SELECT></TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>Relation Code
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT onchange="javascript:return turelatedparty_details_ONCHANGE5(this,'relnDesc');" disabled onblur="javascript:return custom_ONBLUR('turelatedparty_details',this);" id=relnCode class=textfieldfont maxLength=5 size=8 name=turelatedpartydetails.relnCode hotKeyId="search1" enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="N">&nbsp;<A id=sLnk2 style="CURSOR: hand; DISPLAY: none" href="javascript:showRefCode(document.forms[0].relnCode,'04','N','F',document.forms[0].relnDesc)"><IMG style="CURSOR: hand" border=0 src="../Renderer/images/INFENG/search_icon.gif" width=16 height=17 hotKeyId="search1"></IMG></A><BR><INPUT tabIndex=-1 disabled id=relnDesc class=label maxLength=10 size=10 name=turelatedpartydetails.relnDesc fds="Y" fblk="defaultFblk2" fdt="default"></TD></TR>
+<TR>
+<TD class=textlabel>Dispatch Mode
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><SELECT onchange="javascript:return custom_ONCHANGE('turelatedparty_details',this);" disabled id=despMode class=listboxfont name=turelatedpartydetails.despMode enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="N"><OPTION selected value="">Select</OPTION><OPTION value=A>A - Post and Email</OPTION><OPTION value=B>B - Special Delivery and Email</OPTION><OPTION value=C>C - Collect by Person</OPTION><OPTION value=D>D - Courier and Email</OPTION><OPTION value=E>E - Email Only</OPTION><OPTION value=N>N - No Dispatch</OPTION><OPTION value=P>P - Post</OPTION><OPTION value=Q>Q - Courier</OPTION><OPTION value=S>S - Special Delivery</OPTION></SELECT></TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>Designation Code
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT onchange="javascript:return turelatedparty_details_ONCHANGE6(this,'desigDesc');" onblur="javascript:return custom_ONBLUR('turelatedparty_details',this);" id=desigCode class=textfieldfont maxLength=5 size=8 name=turelatedpartydetails.desigCode hotKeyId="search2" enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="N">&nbsp;<A id=sLnk3 style="CURSOR: hand" href="javascript:showRefCode(document.forms[0].desigCode,'20','N','F',document.forms[0].desigDesc)"><IMG style="CURSOR: hand" border=0 src="../Renderer/images/INFENG/search_icon.gif" width=16 height=17 hotKeyId="search2"></IMG></A><BR><INPUT tabIndex=-1 disabled id=desigDesc class=label maxLength=10 size=10 name=turelatedpartydetails.desigDesc fds="Y" fblk="defaultFblk2" fdt="default"></TD></TR>
+<TR>
+<TD class=columnwidth>&nbsp;</TD></TR>
+<TR>
+<TD class=textlabel>CIF ID
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT onchange="javascript:return turelatedparty_details_ONCHANGE7(this,this);" disabled onblur="javascript:return custom_ONBLUR('turelatedparty_details',this);" id=customerId class=textfieldfont maxLength=32 size=31 value=20000000074012 name=turelatedpartydetails.customerId hotKeyId="search3" enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="N">&nbsp;<A id=sLnk4 style="CURSOR: hand; DISPLAY: none" href="javascript:fnShowCustId()" target=_self><IMG style="CURSOR: hand" border=0 src="../Renderer/images/INFENG/search_icon.gif" width=16 height=17 hotKeyId="search3"></IMG></A><BR></TD>
+<TD class=columnwidth>&nbsp;</TD></TR>
+<TR>
+<TD class=textlabel>Title
+<SCRIPT>setMandatory("Y");</SCRIPT>
+<FONT color=red size=+0>&nbsp;*</FONT></TD>
+<TD class=textfield><INPUT onchange="javascript:return custom_ONCHANGE('turelatedparty_details',this);" disabled onblur="javascript:return custom_ONBLUR('turelatedparty_details',this);" id=custTitle class=textfieldfont readOnly maxLength=5 size=8 value=1000 name=turelatedpartydetails.custTitle hotKeyId="search4" enabled fmnd="Y" fblk="defaultFblk2" fdt="default" fmb="N">&nbsp;<A id=sLnk5 style="CURSOR: hand; DISPLAY: none" href="javascript:showRefCode(document.forms[0].custTitle,'45','N','F','')" target=_self><IMG style="CURSOR: hand" border=0 src="../Renderer/images/INFENG/search_icon.gif" width=16 height=17 hotKeyId="search4"></A></TD>
+<TD class=columnwidth>&nbsp;</TD></TR>
+<TR>
+<TD class=textlabel>Name
+<SCRIPT>setMandatory("Y");</SCRIPT>
+<FONT color=red size=+0>&nbsp;*</FONT></TD>
+<TD class=textfield><INPUT onchange="javascript:return custom_ONCHANGE('turelatedparty_details',this);" disabled onblur="javascript:return custom_ONBLUR('turelatedparty_details',this);" id=customerName class=textfieldfont style="TEXT-TRANSFORM: none" readOnly maxLength=80 size=40 value=CARLSON name=turelatedpartydetails.customerName enabled fmnd="Y" fblk="defaultFblk2" fdt="default" fmb="Y"></TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>&nbsp;</TD>
+<TD class=textfield>&nbsp;</TD></TR>
+<TR>
+<TD class=textlabel>Address Type
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT onchange="Javascript:return turelatedparty_details_ONCHANGE8(this,this);" onblur="javascript:return custom_ONBLUR('turelatedparty_details',this);" id=addressType class=textfieldfont style="TEXT-TRANSFORM: none" maxLength=12 size=35 value=Mailing name=turelatedpartydetails.addressType hotKeyId="search5" enabled fmnd="N" fblk="defaultFblk2" fdt="lcase" fmb="Y">&nbsp;<A id=sLnk6 style="CURSOR: hand" href="javascript:fnShowAddress()"><IMG style="CURSOR: hand" border=0 src="../Renderer/images/INFENG/search_icon.gif" width=16 height=17 hotKeyId="search5"></A><BR><INPUT disabled id=addressTypeDesc class=label maxLength=50 size=50 value=Mailing name=turelatedpartydetails.addressTypeDesc fds="Y" fblk="defaultFblk2" fdt="default"></TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>Address Line 1
+<SCRIPT>setMandatory("Y");</SCRIPT>
+<FONT color=red size=+0>&nbsp;*</FONT></TD>
+<TD class=textfield><INPUT onchange="javascript:return custom_ONCHANGE('turelatedparty_details',this);" onblur="javascript:return custom_ONBLUR('turelatedparty_details',this);" id=custAddrLine1 class=textfieldfont readOnly maxLength=45 size=35 value=NA name=turelatedpartydetails.custAddrLine1 enabled fmnd="Y" fblk="defaultFblk2" fdt="default" fmb="Y"></TD></TR>
+<TR>
+<TD class=textlabel>Address Line 2
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT onchange="javascript:return custom_ONCHANGE('turelatedparty_details',this);" onblur="javascript:return custom_ONBLUR('turelatedparty_details',this);" id=custAddrLine2 class=textfieldfont readOnly maxLength=45 size=35 name=turelatedpartydetails.custAddrLine2 enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="Y"></TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>Address Line 3
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT onchange="javascript:return custom_ONCHANGE('turelatedparty_details',this);" onblur="javascript:return custom_ONBLUR('turelatedparty_details',this);" id=custAddrLine3 class=textfieldfont readOnly maxLength=45 size=35 name=turelatedpartydetails.custAddrLine3 enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="N"></TD></TR>
+<TR>
+<TD class=textlabel>City
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT onchange="javascript:return turelatedparty_details_ONCHANGE9(this,'cityName');" onblur="javascript:return custom_ONBLUR('turelatedparty_details',this);" id=custCityCode class=textfieldfont readOnly maxLength=5 size=8 value=NA name=turelatedpartydetails.custCityCode hotKeyId="search6" enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="N">&nbsp;<A id=sLnk7 style="CURSOR: hand; DISPLAY: none" href="javascript:showRefCode(document.forms[0].custCityCode,'01','N','F',document.forms[0].cityName)"><IMG style="CURSOR: hand" border=0 src="../Renderer/images/INFENG/search_icon.gif" width=16 height=17 hotKeyId="search6"></IMG></A><BR><INPUT tabIndex=-1 disabled id=cityName class=label maxLength=10 size=10 value="NO APLICA" name=turelatedpartydetails.cityName fds="Y" fblk="defaultFblk2" fdt="default"></TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>State
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT onchange="javascript:return turelatedparty_details_ONCHANGE10(this,'stateName');" onblur="javascript:return custom_ONBLUR('turelatedparty_details',this);" id=custStateCode class=textfieldfont readOnly maxLength=5 size=8 value=NA name=turelatedpartydetails.custStateCode hotKeyId="search7" enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="N">&nbsp;<A id=sLnk8 style="CURSOR: hand; DISPLAY: none" href="javascript:showRefCode(document.forms[0].custStateCode,'02','N','F',document.forms[0].stateName)"><IMG style="CURSOR: hand" border=0 src="../Renderer/images/INFENG/search_icon.gif" width=16 height=17 hotKeyId="search7"></IMG></A><BR><INPUT tabIndex=-1 disabled id=stateName class=label maxLength=10 size=10 value="NO APLICA" name=turelatedpartydetails.stateName fds="Y" fblk="defaultFblk2" fdt="default"></TD></TR>
+<TR>
+<TD class=textlabel>Postal Code
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT onchange="javascript:return custom_ONCHANGE('turelatedparty_details',this);" onblur="javascript:return custom_ONBLUR('turelatedparty_details',this);" id=custPostalCode class=textfieldfont readOnly maxLength=10 size=10 value=NA name=turelatedpartydetails.custPostalCode enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="N"></TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>Country
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT onchange="javascript:return turelatedparty_details_ONCHANGE11(this,'cntryName');" onblur="javascript:return custom_ONBLUR('turelatedparty_details',this);" id=custCntryCode class=textfieldfont readOnly maxLength=5 size=8 value=CO name=turelatedpartydetails.custCntryCode hotKeyId="search8" enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="N">&nbsp;<A id=sLnk9 style="CURSOR: hand; DISPLAY: none" href="javascript:showRefCode(document.forms[0].custCntryCode,'03','N','F',document.forms[0].cntryName)"><IMG style="CURSOR: hand" border=0 src="../Renderer/images/INFENG/search_icon.gif" width=16 height=17 hotKeyId="search8"></IMG></A><BR><INPUT tabIndex=-1 disabled id=cntryName class=label maxLength=10 size=10 value=COLOMBIA name=turelatedpartydetails.cntryName fds="Y" fblk="defaultFblk2" fdt="default"></TD></TR>
+<TR>
+<TD class=textlabel>Telephone No. Type</TD>
+<TD class=textfield><INPUT onchange="Javascript:return turelatedparty_details_ONCHANGE12(this,this);" onblur="javascript:return custom_ONBLUR('turelatedparty_details',this);" id=phoneType class=textfieldfont style="TEXT-TRANSFORM: none" maxLength=12 size=35 name=turelatedpartydetails.phoneType hotKeyId="search9" enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="Y">&nbsp;<A id=sLnk10 style="CURSOR: hand" href="javascript:fnShowPhone()"><IMG style="CURSOR: hand" border=0 src="../Renderer/images/INFENG/search_icon.gif" width=16 height=17 hotKeyId="search9"></A><BR><INPUT disabled id=phoneTypeDesc class=label maxLength=50 size=50 name=turelatedpartydetails.phoneTypeDesc fds="Y" fblk="defaultFblk2" fdt="default"></TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>Telephone No.</TD>
+<TD class=textfield><INPUT onchange="javascript:return custom_ONCHANGE('turelatedparty_details',this);" onblur="javascript:return custom_ONBLUR('turelatedparty_details',this);" id=custPhNum class=textfieldfont readOnly maxLength=15 size=15 name=turelatedpartydetails.custPhNum enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="N"></TD></TR>
+<TR>
+<TD class=textlabel>Telex No.
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT onchange="javascript:return custom_ONCHANGE('turelatedparty_details',this);" onblur="javascript:return custom_ONBLUR('turelatedparty_details',this);" id=custTelexNum class=textfieldfont readOnly maxLength=15 size=15 name=turelatedpartydetails.custTelexNum enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="N"></TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>Fax No.
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT onchange="javascript:return custom_ONCHANGE('turelatedparty_details',this);" onblur="javascript:return custom_ONBLUR('turelatedparty_details',this);" id=custFaxNum class=textfieldfont readOnly maxLength=15 size=15 name=turelatedpartydetails.custFaxNum enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="N"></TD></TR>
+<TR>
+<TD class=textlabel>Email ID Type
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT onchange="Javascript:return turelatedparty_details_ONCHANGE13(this,this);" onblur="javascript:return custom_ONBLUR('turelatedparty_details',this);" id=emailType class=textfieldfont style="TEXT-TRANSFORM: none" maxLength=12 size=35 name=turelatedpartydetails.emailType hotKeyId="search10" enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="Y">&nbsp;<A id=sLnk11 style="CURSOR: hand" href="javascript:fnShowEmail()"><IMG style="CURSOR: hand" border=0 src="../Renderer/images/INFENG/search_icon.gif" width=16 height=17 hotKeyId="search10"></A><BR><INPUT disabled id=emailTypeDesc class=label maxLength=50 size=50 name=turelatedpartydetails.emailTypeDesc fds="Y" fblk="defaultFblk2" fdt="default"></TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>Email ID
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT onchange="javascript:return custom_ONCHANGE('turelatedparty_details',this);" onblur="javascript:return custom_ONBLUR('turelatedparty_details',this);" id=custEmailId class=textfieldfont readOnly maxLength=50 size=35 name=turelatedpartydetails.custEmailId enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="Y"></TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>&nbsp;</TD>
+<TD class=textfield>&nbsp;</TD></TR>
+<TR>
+<TD class=textlabel>Start Date
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield height=10><INPUT onchange="javascript:return turelatedparty_details_ONCHANGE14(this,this);" disabled onblur="javascript:return custom_ONBLUR('turelatedparty_details',this);" id=startDate_ui class=textfieldfont maxLength=10 name=turelatedpartydetails.startDate_ui hotKeyId="calender1" enabled fmnd="N" fblk="defaultFblk2" fdt="uidate" fmb="N" mnebl="false"><A id=sLnk12 style="CURSOR: hand; DISPLAY: none" href="javascript:openDate(document.forms[0].startDate_ui,BODDate)"><IMG style="CURSOR: hand" border=0 alt=Date src="../images/INFENG/calender.gif" width=24 align=absMiddle height=19 hotKeyId="calender1"></A>
+<DIV id=daysOfMonth1 style="POSITION: absolute"></DIV></TD>
+<TD class=columnwidth><SPACER width="1" height="1" type="block"></SPACER></TD>
+<TD class=textlabel>End Date
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT onchange="javascript:return turelatedparty_details_ONCHANGE15(this,this);" disabled onblur="javascript:return custom_ONBLUR('turelatedparty_details',this);" id=endDate_ui class=textfieldfont maxLength=10 name=turelatedpartydetails.endDate_ui hotKeyId="calender2" enabled fmnd="N" fblk="defaultFblk2" fdt="uidate" fmb="N" mnebl="false"><A id=sLnk13 style="CURSOR: hand; DISPLAY: none" href="javascript:openDate(document.forms[0].endDate_ui,BODDate)"><IMG style="CURSOR: hand" border=0 alt=Date src="../images/INFENG/calender.gif" width=24 align=absMiddle height=19 hotKeyId="calender2"></A>
+<DIV id=daysOfMonth2 style="POSITION: absolute"></DIV></TD></TR>
+<TR>
+<TD class=textlabel>Amt.
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT onchange="javascript:return turelatedparty_details_ONCHANGE17(this,document.forms[0].amount);" disabled onblur="javascript:return turelatedparty_details_ONBLUR16(this,format,document.forms[0].amount,crncyCode,'N');" id=amount class=textfieldfont maxLength=24 size=24 name=turelatedpartydetails.amount enabled fmnd="N" fblk="defaultFblk2" fdt="amount" fmb="N"></TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>Notes
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><TEXTAREA onblur="javascript:return turelatedparty_details_ONBLUR18(this,this,60);" id=remarks class=textfieldfont onkeydown="javascript:return turelatedparty_details_ONKEYDOWN19(this,event);" name=turelatedpartydetails.remarks enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="Y" maxlength="60" size="35"></TEXTAREA></TD></TR>
+<TR>
+<TD class=columnwidth>&nbsp;</TD></TR>
+<TR>
+<TD class=textlabel>Print</TD></TR>
+<TR>
+<TD class=columnwidth>&nbsp;</TD></TR>
+<TR>
+<TD class=textlabel>Print Statement
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT id=printAcctStmt CHECKED type=radio value=Y name=turelatedpartydetails.printAcctStmt enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="N">Yes<INPUT id=printAcctStmt type=radio value=N name=turelatedpartydetails.printAcctStmt enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="N">No</TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>Print Advice for Standing Order
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT id=printAdvStndOrd CHECKED type=radio value=Y name=turelatedpartydetails.printAdvStndOrd enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="N">Yes<INPUT id=printAdvStndOrd type=radio value=N name=turelatedpartydetails.printAdvStndOrd enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="N">No</TD></TR>
+<TR>
+<TD class=textlabel>Print Deposit Notice
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT id=printDepNotice CHECKED type=radio value=Y name=turelatedpartydetails.printDepNotice enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="N">Yes<INPUT id=printDepNotice type=radio value=N name=turelatedpartydetails.printDepNotice enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="N">No</TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>Print Loan Notice
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT id=printLoanNotice CHECKED type=radio value=Y name=turelatedpartydetails.printLoanNotice enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="N">Yes<INPUT id=printLoanNotice type=radio value=N name=turelatedpartydetails.printLoanNotice enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="N">No</TD></TR>
+<TR>
+<TD class=textlabel>Interest Certificate
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT id=intcertPrintFlg CHECKED type=radio value=Y name=turelatedpartydetails.intcertPrintFlg enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="N">Yes<INPUT id=intcertPrintFlg type=radio value=N name=turelatedpartydetails.intcertPrintFlg enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="N">No</TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>Interest Rate Change Advice
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT id=intAdvFlg CHECKED type=radio value=Y name=turelatedpartydetails.intAdvFlg enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="N">Yes<INPUT id=intAdvFlg type=radio value=N name=turelatedpartydetails.intAdvFlg enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="N">No</TD></TR>
+<TR>
+<TD class=textlabel>Exclude from Combined Statement
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT id=xcldCombStmt CHECKED type=radio value=Y name=turelatedpartydetails.xcldCombStmt enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="N">Yes<INPUT id=xcldCombStmt type=radio value=N name=turelatedpartydetails.xcldCombStmt enabled fmnd="N" fblk="defaultFblk2" fdt="default" fmb="N">No</TD></TR>
+<TR>
+<TD class=textlabel>Record</TD>
+<TD class=textfield><INPUT onclick="javascript:return turelatedparty_details_ONCLICK21(this,this);" disabled id=chkdelFlg class=check type=checkbox value=N name=turelatedpartydetails.chkdelFlg enabled fblk="defaultFblk2" fdt="default" fmb="N">Del.</TD></TR>
+<TR>
+<TD class=rowspacingbottom colSpan=5>&nbsp;</TD></TR>
+<TR class=subhdrbg vAlign=middle>
+<TD class=subhdr colSpan=2>Language Preference</TD>
+<TD vAlign=middle colSpan=3 align=right>&nbsp;</TD></TR>
+<TR class=rowspacing>
+<TD colSpan=5>&nbsp;</TD></TR>
+<TR>
+<TD class=textlabel>Preferred Language Code
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><INPUT onchange="javascript:return turelatedparty_details_ONCHANGE22(this,'prefLangCodeDesc');" onblur="javascript:return custom_ONBLUR('turelatedparty_details',this);" id=prefLangCode class=textfieldfont maxLength=10 size=14 value=es_ES name=turelatedpartydetails.prefLangCode hotKeyId="search11" enabled fmnd="N" fblk="defaultFblk2" fdt="default">&nbsp;<A id=sLnk14 style="CURSOR: hand" href="javascript:showAppLangCodes(document.forms[0].prefLangCode,'F',document.forms[0].prefLangCodeDesc)"><IMG style="CURSOR: hand" border=0 src="../Renderer/images/INFENG/search_icon.gif" width=16 height=17 hotKeyId="search11"></IMG></A><INPUT tabIndex=-1 disabled id=prefLangCodeDesc class=label maxLength=50 size=25 name=turelatedpartydetails.prefLangCodeDesc fds="Y" fblk="defaultFblk2" fdt="default"></TD>
+<TD class=columnwidth></TD>
+<TD class=textlabel>Notes
+<SCRIPT>setMandatory("N");</SCRIPT>
+</TD>
+<TD class=textfield><TEXTAREA onblur="javascript:return turelatedparty_details_ONBLUR23(this,this,60);" id=prefRemarks class=textfieldfont onkeydown="javascript:return turelatedparty_details_ONKEYDOWN24(this,event);" name=turelatedpartydetails.prefRemarks enabled fmnd="N" fblk="defaultFblk2" fdt="default" maxlength="60" size="35"></TEXTAREA></TD></TR>
+<TR>
+<TD class=rowspacingbottom colSpan=5>&nbsp;</TD></TR>
+<TR>
+<TD class=rowspacing colSpan=5><SPACER width="1" height="1" type="block"></SPACER></TD></TR>
+<TR class=subhdrbg vAlign=middle>
+<TD class=subhdr colSpan=5>FATCA Details</TD>
+<TD colSpan=3 align=right></TD></TR>
+<TR>
+<TD class=textlabel>Mark Holder Foreign Tax reportable</TD>
+<TD><INPUT onclick="javascript:return turelatedparty_details_ONCLICK25(this);" id=FAmarkHoldTax type=radio value=Y name=turelatedpartydetails.FAmarkHoldTax fds="Y" fblk="defaultFblk2" fdt="default">Yes<INPUT onclick="javascript:return turelatedparty_details_ONCLICK26(this);" id=FAmarkHoldTax CHECKED type=radio value=N name=turelatedpartydetails.FAmarkHoldTax fds="Y" fblk="defaultFblk2" fdt="default">No</TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>Tax Reporting Country</TD>
+<TD class=textfield><INPUT onchange="javascript:return turelatedparty_details_ONCHANGE27(this,this,'validateCntryCode','cntryCodeDesc');" disabled onblur="javascript:return custom_ONBLUR('turelatedparty_details',this);" id=FAcountryCode class=textfieldfont maxLength=5 size=5 name=turelatedpartydetails.FAcountryCode hotKeyId="search12" fds="Y" fblk="defaultFblk2" fdt="default">&nbsp;<A id=sLnk24 style="CURSOR: hand; DISPLAY: none" href="javascript:showDynSearcher('SRFATCM','cntry_code=:FAcountryCode|delFlg=N',':FAcountryCode=cntry_code|:FAcountryName=cntry_name')"><IMG style="CURSOR: hand" border=0 src="../Renderer/images/INFENG/search_icon.gif" width=16 height=17 hotKeyId="search12"></IMG></A><BR><INPUT onchange="javascript:return custom_ONCHANGE('turelatedparty_details',this);" disabled onblur="javascript:return custom_ONBLUR('turelatedparty_details',this);" id=FAcountryName class=label size=25 name=turelatedpartydetails.FAcountryName fds="Y" fblk="defaultFblk2" fdt="default"></TD></TR>
+<TR>
+<TD class=textlabel>Foreign Account Tax Percentage</TD>
+<TD class=textfield><INPUT onchange="javascript:return custom_ONCHANGE('turelatedparty_details',this);" disabled onblur="javascript:return custom_ONBLUR('turelatedparty_details',this);" id=FAforeignAccTaxPcnt class=textfieldfont maxLength=15 size=15 value=0,000000 name=turelatedpartydetails.FAforeignAccTaxPcnt fds="Y" fblk="defaultFblk2" fdt="default"></TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>Tax Reporting Status</TD>
+<TD class=textfield><INPUT onchange='javascript:return turelatedparty_details_ONCHANGE28(this,"FATaxRepStatusDesc");' disabled onblur="javascript:return custom_ONBLUR('turelatedparty_details',this);" id=FATaxRepStatus class=textfieldfont maxLength=5 size=6 name=turelatedpartydetails.FATaxRepStatus hotKeyId="search13" fds="Y" fblk="defaultFblk2" fdt="default">&nbsp;<A id=sLnk23 style="CURSOR: hand; DISPLAY: none" href="javascript:showRefCode(document.forms[0].FATaxRepStatus,'5Z','N','F',document.forms[0].FATaxRepStatusDesc)"><IMG style="CURSOR: hand" border=0 src="../Renderer/images/INFENG/search_icon.gif" width=16 height=17 hotKeyId="search13"></IMG></A><BR><INPUT disabled id=FATaxRepStatusDesc class=label maxLength=10 size=10 name=turelatedpartydetails.FATaxRepStatusDesc fds="Y" fblk="defaultFblk2" fdt="default"></TD></TR>
+<TR>
+<TD class=textlabel>Last Tax Reporting Review Date
+<SCRIPT>setMandatory("N")</SCRIPT>
+ </TD>
+<TD class=textfield><INPUT onchange=fnEventFormatDate(this) disabled id=FAlastTaxRepDate_ui class=textfieldfont maxLength=10 size=10 name=turelatedpartydetails.FAlastTaxRepDate_ui hotKeyId="calendar101" enabled fmnd="N" fdt="uidate" mnebl="false"><A id=sLnk26 style="CURSOR: hand; DISPLAY: none" href='javascript:openDate(document.forms[0].FAlastTaxRepDate_ui,"10-04-2018")' target=_self><IMG class=img style="CURSOR: hand" border=0 alt="Select date from calendar." src="../Renderer/images/INFENG/calender.gif" width=24 align=absMiddle height=19 hotKeyId="calendar101"></IMG></A></TD><INPUT disabled id=FAlastTaxRepDate type=hidden name=turelatedpartydetails.FAlastTaxRepDate fmnd="N" fdt="fdate" vFldId="FAlastTaxRepDate_ui" mneb1="false">
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>Next Tax Reporting Review Date
+<SCRIPT>setMandatory("N")</SCRIPT>
+ </TD>
+<TD class=textfield><INPUT onchange=fnEventFormatDate(this) disabled id=FAnextTaxRepDate_ui class=textfieldfont maxLength=10 size=10 name=turelatedpartydetails.FAnextTaxRepDate_ui hotKeyId="calendar102" enabled fmnd="N" fdt="uidate" mnebl="false"><A id=sLnk25 style="CURSOR: hand; DISPLAY: none" href='javascript:openDate(document.forms[0].FAnextTaxRepDate_ui,"10-04-2018")' target=_self><IMG class=img style="CURSOR: hand" border=0 alt="Select date from calendar." src="../Renderer/images/INFENG/calender.gif" width=24 align=absMiddle height=19 hotKeyId="calendar102"></IMG></A></TD><INPUT disabled id=FAnextTaxRepDate type=hidden name=turelatedpartydetails.FAnextTaxRepDate fmnd="N" fdt="fdate" vFldId="FAnextTaxRepDate_ui" mneb1="false"></TR>
+<TR>
+<TD class=textlabel>Free Code 1</TD>
+<TD class=textfield><INPUT onchange='javascript:return turelatedparty_details_ONCHANGE29(this,"FAfreecode1Desc");' disabled onblur="javascript:return custom_ONBLUR('turelatedparty_details',this);" id=FAfreecode1 class=textfieldfont maxLength=5 size=6 name=turelatedpartydetails.FAfreecode1 hotKeyId="search14" fds="Y" fblk="defaultFblk2" fdt="default">&nbsp;<A id=sLnk21 style="CURSOR: hand; DISPLAY: none" href="javascript:showRefCode(document.forms[0].FAfreecode1,'5X','N','F',document.forms[0].FAfreecode1Desc)"><IMG style="CURSOR: hand" border=0 src="../Renderer/images/INFENG/search_icon.gif" width=16 height=17 hotKeyId="search14"></IMG></A><BR><INPUT disabled id=FAfreecode1Desc class=label maxLength=10 size=10 name=turelatedpartydetails.FAfreecode1Desc fds="Y" fblk="defaultFblk2" fdt="default"></TD>
+<TD></TD>
+<TD class=textlabel>Free Code 2</TD>
+<TD class=textfield><INPUT onchange='javascript:return turelatedparty_details_ONCHANGE30(this,"FAfreecode2Desc");' disabled onblur="javascript:return custom_ONBLUR('turelatedparty_details',this);" id=FAfreecode2 class=textfieldfont maxLength=5 size=6 name=turelatedpartydetails.FAfreecode2 hotKeyId="search15" fds="Y" fblk="defaultFblk2" fdt="default">&nbsp;<A id=sLnk22 style="CURSOR: hand; DISPLAY: none" href="javascript:showRefCode(document.forms[0].FAfreecode2,'5Y','N','F',document.forms[0].FAfreecode2Desc)"><IMG style="CURSOR: hand" border=0 src="../Renderer/images/INFENG/search_icon.gif" width=16 height=17 hotKeyId="search15"></IMG></A><BR><INPUT disabled id=FAfreecode2Desc class=label maxLength=10 size=10 name=turelatedpartydetails.FAfreecode2Desc fds="Y" fblk="defaultFblk2" fdt="default"></TD></TR>
+<TR>
+<TD class=textlabel>Free Text</TD>
+<TD class=textfield><TEXTAREA disabled onblur="javascript:return turelatedparty_details_ONBLUR31(this,this,240);" id=FAfreeText class=textfieldfont onkeydown="javascript:return turelatedparty_details_ONKEYDOWN32(this,event);" rows=3 cols=23 name=turelatedpartydetails.FAfreeText type="text" fds="Y" fblk="defaultFblk2" fdt="default" fmb="Y" input></TEXTAREA></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></DIV><BR><SPAN><INPUT type=hidden value=~custIntCode|FIS|FI3|~tugendet|10-04-2018|~tuintdet||~tuschdet|4,8|3|0|10-07-2018|10-04-2018|90|4,8|4.8|4.907|.004|30|FIS| name=customData>
+<SCRIPT language=javascript src="../Renderer/custom/javascripts/turelatedparty_details_cust.js"></SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/custom/javascripts/custom_functions.js"></SCRIPT>
+
+<SCRIPT language=JavaScript>
+		printFooterBlock();
+	</SCRIPT>
+ 
+<DIV class=ctable><INPUT onclick="javascript:return turelatedparty_details_ONCLICK34(this,document.forms[0].Submit);" id=Submit class=button type=button value=Submit name=Submit hotKeyId="Submit"><INPUT onclick="javascript:return turelatedparty_details_ONCLICK36(this,document.forms[0].Validate);" id=Validate class=button type=button value=Validate name=Validate hotKeyId="Validate"><INPUT onclick="javascript:return turelatedparty_details_ONCLICK37(this,document.forms[0].Cancel);" id=Cancel class=button type=button value=Cancel name=Cancel hotKeyId="Cancel"></DIV></SPAN></FORM></SPAN></BODY></HTML>

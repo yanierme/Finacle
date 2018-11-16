@@ -1,0 +1,493 @@
+<HTML><HEAD><TITLE>Error Details</TITLE><BASE href="https://wsfinaclecdtperf.bancolombia.corp:11111/finbranch/errordetails/">
+<META content=text/html;charset=utf-8 http-equiv=Content-Type>
+<META content=-1 http-equiv=PRAGMA>
+<META content=no-cache http-equiv=Cache-Control>
+<META content=-1 http-equiv=Expires>
+<SCRIPT language=javascript src="../Renderer/javascripts/102170_finbranchResource_INFENG.js"> </SCRIPT>
+<LINK title="Finacle Stylesheet" rel=STYLESHEET type=text/css href="../Renderer/stylesheets/1000/10217_services.css">
+<SCRIPT language=javascript src="https://wsfinaclecdtperf.bancolombia.corp:11111/finbranch/MenuRenderer/mtree/1000_GU_BT_693_INFENG_FIN_LEVEL01.js"></SCRIPT>
+
+<SCRIPT language=javascript src="https://wsfinaclecdtperf.bancolombia.corp:11111/finbranch/MenuRenderer/mtree/1000_GU_BT_693_INFENG_SC_FIN.js"></SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/mtree/precArray.js"></SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_cust_evt.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_loc_evt.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/1021710870_core_banking.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_resource_functions.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/1021710870_login_common_functions.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/1021710870_common_functions.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_hotkeyprocessor_link.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_hotkeydata_link.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/errordetails/1000/10217_errordetails_link.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/errordetails/1000/10217_tuacop_error_details_glink.js"> </SCRIPT>
+
+<SCRIPT language=JavaScript>
+var dom_to_set = 'bancolombia.corp';
+var prodEnv = 'Y'; 
+var SSO = (dom_to_set != "") && true;
+if (SSO) {
+	document.domain = dom_to_set;
+}
+if(prodEnv == 'Y')
+{
+	document.oncontextmenu = function ()
+	{
+		return false;
+	}
+}
+</SCRIPT>
+
+<SCRIPT>
+var reqId = "5d73ptipv726";
+var rtId = "z9mm2mtlqzgq";
+var isPopup = "N";
+var reqIdChkByPass = "null";
+var silentPrntReqd = "N";
+var calbase = "00";
+var lowHijYear = 1300;
+var highHijYear = 1599;
+var CURR_GROUP_NAME= "errordetails";
+var localeCode= "DF";
+var encodeLst = "[]";
+var isEncodeReqd = "Y";
+var dateFormat = "00";
+var NumLocYears="0";
+var dateInputCal ="00";
+var DECIMAL_SEPARATOR = ',';
+var MANTISSA_SEPARATOR = '.';
+var LANGCODE = "INFENG";
+var finContextPath = "/finbranch";
+var crvContextPath = '/fincrv';
+var lastCalMappedDate = "";
+var iCalCount = 1;
+var iFeatureCount = 0;
+var FeatureStringArr = new Array(0);
+var calStringArr = new Array(1);
+var ContextSwitchDoneFrom = "";
+
+            calStringArr[0] = '00';
+
+
+
+var profileId  = '1000';
+var literalContext = 'C';
+var defaultLiteralContext = 'C';
+var dualFlg = "N"; 
+
+function checkIfSwitchEnabled(feature)
+{
+        for (var i=0; i<FeatureStringArr.length; i++)
+        {
+		if(feature === FeatureStringArr[i])
+			return true;
+        }
+	return false;	
+}
+
+function isFeatureEnabledFor(ftrString){
+                var e = false;
+                var x = ftrString.split(","); //loop thru the list of features 
+                for(var i = 0; i< x.length;i++)
+                {
+                   e = checkIfSwitchEnabled (x[i]); // find out if the current feature is enabled
+                   if (e) break;         // If any feature is enabled, that is enough.. return true.
+                }
+                return e;
+}
+
+
+if (LANGCODE == "ARABIC")
+{
+    document.write('<HTML dir=RTL></HTML>');
+}
+
+</SCRIPT>
+
+<META content=no-cache http-equiv=PRAGMA>
+<META content=no-cache,no-store http-equiv=Cache-Control>
+<META content=-1 http-equiv=Expires>
+<SCRIPT src="../Renderer/javascripts/1000/10217_timeout_link.js"></SCRIPT>
+
+<SCRIPT>
+window.history.forward(1);
+var timeid;
+var USERID = "USERCDT29";
+var USER_TIME_OUT = 23580000;
+
+fnSetTimers();
+enableTimers();
+
+</SCRIPT>
+
+<SCRIPT>
+var sTabHeadingPrefix = "tuacop";
+var sTabErrAltText = "";
+var ancCount = 0;
+var sMode ='';
+</SCRIPT>
+
+<SCRIPT>
+
+	var sbErrBuffer = '';
+	var sPopUpExceptionWindow = 'true' ;
+	var sReferralMode = '' ;
+</SCRIPT>
+
+<SCRIPT language=JavaScript src="../Renderer/javascripts/jspjs/INFENG/102170_tuacop_error_details_INFENG.js"> </SCRIPT>
+</HEAD>
+<BODY onresize=adjustMenuDiv(); onkeyup="javascript:return tuacop_error_details_ONKEYUP2(this,event);" class=cbody onload="javascript:return tuacop_error_details_ONLOAD3(this);" onkeydown="javascript:return tuacop_error_details_ONKEYDOWN1(this,event);" leftMargin=0 topMargin=0>
+<FORM class=cform onsubmit="javascript:return tuacop_error_details_ONSUBMIT4(this);" method=post action=../errordetails/errordetails_ctrl.jsp>
+<SCRIPT language=javascript src="../Renderer/custom/samples/custfetch/custom_functions.js"></SCRIPT>
+
+<SCRIPT language=JavaScript src="../Renderer/javascripts/jspjs/INFENG/102170_header_INFENG.js"> </SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_header_link.js"></SCRIPT>
+
+<SCRIPT>
+
+
+var prodEnv = "Y"; 
+var isProdEnv  = "Y";
+var nonSSOLogin = false;
+var toPaintHeader = true; 
+if((typeof(isSSOLogin) != 'undefined')&&(typeof(isSSOLogin) != null)){
+   nonSSOLogin = isSSOLogin(); 
+} 
+if((typeof(paintHeader) != 'undefined')&&(typeof(paintHeader) != null)){ 
+   toPaintHeader = paintHeader(); 
+} 
+
+var enterKey = 13;
+var logTestCase = "";
+var currIp = "";
+var strBaseRef = "https://wsfinaclecdtperf.bancolombia.corp:11111";
+var sessionid = "O:3474";
+var sectok = "f694dd4e34c9e84b625270ee3b0d68e9";
+var fabsessionid = "";
+var finsessionid = "O:3474";
+var FinAvailFlg = "Y";
+var FabAvailFlg = "N";
+var headDate = getDateForDisplay("10 April, 2018", "10", "04", "2018");
+var headUserId = "USERCDT29";
+var headCtxSol = "BC000001";
+var crvBaseUrl = 'PBMDEBDFIN03:8888';
+var fabBaseUrl = '';
+var finBaseUrl = '';
+var userMenuId = '1000_GU_BT_693';
+var userMenuTreeObj = new MenuProperties();
+var userSCMenuTreeObj = new MenuShortCutProperties();
+userMenuTreeObj.setUsrMenuId(userMenuId);
+userMenuTreeObj.setMenuObj(userMenuTreeObj);
+userSCMenuTreeObj.setUsrSCMenuId(userMenuId);
+userSCMenuTreeObj.setMenuSCObj(userSCMenuTreeObj);
+var isAuditEnabled = false;
+var isBackGround = false;
+var bgParentGroup = '';
+var isCalledMenu = false;
+var crvAcctId = '';
+var crvCustId = '';
+var sGroupName = 'errordetails';
+var menuType = '';
+var mopId = '';
+var isLoggedInFin = false;
+var isLoggedInFab = false;
+var IS_ERROR_PAGE = false;
+var menuInfoDownloaded = false;
+var appLangCode = "INFENG";
+var isONSLogin = true;
+var finSecTok = "";
+var fabSecTok = "";
+var ssoAuthUrl = "https://WSFINACLECDTPERF.bancolombia.corp:11111/SSO/SSOServlet";
+var menuTitle = '';
+var isMenuShrtcutProt = 'N';
+var ipAddress = "10.25.153.154";
+var multiBankEnabled = "N";
+var isPortalCtxt =  "";
+var inPortal = false;
+var IsFinacleLite = "N";
+var Literal = "";
+
+userInfoUtil.setEffTenor("F");
+userInfoUtil.setContextSol("BC000001");
+
+
+inPortal 		= false;
+isAuditEnabled = false;
+isCalledMenu    =       false;
+gfkmCookie = '';
+mopId = 'HOAACTU';
+menuType = '';
+
+menuTitle = 'Account Opening-Top Up Deposits';
+
+isBackGround = false;
+userMenuTreeObj.setBgMode(isBackGround);
+bgParentGroup = '';
+iMemopad = 0;
+menuInfoDownloaded = true;
+downloadedLevel = 1;
+if (menuInfoDownloaded)
+{
+  for(i=2;i<=downloadedLevel;i++) 
+   { 
+           levelList = eval("finMenuLevel0"+i); 
+           finMenu = finMenu.concat(levelList); 
+   } 
+
+userMenuTreeObj.setMenuProps(USER_MENU_ID, finMenu, fabMenu, crvMenu, bgMenu, portalTabMenuArr, portalLhnAMenuArr, portalLhnBMenuArr, miscMenu);
+userSCMenuTreeObj.setMenuSCProps(USER_MENU_ID,normalONSMenu, fcfgMenu, icfgMenu, bcfgMenu,radfxMenu);
+}
+isLoggedInFin = true;
+isLoggedInFab = false;
+
+     writeLayer();
+	 hideMenuTreeForNonIE();
+
+</SCRIPT>
+
+<TABLE cellSpacing=0 cellPadding=0 width="100%" background=../Renderer/images/INFENG/toptile.gif border=0>
+<TBODY>
+<TR>
+<TD vAlign=top rowSpan=2 width="20%"><IMG style="CURSOR: hand" src="../Renderer/images/INFENG/logo_new.gif"></TD>
+<TD vAlign=top width="80%" align=right>
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD style="BACKGROUND-IMAGE: url(../Renderer/images/INFENG/dotstile.gif); BACKGROUND-REPEAT: repeat-x" colSpan=12><SPACER width="1" height="1" type="block"></SPACER></TD></TR>
+<TR>
+<TD><IMG style="CURSOR: hand" src="../Renderer/images/INFENG/arrow.gif" width=18 height=17></TD>
+<TD width=1><IMG style="CURSOR: hand" src="../Renderer/images/INFENG/divider_topnavi.gif" width=1 height=17></TD>
+<TD width=1><IMG style="CURSOR: hand" src="../Renderer/images/INFENG/divider_topnavi.gif" width=1 height=17></TD>
+<TD onmouseover="this.className=' bgTd ' " onmouseout="this.className=' topnavi_bottom ' " class=topnavi_bottom><A id=anc_html class=topnavi style="CURSOR: hand" href="javascript:fnHtmlMenu();">Menu</A></TD>
+<TD width=1><IMG style="CURSOR: hand" src="../Renderer/images/INFENG/divider_topnavi.gif" width=1 height=17></TD>
+<TD onmouseover="this.className=' bgTd ' " onmouseout="this.className=' topnavi_bottom ' " id=showmemoleftcurve class=topnavi_bottom><A id=anc_hdrm class=topnavi style="CURSOR: hand" href="javascript:fnMenuHdr('showmemopad','false');">Show Memo Pad</A></TD>
+<TD width=1><IMG style="CURSOR: hand" src="../Renderer/images/INFENG/divider_topnavi.gif" width=1 height=17></TD>
+<TD onmouseover="this.className=' bgTd ' " onmouseout="this.className=' topnavi_bottom ' " id=bgmenuleftcurve class=topnavi_bottom><A id=anc_mhdr class=topnavi style="CURSOR: hand" href="javascript:fnMenuHdr('showbglist','true');">Background Menu</A></TD>
+<TD width=1><IMG style="CURSOR: hand" src="../Renderer/images/INFENG/divider_topnavi.gif" width=1 height=17></TD>
+<TD onmouseover="this.className=' bgTd ' " onmouseout="this.className=' topnavi_bottom ' " class=topnavi_bottom><A id=anc_hcrnc class=topnavi style="CURSOR: hand" href="javascript:showCrncyConverter();">CCY Converter</A></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD colSpan=2></TD></TR>
+<TR>
+<TD background=../Renderer/images/INFENG/bottomtile.gif colSpan=2>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD width="30%"><IMG style="CURSOR: hand" border=0 src="../Renderer/images/INFENG/UBSI.gif" width=275 height=23></TD>
+<TD width="70%" align=right>
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD class=titletxt>
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD>10 April, 2018</TD>
+<TD class=textfieldspcms>|</TD>
+<TD>User&nbsp;&nbsp;USERCDT29</TD>
+<TD class=textfieldspcms>|</TD>
+<TD>BC000001</TD>
+<TD class=textfieldspcms>|</TD></TR></TBODY></TABLE></TD>
+<TD class=textlabelms>Menu Shortcut:</TD>
+<TD class=textfieldms><INPUT id=menuName class=textfieldfontms onkeydown="fnGo('',event)" maxLength=8 size=9 name=menuName><INPUT type=hidden name=bgMenuUrl></TD>
+<TD class=textfieldbtnms><INPUT onclick="fnGo('Go')" id=gotomenu class=buttonms type=button value=Go name=gotomenu>&nbsp;</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<DIV id=menutree_div style="WIDTH: 263px; POSITION: absolute; LEFT: 0px; Z-INDEX: -1; TOP: 62px; VISIBILITY: hidden" border="0">
+<TABLE id=mtitle_tab style="Z-INDEX: -1; VISIBILITY: hidden" cellSpacing=0 cellPadding=1 width="100%" border=0>
+<TBODY>
+<TR>
+<TD bgColor=#9ab4cb width="57%" align=right>Menu</TD>
+<TD bgColor=#9ab4cb width="43%" align=right><IMG onclick=HIDE_menutree() style="CURSOR: hand" border=0 hspace=0 alt=Close src="../Renderer/images/INFENG/X.gif" width=15 height=14></TD></TR></TBODY></TABLE><IFRAME id=menutree style="Z-INDEX: -1; VISIBILITY: hidden" height="100%" marginHeight=0 src="javascript:false;" frameBorder=0 width="100%" marginWidth=0></IFRAME></DIV>
+<DIV id=cancelwait_div style="HEIGHT: 100px; WIDTH: 100px; POSITION: absolute; Z-INDEX: 0; VISIBILITY: hidden"><IFRAME id=cancelwait height="100%" marginHeight=0 src="javascript:false;" frameBorder=0 width="100%" name=cancelwait marginWidth=0 scrolling=no></IFRAME></DIV>
+<TABLE class=ctable cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=page-heading colSpan=5>
+<SCRIPT>jsUtil.htmlEncode('Account Opening - Top Up Deposits')</SCRIPT>
+Account Opening - Top Up Deposits&nbsp;</TD></TR>
+<TR>
+<TD class=textlabel>&nbsp;&nbsp;&nbsp; Function :</TD>
+<TD class=textfielddisplaylabel>
+<SCRIPT>jsUtil.htmlEncode('')</SCRIPT>
+</TD></TR>
+<TR>
+<TD class=textlabel>&nbsp;&nbsp;&nbsp; CIF ID :</TD>
+<TD class=textfielddisplaylabel>
+<SCRIPT>jsUtil.htmlEncode('20000000074012')</SCRIPT>
+20000000074012 -
+<SCRIPT>jsUtil.htmlEncode('CARLSON')</SCRIPT>
+ CARLSON</TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>&nbsp;&nbsp;&nbsp; Master A/c. No. :</TD>
+<TD class=textfielddisplaylabel>
+<SCRIPT>jsUtil.htmlEncode('')</SCRIPT>
+-
+<SCRIPT>jsUtil.htmlEncode('')</SCRIPT>
+ </TD></TR>
+<TR>
+<TD class=textlabel>&nbsp;&nbsp;&nbsp; CCY :</TD>
+<TD class=textfielddisplaylabel>
+<SCRIPT>jsUtil.htmlEncode('COP')</SCRIPT>
+COP</TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>&nbsp;&nbsp;&nbsp; Scheme Code :</TD>
+<TD class=textfielddisplaylabel>
+<SCRIPT>jsUtil.htmlEncode('FI3')</SCRIPT>
+FI3 -
+<SCRIPT>jsUtil.htmlEncode('CDT  T FIJA NO CAPITALIZABLE  90- 119')</SCRIPT>
+ CDT T FIJA NO CAPITALIZABLE 90- 119</TD></TR>
+<TR>
+<TD class=textlabel>&nbsp;&nbsp;&nbsp; General Ledger Subhead Code :</TD>
+<TD class=textfielddisplaylabel>
+<SCRIPT>jsUtil.htmlEncode('F1ZDX')</SCRIPT>
+F1ZDX -
+<SCRIPT>jsUtil.htmlEncode('CDT EMIT MENOS DE 6 MESES')</SCRIPT>
+ CDT EMIT MENOS DE 6 MESES</TD>
+<TD class=columnwidth>&nbsp;</TD>
+<TD class=textlabel>&nbsp;&nbsp;&nbsp; Permanent A/c. ID :</TD>
+<TD class=textfielddisplaylabel>
+<SCRIPT>jsUtil.htmlEncode('')</SCRIPT>
+</TD></TR>
+<TR>
+<TD class=textlabel>&nbsp;&nbsp;&nbsp; Pool Code :</TD>
+<TD class=textfielddisplaylabel>
+<SCRIPT>jsUtil.htmlEncode('')</SCRIPT>
+-
+<SCRIPT>jsUtil.htmlEncode('')</SCRIPT>
+ </TD></TR></TBODY></TABLE>
+<SCRIPT language=javascript>
+function cancelDlgOnBack(sMode)
+{
+	if(sMode == "V" || sMode == "I" || sMode == "X")
+	{
+		return true;
+	}
+	else
+	{
+		if((confirm(finbranchResArr.get("FAT000925"))==true))
+		{
+			return true;
+		}
+	}
+	return false;
+}
+</SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/jspjs/INFENG/102170_tuacop_tuacopTabResource_INFENG.js"></SCRIPT>
+
+<SCRIPT language=javascript src="../Renderer/javascripts/1000/10217_tabgen_link.js"></SCRIPT>
+
+<SCRIPT language=javascript>
+    var verticalTabPosition = 139;
+    var tabResourceDetails = [
+["tugen","FTT000123","N","FHK000007","2","N","1","N","G"],
+["tuint","FTT000141","N","FHK000009","2","N","2","N","I"],
+["tusch","FTT000233","N","FHK000019","2","N","2","N","S"],
+["tuflw","FTT000120","N","FHK000006","2","N","1","N","F"],
+["turen","FTT000218","N","FHK000023","2","N","1","N","W"],
+["tunominationdetails","FTT000175","Y","FHK000014","2","N","0","N","N"],
+["turelatedpartydetails","FTT000215","Y","FHK000012","2","Y","1","N","L"],
+["tumiscodes","FTT000168","Y","FHK000013","2","N","0","N","M"],
+["tupymtdet","FTT000188","N","FHK000016","1","N","0","N","P"],
+["tuotherdetails","FTT000181","Y","FHK000015","1","N","0","N","O"],
+["tudocumentdetails","FTT000091","Y","FHK000004","1","N","0","N","D"],
+["tutds","FTT000131","N","FHK000001","1","N","0","N","A"],
+["errordetails","FTT000102","N","FHK000018","1","N","1","N","R"],
+["tutran","FTT000260","Y","FHK000003","1","N","0","N","C"]
+];
+    convertTabLiterals(tabResourceDetails, jstabResArr);
+    var DynaTabGen = new DynaTabGenClass("errordetails", false);
+    DynaTabGen.writeHtmlTabString(tabResourceDetails, verticalTabPosition);
+</SCRIPT>
+
+<DIV id=hTab style="POSITION: absolute; VISIBILITY: hidden">
+<TABLE class=htable cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR>
+<TD vAlign=top>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=activetab4><SPAN class=accesskey>G</SPAN>eneral</A></TD>
+<TD class=activetab5><SPAN class=accesskey>I</SPAN>nterest &amp; Tax</A></TD>
+<TD class=activetab5><SPAN class=accesskey>S</SPAN>cheme</A></TD>
+<TD class=activetab5><SPAN class=accesskey>F</SPAN>low</A></TD>
+<TD class=activetab5>Rene<SPAN class=accesskey>w</SPAN>al&amp;Closure</A></TD>
+<TD class=activetab5><INPUT id="hdnChktunominationdetails " class=check type=checkbox name=hdnChktunominationdetails><SPAN class=accesskey>N</SPAN>omination</A></TD></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD vAlign=top>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=activetab1>E<SPAN class=accesskey>r</SPAN>rors</A></TD>
+<TD class=activetab3><INPUT id="hdnChktumiscodes " class=check type=checkbox name=hdnChktumiscodes><SPAN class=accesskey>M</SPAN>IS Codes</A></TD>
+<TD class=activetab3><SPAN class=accesskey>P</SPAN>ayment Instructions</A></TD>
+<TD class=activetab3><INPUT id="hdnChktuotherdetails " class=check type=checkbox name=hdnChktuotherdetails><SPAN class=accesskey>O</SPAN>thers</A></TD>
+<TD class=activetab3><INPUT id="hdnChktudocumentdetails " class=check type=checkbox name=hdnChktudocumentdetails><SPAN class=accesskey>D</SPAN>ocument</A></TD>
+<TD class=activetab3>Imp<SPAN class=accesskey>a</SPAN>ct On TDS</A></TD>
+<TD class=activetab3><INPUT id="hdnChkturelatedpartydetails " class=check CHECKED type=checkbox name=hdnChkturelatedpartydetails>Re<SPAN class=accesskey>l</SPAN>ated Party</A></TD>
+<TD class=activetab3><INPUT id="hdnChktutran " class=check type=checkbox name=hdnChktutran>Transa<SPAN class=accesskey>c</SPAN>tion</A></TD></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD vAlign=top>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV>
+<DIV id=sTab class=ctable align=left width="100%" border="0" cellpadding="0" cellspacing="0" <table><TR><TD valign="top">
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=activetab4>&nbsp;<A onclick=" return getStatus('N','tugen')" onmouseover=displayHand(this) ondblclick="return false;" id=tugen style="CURSOR: hand"><SPAN class=accesskey>G</SPAN>eneral</A></TD>
+<TD class=activetab5>&nbsp;<A onclick=" return getStatus('N','tuint')" onmouseover=displayHand(this) ondblclick="return false;" id=tuint style="CURSOR: hand"><SPAN class=accesskey>I</SPAN>nterest &amp; Tax</A></TD>
+<TD class=activetab5>&nbsp;<A onclick=" return getStatus('N','tusch')" onmouseover=displayHand(this) ondblclick="return false;" id=tusch style="CURSOR: hand"><SPAN class=accesskey>S</SPAN>cheme</A></TD>
+<TD class=activetab5>&nbsp;<A onclick=" return getStatus('N','tuflw')" onmouseover=displayHand(this) ondblclick="return false;" id=tuflw style="CURSOR: hand"><SPAN class=accesskey>F</SPAN>low</A></TD>
+<TD class=activetab5>&nbsp;<A onclick=" return getStatus('N','turen')" onmouseover=displayHand(this) ondblclick="return false;" id=turen style="CURSOR: hand">Rene<SPAN class=accesskey>w</SPAN>al&amp;Closure</A></TD>
+<TD class=activetab5><INPUT id="chktunominationdetails " class=check type=checkbox name=chktunominationdetails>&nbsp;<A onclick=" return getStatus('Y','tunominationdetails')" onmouseover=displayHand(this) ondblclick="return false;" id=tunominationdetails style="CURSOR: hand"><SPAN class=accesskey>N</SPAN>omination</A></TD></TD></TR></TBODY></TABLE></TD></TR><TR><TD valign="top">
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=activetab1>&nbsp;<A onclick=" return getStatus('N','errordetails')" onmouseover=displayHand(this) ondblclick="return false;" id=errordetails style="CURSOR: hand">E<SPAN class=accesskey>r</SPAN>rors</A></TD>
+<TD class=activetab3><INPUT id="chktumiscodes " class=check type=checkbox name=chktumiscodes>&nbsp;<A onclick=" return getStatus('Y','tumiscodes')" onmouseover=displayHand(this) ondblclick="return false;" id=tumiscodes style="CURSOR: hand"><SPAN class=accesskey>M</SPAN>IS Codes</A></TD>
+<TD class=activetab3>&nbsp;<A onclick=" return getStatus('N','tupymtdet')" onmouseover=displayHand(this) ondblclick="return false;" id=tupymtdet style="CURSOR: hand"><SPAN class=accesskey>P</SPAN>ayment Instructions</A></TD>
+<TD class=activetab3><INPUT id="chktuotherdetails " class=check type=checkbox name=chktuotherdetails>&nbsp;<A onclick=" return getStatus('Y','tuotherdetails')" onmouseover=displayHand(this) ondblclick="return false;" id=tuotherdetails style="CURSOR: hand"><SPAN class=accesskey>O</SPAN>thers</A></TD>
+<TD class=activetab3><INPUT id="chktudocumentdetails " class=check type=checkbox name=chktudocumentdetails>&nbsp;<A onclick=" return getStatus('Y','tudocumentdetails')" onmouseover=displayHand(this) ondblclick="return false;" id=tudocumentdetails style="CURSOR: hand"><SPAN class=accesskey>D</SPAN>ocument</A></TD>
+<TD class=activetab3>&nbsp;<A onclick=" return getStatus('N','tutds')" onmouseover=displayHand(this) ondblclick="return false;" id=tutds style="CURSOR: hand">Imp<SPAN class=accesskey>a</SPAN>ct On TDS</A></TD>
+<TD class=activetab3><INPUT id="chkturelatedpartydetails " class=check CHECKED type=checkbox name=chkturelatedpartydetails>&nbsp;<A onclick=" return getStatus('Y','turelatedpartydetails')" onmouseover=displayHand(this) ondblclick="return false;" id=turelatedpartydetails style="CURSOR: hand">Re<SPAN class=accesskey>l</SPAN>ated Party</A></TD>
+<TD class=activetab3><INPUT id="chktutran " class=check type=checkbox name=chktutran>&nbsp;<A onclick=" return getStatus('Y','tutran')" onmouseover=displayHand(this) ondblclick="return false;" id=tutran style="CURSOR: hand">Transa<SPAN class=accesskey>c</SPAN>tion</A></TD></TD></TR></TBODY></TABLE></TD></TR><TR><TD valign="top">
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR></TD></TR></TBODY></TABLE></TD></TR>
+<SCRIPT language=javascript> tfkmResource = {"CAR|FORM" : "fkmResourceOnCAR" ,"CAM|FORM" : "fkmResourceOnCAM" ,"CAP|FORM" : "fkmResourceOnCAP" ,"CAO|FORM" : "fkmResourceOnCAO" ,"CAD|FORM" : "fkmResourceOnCAD" ,"CAA|FORM" : "fkmResourceOnCAA" ,"CAL|FORM" : "fkmResourceOnCAL" ,"CAC|FORM" : "fkmResourceOnCAC" ,"CAG|FORM" : "fkmResourceOnCAG" ,"CAI|FORM" : "fkmResourceOnCAI" ,"CAS|FORM" : "fkmResourceOnCAS" ,"CAF|FORM" : "fkmResourceOnCAF" ,"CAW|FORM" : "fkmResourceOnCAW" ,"CAN|FORM" : "fkmResourceOnCAN" }; function fkmResourceOnCAR() { getStatus("N","errordetails"); } function fkmResourceOnCAM() { getStatus("Y","tumiscodes"); } function fkmResourceOnCAP() { getStatus("N","tupymtdet"); } function fkmResourceOnCAO() { getStatus("Y","tuotherdetails"); } function fkmResourceOnCAD() { getStatus("Y","tudocumentdetails"); } function fkmResourceOnCAA() { getStatus("N","tutds"); } function fkmResourceOnCAL() { getStatus("Y","turelatedpartydetails"); } function fkmResourceOnCAC() { getStatus("Y","tutran"); } function fkmResourceOnCAG() { getStatus("N","tugen"); } function fkmResourceOnCAI() { getStatus("N","tuint"); } function fkmResourceOnCAS() { getStatus("N","tusch"); } function fkmResourceOnCAF() { getStatus("N","tuflw"); } function fkmResourceOnCAW() { getStatus("N","turen"); } function fkmResourceOnCAN() { getStatus("Y","tunominationdetails"); }   function goToNextTab() { getStatus('errordetails','tumiscodes');  }   function goToPrevTab() {getStatus('errordetails','tunominationdetails');  } </SCRIPT>
+
+<SCRIPT language=javascript>
+printBlock();
+
+</SCRIPT>
+<INPUT id=actionCode type=hidden name=actionCode><INPUT type=hidden name=tabName><INPUT id=callMode type=hidden value=E name=callMode><INPUT type=hidden value=tuacop_error_details name=screenName><INPUT id=expldQryStr type=hidden name=expldQryStr><INPUT id=reqId type=hidden value=5d73ptipv726 name=reqId><INPUT id=rtId type=hidden value=z9mm2mtlqzgq name=rtId><INPUT id=reqIdChkByPass type=hidden value=null name=reqIdChkByPass><INPUT id=ContextSwitchDoneFrom type=hidden name=ContextSwitchDoneFrom><INPUT type=hidden name=submitform><INPUT id=showResPage type=hidden value=N name=showResPage><INPUT type=hidden value=errordetails name=pagename><TR><TD>
+<TABLE class=table cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD>
+<TABLE class=innertable cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD vAlign=top>
+<TABLE class=innertabletop1 cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD>
+<TABLE class=errortableborder cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=alert colSpan=3>Error Details</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TABLE>
+<TABLE class=buttonPanel width="100%" border=0>
+<TBODY>
+<TR>
+<TD><INPUT onclick="javascript:return tuacop_error_details_ONCLICK5(this,this);" id=Submit class=button maxLength=10 type=button value=Submit name=Submit hotKeyId="Submit">&nbsp;</TD></TR></TBODY></TABLE><INPUT type=hidden value=~custIntCode|FIS|FI3|~tugendet|10-04-2018|~tuintdet|4,8|~tuschdet|4,8|3|0|10-07-2018|10-04-2018|90|4,8|4.8|4.907|.004|30|FIS| name=customData> </FORM></DIV></BODY></HTML>
