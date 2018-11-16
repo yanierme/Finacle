@@ -7,7 +7,7 @@ repositories {
 buildscript {
     repositories {
         mavenLocal()
-        jcenter()
+         jcenter()
 		//maven{url"http://artifactory.bancolombia.corp/gradlew/"}
     }
     dependencies {
