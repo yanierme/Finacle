@@ -83,7 +83,7 @@
             <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="fa fa-comments-o"></i> Stories</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 16-11-2018 09:52</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 16-11-2018 13:37</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -162,12 +162,12 @@ to create a CDT pishical for screen in Finacle
                 <tr class="step-table-separator">
                     <td colspan="5"></td>
                 </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-ERROR">
                     <td width="60" class="step-icon">
                         <a name="0"/>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block">
-                                <i class="fa fa-plus-square-o imgstepSection0 success-icon"
+                                <i class="fa fa-plus-square-o imgstepSection0 error-icon"
                                    style="margin-left: 20px; float:left;  padding-right:5px"></i>
                             </a>
                     </td>
@@ -182,18 +182,66 @@ to create a CDT pishical for screen in Finacle
 
                         </div>
                     </td>
-                        <td width="100" class="SUCCESS-text">
+                        <td width="100" class="ERROR-text">
                                 <a href="180c69a5576c8b056f2907e0f92d9ce3210cd66d0297d71ea366bf7cb8a7d57e_screenshots.html#screenshots?screenshot=0">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="44b587795a6e7b2090d7a17167946cc19c0b1728f21bb650de6bc5e36045ff6a.png"
-                                         href="44b587795a6e7b2090d7a17167946cc19c0b1728f21bb650de6bc5e36045ff6a.png"
+                                    <img src="ce08a50080e1ecb385d879588587c23bc75d5a513cabe623e098db751d8c92d8.png"
+                                         href="ce08a50080e1ecb385d879588587c23bc75d5a513cabe623e098db751d8c92d8.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">16.32s</span></td>
+                    <td width="100"><span class="top-level-step">ERROR</span></td>
+                    <td width="100"><span class="top-level-step">9.65s</span></td>
                 </tr>
+                    <tr class="test-ERROR">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="4" class="error-message-cell">
+                            <div class="error-message ellipsis"
+                                 title='No such element exception: Unable to find element with css selector == *[name=&#39;loginFrame&#39;]'>
+                                <pre>No such element exception: Unable to find element with css selector == *[name=&#39;loginFrame&#39;]</pre>
+                            </div>
+                <div><!-- Stack trace -->
+                    <button type="button" class="btn btn-danger" data-toggle="modal"
+                            data-target="#stacktraceModal-1">
+                        View details
+                    </button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="stacktraceModal-1" tabindex="-1" role="dialog"
+                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="stacktraceModalLabel">
+                                    org.openqa.selenium.NoSuchElementException
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                    <h5>
+                                        <pre>Unable to find element with css selector == *[name='loginFrame']<br>For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br>Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'<br>System info: host: 'SBMEDLAPBANYM5', ip: '10.25.247.80', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'<br>Driver info: org.openqa.selenium.remote.RemoteWebDriver<br>Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:13221/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}<br>Session ID: 7a944352-b005-437c-abee-904259ed6322<br>*** Element info: {Using=name, value=loginFrame}<br>For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br>Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'<br>System info: host: 'SBMEDLAPBANYM5', ip: '10.25.247.80', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'<br>Driver info: driver.version: unknown</pre>
+                                    </h5>
+                                    com.bancolombia.soporte.finacle.screenplay.utils.Utilidades_Finacle.selecFrame(Utilidades_Finacle.java
+                                    :19) <br>
+                                    com.bancolombia.soporte.finacle.screenplay.stepdefinitions.Open_Account_Finacle_For_Screen.thatUserIsLoggedInFinacleWithYour(Open_Account_Finacle_For_Screen.java
+                                    :42) <br>
+                                    ✽.that user is logged in finacle with your(src/test/resources/com/bancolombia/soporte/finacle/features/open_cdt_phisical_for_screen.feature
+                                    :8) <br>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                        </td>
+                    </tr>
                     <tr>
                     <td colspan="5">
                     <table id="stepSection0" style="display:none; width:100%">
@@ -215,14 +263,14 @@ to create a CDT pishical for screen in Finacle
                         <td width="100" class="SUCCESS-text">
                                 <a href="180c69a5576c8b056f2907e0f92d9ce3210cd66d0297d71ea366bf7cb8a7d57e_screenshots.html#screenshots?screenshot=1">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="60db4f11801c33370e8d05dcd66c544571f802698e21ca6c08404d7a6651ad08.png"
-                                         href="60db4f11801c33370e8d05dcd66c544571f802698e21ca6c08404d7a6651ad08.png"
+                                    <img src="ce08a50080e1ecb385d879588587c23bc75d5a513cabe623e098db751d8c92d8.png"
+                                         href="ce08a50080e1ecb385d879588587c23bc75d5a513cabe623e098db751d8c92d8.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">7.27s</span></td>
+                    <td width="100"><span class="nested-step">6.24s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -241,833 +289,58 @@ to create a CDT pishical for screen in Finacle
                         <td width="100" class="SUCCESS-text">
                                 <a href="180c69a5576c8b056f2907e0f92d9ce3210cd66d0297d71ea366bf7cb8a7d57e_screenshots.html#screenshots?screenshot=2">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="60db4f11801c33370e8d05dcd66c544571f802698e21ca6c08404d7a6651ad08.png"
-                                         href="60db4f11801c33370e8d05dcd66c544571f802698e21ca6c08404d7a6651ad08.png"
+                                    <img src="ce08a50080e1ecb385d879588587c23bc75d5a513cabe623e098db751d8c92d8.png"
+                                         href="ce08a50080e1ecb385d879588587c23bc75d5a513cabe623e098db751d8c92d8.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">7.16s</span></td>
+                    <td width="100"><span class="nested-group-step">5.68s</span></td>
                 </tr>
 
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Usuario enters 'usercdt17' into User_Id
-                            </span>
-
-                        </div>
-                    </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="180c69a5576c8b056f2907e0f92d9ce3210cd66d0297d71ea366bf7cb8a7d57e_screenshots.html#screenshots?screenshot=3">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="2988ae9c793a38d83129133af4825ed2fa4e0f17ae8894165ad49c97721f65e5.png"
-                                         href="2988ae9c793a38d83129133af4825ed2fa4e0f17ae8894165ad49c97721f65e5.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0.81s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Usuario enters 'Amb13nt32017*' into password
-                            </span>
-
-                        </div>
-                    </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="180c69a5576c8b056f2907e0f92d9ce3210cd66d0297d71ea366bf7cb8a7d57e_screenshots.html#screenshots?screenshot=5">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="f720994fb8c02a416877cb0bcf85bfbf5eff28426f85955c47a94c3995fd556e.png"
-                                         href="f720994fb8c02a416877cb0bcf85bfbf5eff28426f85955c47a94c3995fd556e.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0.83s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Usuario clicks on submit
-                            </span>
-
-                        </div>
-                    </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="180c69a5576c8b056f2907e0f92d9ce3210cd66d0297d71ea366bf7cb8a7d57e_screenshots.html#screenshots?screenshot=7">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="cb44d491c820c798fa9cd8eda035f7c82a58706c7e94757df3951dd61c3dc4a5.png"
-                                         href="cb44d491c820c798fa9cd8eda035f7c82a58706c7e94757df3951dd61c3dc4a5.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">2.52s</span></td>
-                </tr>
 
                     </table>
                     </td>
                     <tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-SKIPPED">
                     <td width="60" class="step-icon">
                         <a name="1"/>
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
-                               style="display:block">
-                                <i class="fa fa-plus-square-o imgstepSection1 success-icon"
-                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
-                            </a>
+                            <span style="margin-left: 20px; margin-right: 5px;"
+                                  class="top-level-icon"><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
-                               style="display:block;">
                             <span class="top-level-step">
                                 When he wants to open a CDT in finacle in the BC000001
                             </span>
-                            </a>
 
                         </div>
                     </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="180c69a5576c8b056f2907e0f92d9ce3210cd66d0297d71ea366bf7cb8a7d57e_screenshots.html#screenshots?screenshot=9">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="b38fb67bdc467c98145af61cd9fc03d054ad2287e651627307db499c01ac6d9b.png"
-                                         href="b38fb67bdc467c98145af61cd9fc03d054ad2287e651627307db499c01ac6d9b.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
+                        <td width="100" class="SKIPPED-text">
                         </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">13.36s</span></td>
+                    <td width="100"><span class="top-level-step">SKIPPED</span></td>
+                    <td width="100"><span class="top-level-step">0s</span></td>
                 </tr>
-                    <tr>
-                    <td colspan="5">
-                    <table id="stepSection1" style="display:none; width:100%">
-
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Usuario enters 'BC000001' into sucursal
-                            </span>
-
-                        </div>
-                    </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="180c69a5576c8b056f2907e0f92d9ce3210cd66d0297d71ea366bf7cb8a7d57e_screenshots.html#screenshots?screenshot=10">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="d5ed9a0fa124433e984abd6ae20b99041a431772f5898580e4dc7931b5979e33.png"
-                                         href="d5ed9a0fa124433e984abd6ae20b99041a431772f5898580e4dc7931b5979e33.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0.83s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Usuario clicks on sol_button
-                            </span>
-
-                        </div>
-                    </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="180c69a5576c8b056f2907e0f92d9ce3210cd66d0297d71ea366bf7cb8a7d57e_screenshots.html#screenshots?screenshot=12">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="b38fb67bdc467c98145af61cd9fc03d054ad2287e651627307db499c01ac6d9b.png"
-                                         href="b38fb67bdc467c98145af61cd9fc03d054ad2287e651627307db499c01ac6d9b.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">1.52s</span></td>
-                </tr>
-
-                    </table>
-                    </td>
-                    <tr>
-                <tr class="test-ERROR">
+                <tr class="test-SKIPPED">
                     <td width="60" class="step-icon">
                         <a name="2"/>
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
-                               style="display:block">
-                                <i class="fa fa-plus-square-o imgstepSection2 error-icon"
-                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
-                            </a>
+                            <span style="margin-left: 20px; margin-right: 5px;"
+                                  class="top-level-icon"><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
-                               style="display:block;">
                             <span class="top-level-step">
                                 And the User enters the next detais<br><table class='embedded'><thead><th>sol_id</th><th>cif_id</th><th>scheme_Code</th><th>opening_date</th><th>stament</th><th>initial_Amt</th><th>tenor</th><th>rate</th><th>frecuency</th></thead><tbody><tr><td>04</td><td>20000000074012</td><td>FI3</td><td>09-04-2018</td><td>N</td><td>40000000</td><td>90</td><td>4,8</td><td>30</td></tr><tr><td>04</td><td>20000000074012</td><td>FI3</td><td>09-04-2018</td><td>N</td><td>40000000</td><td>90</td><td>4,8</td><td>30</td></tr></tbody></table>
                             </span>
-                            </a>
 
                         </div>
                     </td>
-                        <td width="100" class="ERROR-text">
-                                <a href="180c69a5576c8b056f2907e0f92d9ce3210cd66d0297d71ea366bf7cb8a7d57e_screenshots.html#screenshots?screenshot=14">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="31500968ca3be4297c0512a1e46f069d6b3ccce37824055eeca8c7071155cf3a.png"
-                                         href="31500968ca3be4297c0512a1e46f069d6b3ccce37824055eeca8c7071155cf3a.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
+                        <td width="100" class="SKIPPED-text">
                         </td>
-                    <td width="100"><span class="top-level-step">ERROR</span></td>
-                    <td width="100"><span class="top-level-step">45.01s</span></td>
+                    <td width="100"><span class="top-level-step">SKIPPED</span></td>
+                    <td width="100"><span class="top-level-step">0s</span></td>
                 </tr>
-                    <tr class="test-ERROR">
-                        <td width="40">&nbsp</td>
-                        <td width="%" colspan="4" class="error-message-cell">
-                            <div class="error-message ellipsis"
-                                 title='No such element exception: Expected condition failed: waiting for By.xpath: //table[@class=&#39;resultpage&#39;]/tbody/tr/td[2]/font to be displayed (tried for 5 second(s) with 100 milliseconds interval)Build info: version: &#39;3.12.0&#39;, revision: &#39;7c6e0b3&#39;, time: &#39;2018-05-08T14:04:26.12Z&#39;System info: host: &#39;SBMEDLAPBANYM5&#39;, ip: &#39;10.25.153.154&#39;, os.name: &#39;Windows 10&#39;, os.arch: &#39;amd64&#39;, os.version: &#39;10.0&#39;, java.version: &#39;1.8.0_191&#39;Driver info: driver.version: unknown'>
-                                <pre>No such element exception: Expected condition failed: waiting for By.xpath: //table[@class=&#39;resultpage&#39;]/tbody/tr/td[2]/font to be displayed (tried for 5 second(s) with 100 milliseconds interval)Build info: version: &#39;3.12.0&#39;,...</pre>
-                            </div>
-                <div><!-- Stack trace -->
-                    <button type="button" class="btn btn-danger" data-toggle="modal"
-                            data-target="#stacktraceModal-10">
-                        View details
-                    </button>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="stacktraceModal-10" tabindex="-1" role="dialog"
-                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                </button>
-                                <h4 class="modal-title" id="stacktraceModalLabel">
-                                    org.openqa.selenium.NoSuchElementException
-                                </h4>
-                            </div>
-                            <div class="modal-body">
-                                    <h5>
-                                        <pre>Expected condition failed: waiting for By.xpath: //table[@class='resultpage']/tbody/tr/td[2]/font to be displayed (tried for 5 second(s) with 100 milliseconds interval)<br>Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'<br>System info: host: 'SBMEDLAPBANYM5', ip: '10.25.153.154', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'<br>Driver info: driver.version: unknown</pre>
-                                    </h5>
-                                    com.bancolombia.soporte.finacle.screenplay.tasks.Account_Number.performAs(Account_Number.java
-                                    :22) <br>
-                                    com.bancolombia.soporte.finacle.screenplay.stepdefinitions.Open_Account_Finacle_For_Screen.theUserEntersTheNextDetais(Open_Account_Finacle_For_Screen.java
-                                    :69) <br>
-                                    cucumber.runner.Runner.runPickle(Runner.java
-                                    :80) <br>
-                                    org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java
-                                    :89) <br>
-                                    org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java
-                                    :41) <br>
-                                    org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java
-                                    :541) <br>
-                                    org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java
-                                    :763) <br>
-                                    org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java
-                                    :463) <br>
-                                    org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java
-                                    :209) <br>
-                            </div>
-
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal"
-                                            aria-label="Close"><span aria-hidden="true">&times;</span>
-                                    </button>
-                                    <h4 class="modal-title" id="stacktraceModalLabel">
-                                        Caused by: org.openqa.selenium.TimeoutException
-                                    </h4>
-                                </div>
-                                <div class="modal-body">
-                                        <pre>Expected condition failed: waiting for By.xpath: //table[@class='resultpage']/tbody/tr/td[2]/font to be displayed (tried for 5 second(s) with 100 milliseconds interval)<br>Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'<br>System info: host: 'SBMEDLAPBANYM5', ip: '10.25.153.154', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'<br>Driver info: driver.version: unknown</pre>
-                                    <pre>
-                                        com.bancolombia.soporte.finacle.screenplay.tasks.Account_Number.performAs(Account_Number.java :22) <br>
-                                        com.bancolombia.soporte.finacle.screenplay.stepdefinitions.Open_Account_Finacle_For_Screen.theUserEntersTheNextDetais(Open_Account_Finacle_For_Screen.java :69) <br>
-                                        cucumber.runner.Runner.runPickle(Runner.java :80) <br>
-                                        org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java :89) <br>
-                                        org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java :41) <br>
-                                        org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :541) <br>
-                                        org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :763) <br>
-                                        org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java :463) <br>
-                                        org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java :209) <br>
-                                    </pre>
-                                </div>
-
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                        </td>
-                    </tr>
-                    <tr>
-                    <td colspan="5">
-                    <table id="stepSection2" style="display:none; width:100%">
-
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Usuario enters '20000000074012' into cif_id
-                            </span>
-
-                        </div>
-                    </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="180c69a5576c8b056f2907e0f92d9ce3210cd66d0297d71ea366bf7cb8a7d57e_screenshots.html#screenshots?screenshot=15">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="58f5ced2f8a810f3c5e7874814959d1c0fd949f61e77bbabc9d068b5b5010173.png"
-                                         href="58f5ced2f8a810f3c5e7874814959d1c0fd949f61e77bbabc9d068b5b5010173.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">1.82s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Usuario enters 'FI3' into scheme_code
-                            </span>
-
-                        </div>
-                    </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="180c69a5576c8b056f2907e0f92d9ce3210cd66d0297d71ea366bf7cb8a7d57e_screenshots.html#screenshots?screenshot=17">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="3fadfaa892fb26fa96672cb36401fdf07742af19f66a07735f1782f1ad1116f8.png"
-                                         href="3fadfaa892fb26fa96672cb36401fdf07742af19f66a07735f1782f1ad1116f8.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">2.4s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Usuario clicks on ir
-                            </span>
-
-                        </div>
-                    </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="180c69a5576c8b056f2907e0f92d9ce3210cd66d0297d71ea366bf7cb8a7d57e_screenshots.html#screenshots?screenshot=19">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="8fd4c15bd6fca809053955224dff443f26d3be0bc3b1fd77bfc64edb99f1dd23.png"
-                                         href="8fd4c15bd6fca809053955224dff443f26d3be0bc3b1fd77bfc64edb99f1dd23.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">1.75s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Usuario clicks on general
-                            </span>
-
-                        </div>
-                    </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="180c69a5576c8b056f2907e0f92d9ce3210cd66d0297d71ea366bf7cb8a7d57e_screenshots.html#screenshots?screenshot=21">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="61f2d1ab759a0eb7a128c27e173064ca0d628a7b40de3b1b94a6d9b2dfb19a0b.png"
-                                         href="61f2d1ab759a0eb7a128c27e173064ca0d628a7b40de3b1b94a6d9b2dfb19a0b.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">1.29s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Usuario enters '09-04-2018' into opening_date
-                            </span>
-
-                        </div>
-                    </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="180c69a5576c8b056f2907e0f92d9ce3210cd66d0297d71ea366bf7cb8a7d57e_screenshots.html#screenshots?screenshot=23">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="655d42433166572357bb146c003686c93d81ba25a6f5c8ac123a8c2469e9588b.png"
-                                         href="655d42433166572357bb146c003686c93d81ba25a6f5c8ac123a8c2469e9588b.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0.94s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Usuario selects N in Statement
-                            </span>
-
-                        </div>
-                    </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="180c69a5576c8b056f2907e0f92d9ce3210cd66d0297d71ea366bf7cb8a7d57e_screenshots.html#screenshots?screenshot=25">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="a998727c976ec3b6cca50b7a27b51e8a6e805f12d9ee54427705d64371ef4e63.png"
-                                         href="a998727c976ec3b6cca50b7a27b51e8a6e805f12d9ee54427705d64371ef4e63.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0.54s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Usuario clicks on Interest and tax
-                            </span>
-
-                        </div>
-                    </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="180c69a5576c8b056f2907e0f92d9ce3210cd66d0297d71ea366bf7cb8a7d57e_screenshots.html#screenshots?screenshot=27">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="2ee8a084f12c392fc796bde72a004962d4eb3c4dd092598e1cf4748c6258d1ad.png"
-                                         href="2ee8a084f12c392fc796bde72a004962d4eb3c4dd092598e1cf4748c6258d1ad.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">1.7s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Usuario clicks on Withholding Tax Borne By
-                            </span>
-
-                        </div>
-                    </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="180c69a5576c8b056f2907e0f92d9ce3210cd66d0297d71ea366bf7cb8a7d57e_screenshots.html#screenshots?screenshot=29">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="54fb8885325c0c24a83d27f8b22d4cc81b8b42ac3af38a9d6460e24a67c0c1ac.png"
-                                         href="54fb8885325c0c24a83d27f8b22d4cc81b8b42ac3af38a9d6460e24a67c0c1ac.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">1.47s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Usuario clicks on scheme
-                            </span>
-
-                        </div>
-                    </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="180c69a5576c8b056f2907e0f92d9ce3210cd66d0297d71ea366bf7cb8a7d57e_screenshots.html#screenshots?screenshot=31">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="b5433a689e1cb057699869dccf5adac7c3f9f8611a718fdd5395396f20e944b6.png"
-                                         href="b5433a689e1cb057699869dccf5adac7c3f9f8611a718fdd5395396f20e944b6.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">2.5s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Usuario enters '40000000' into Initial Deposit
-                            </span>
-
-                        </div>
-                    </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="180c69a5576c8b056f2907e0f92d9ce3210cd66d0297d71ea366bf7cb8a7d57e_screenshots.html#screenshots?screenshot=33">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="afb60aa2fac5f5d09d72bc1c5aedcf67f3cb25a6ccc12674338287f97da169cd.png"
-                                         href="afb60aa2fac5f5d09d72bc1c5aedcf67f3cb25a6ccc12674338287f97da169cd.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0.92s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Usuario enters '90' into Tenure in Days
-                            </span>
-
-                        </div>
-                    </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="180c69a5576c8b056f2907e0f92d9ce3210cd66d0297d71ea366bf7cb8a7d57e_screenshots.html#screenshots?screenshot=35">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="32f06612d46854722362978e1522ea8d1f78ca6f4fb13b66bbafa415e7bbcc1c.png"
-                                         href="32f06612d46854722362978e1522ea8d1f78ca6f4fb13b66bbafa415e7bbcc1c.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">1.04s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Usuario enters '4,8' into Spread Interest Rate
-                            </span>
-
-                        </div>
-                    </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="180c69a5576c8b056f2907e0f92d9ce3210cd66d0297d71ea366bf7cb8a7d57e_screenshots.html#screenshots?screenshot=37">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="35ee0156a895f2656ae2f7467b486002081f0c80089b1d6ab0c615adc1ed8dd5.png"
-                                         href="35ee0156a895f2656ae2f7467b486002081f0c80089b1d6ab0c615adc1ed8dd5.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0.99s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Usuario enters '30' into Payout Frequency (Days)
-                            </span>
-
-                        </div>
-                    </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="180c69a5576c8b056f2907e0f92d9ce3210cd66d0297d71ea366bf7cb8a7d57e_screenshots.html#screenshots?screenshot=39">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="b481dad255d320a4a587e147b092e585f440257b5fb27349e218decbad3754ea.png"
-                                         href="b481dad255d320a4a587e147b092e585f440257b5fb27349e218decbad3754ea.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0.95s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Usuario clicks on general
-                            </span>
-
-                        </div>
-                    </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="180c69a5576c8b056f2907e0f92d9ce3210cd66d0297d71ea366bf7cb8a7d57e_screenshots.html#screenshots?screenshot=41">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="a961e7793d3c63ea5668307f6bcf12f3848def56f6974f14573af0d07c102349.png"
-                                         href="a961e7793d3c63ea5668307f6bcf12f3848def56f6974f14573af0d07c102349.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">1.49s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Usuario clicks on Related
-                            </span>
-
-                        </div>
-                    </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="180c69a5576c8b056f2907e0f92d9ce3210cd66d0297d71ea366bf7cb8a7d57e_screenshots.html#screenshots?screenshot=43">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="42e7c2097f645f912baaf8d3782b047c91b5ca1f77cbfa70c1b2cfe3cd52c6e5.png"
-                                         href="42e7c2097f645f912baaf8d3782b047c91b5ca1f77cbfa70c1b2cfe3cd52c6e5.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">1.69s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Usuario clicks on Renewal
-                            </span>
-
-                        </div>
-                    </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="180c69a5576c8b056f2907e0f92d9ce3210cd66d0297d71ea366bf7cb8a7d57e_screenshots.html#screenshots?screenshot=45">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="a41e8a4b555d92443c2075fed21699d0843c547f17ca737b4901544a7734d49f.png"
-                                         href="a41e8a4b555d92443c2075fed21699d0843c547f17ca737b4901544a7734d49f.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">1.67s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Usuario clicks on Interest and tax
-                            </span>
-
-                        </div>
-                    </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="180c69a5576c8b056f2907e0f92d9ce3210cd66d0297d71ea366bf7cb8a7d57e_screenshots.html#screenshots?screenshot=47">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="5a6c3c27ca21bf9f18bec53c109c936708dcc146e89b896345e57c3df0640a57.png"
-                                         href="5a6c3c27ca21bf9f18bec53c109c936708dcc146e89b896345e57c3df0640a57.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">2.13s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Usuario clicks on scheme
-                            </span>
-
-                        </div>
-                    </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="180c69a5576c8b056f2907e0f92d9ce3210cd66d0297d71ea366bf7cb8a7d57e_screenshots.html#screenshots?screenshot=49">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="fd22f40eccee495c7410cc8d935b6272e4a583f7036752642d6f64f4911a5cd2.png"
-                                         href="fd22f40eccee495c7410cc8d935b6272e4a583f7036752642d6f64f4911a5cd2.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">1.72s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Usuario clicks on general
-                            </span>
-
-                        </div>
-                    </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="180c69a5576c8b056f2907e0f92d9ce3210cd66d0297d71ea366bf7cb8a7d57e_screenshots.html#screenshots?screenshot=51">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="3c1f7e81ca9aaa751e2bdf2e3f305e48eddb4a9940aebe68d9961bd31182c27f.png"
-                                         href="3c1f7e81ca9aaa751e2bdf2e3f305e48eddb4a9940aebe68d9961bd31182c27f.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">2.15s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Usuario clicks on Submit account
-                            </span>
-
-                        </div>
-                    </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="180c69a5576c8b056f2907e0f92d9ce3210cd66d0297d71ea366bf7cb8a7d57e_screenshots.html#screenshots?screenshot=53">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="31500968ca3be4297c0512a1e46f069d6b3ccce37824055eeca8c7071155cf3a.png"
-                                         href="31500968ca3be4297c0512a1e46f069d6b3ccce37824055eeca8c7071155cf3a.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">2.09s</span></td>
-                </tr>
-
-                    </table>
-                    </td>
-                    <tr>
                 <tr class="test-SKIPPED">
                     <td width="60" class="step-icon">
                         <a name="3"/>
@@ -1090,7 +363,7 @@ to create a CDT pishical for screen in Finacle
                 <tr class="test-ERROR">
                     <td colspan="3"></td>
                     <td width="100"><span class="top-level-step"><em>ERROR</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>75.26s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>10.5s</em></span></td>
                 </tr>
 
             </table>

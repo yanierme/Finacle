@@ -1,17 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Open Account phisical for screen" skipped="0" tests="1" time="75.26" timestamp="2018-11-16 09:52:33"><testcase name="open account CDT in Finacle for screen"><error message="Expected condition failed: waiting for By.xpath: //table[@class='resultpage']/tbody/tr/td[2]/font to be displayed (tried for 5 second(s) with 100 milliseconds interval)&#10;Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'&#10;System info: host: 'SBMEDLAPBANYM5', ip: '10.25.153.154', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">Expected condition failed: waiting for By.xpath: //table[@class='resultpage']/tbody/tr/td[2]/font to be displayed (tried for 5 second(s) with 100 milliseconds interval)
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Open Account phisical for screen" skipped="0" tests="1" time="10.5" timestamp="2018-11-16 01:37:07"><testcase name="open account CDT in Finacle for screen"><error message="Unable to find element with css selector == *[name='loginFrame']&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'&#10;System info: host: 'SBMEDLAPBANYM5', ip: '10.25.247.80', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:13221/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}&#10;Session ID: 7a944352-b005-437c-abee-904259ed6322&#10;*** Element info: {Using=name, value=loginFrame}&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'&#10;System info: host: 'SBMEDLAPBANYM5', ip: '10.25.247.80', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">Unable to find element with css selector == *[name='loginFrame']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'SBMEDLAPBANYM5', ip: '10.25.153.154', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: driver.version: unknown</error><system-err>Expected condition failed: waiting for By.xpath: //table[@class='resultpage']/tbody/tr/td[2]/font to be displayed (tried for 5 second(s) with 100 milliseconds interval)
+System info: host: 'SBMEDLAPBANYM5', ip: '10.25.247.80', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:13221/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 7a944352-b005-437c-abee-904259ed6322
+*** Element info: {Using=name, value=loginFrame}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'SBMEDLAPBANYM5', ip: '10.25.153.154', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'SBMEDLAPBANYM5', ip: '10.25.247.80', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: unknown</error><system-err>Unable to find element with css selector == *[name='loginFrame']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'SBMEDLAPBANYM5', ip: '10.25.247.80', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:13221/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 7a944352-b005-437c-abee-904259ed6322
+*** Element info: {Using=name, value=loginFrame}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'SBMEDLAPBANYM5', ip: '10.25.247.80', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: driver.version: unknown&#13;
-com.bancolombia.soporte.finacle.screenplay.tasks.Account_Number.performAs(Account_Number.java:22)&#13;
-com.bancolombia.soporte.finacle.screenplay.stepdefinitions.Open_Account_Finacle_For_Screen.theUserEntersTheNextDetais(Open_Account_Finacle_For_Screen.java:69)&#13;
-cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
-org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
-org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
-org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)&#13;
-org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)&#13;
-org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)&#13;
-org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)&#13;
+com.bancolombia.soporte.finacle.screenplay.utils.Utilidades_Finacle.selecFrame(Utilidades_Finacle.java:19)&#13;
+com.bancolombia.soporte.finacle.screenplay.stepdefinitions.Open_Account_Finacle_For_Screen.thatUserIsLoggedInFinacleWithYour(Open_Account_Finacle_For_Screen.java:42)&#13;
+✽.that user is logged in finacle with your(src/test/resources/com/bancolombia/soporte/finacle/features/open_cdt_phisical_for_screen.feature:8)&#13;
 </system-err></testcase></testsuite>
