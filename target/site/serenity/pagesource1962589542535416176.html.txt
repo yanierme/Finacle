@@ -1,0 +1,59 @@
+<HTML><HEAD>
+<META content=text/html;charset=utf-8 http-equiv=Content-Type>
+<META content=no-cache http-equiv=PRAGMA>
+<META content=no-cache,no-store http-equiv=Cache-Control>
+<META content=-1 http-equiv=Expires>
+<SCRIPT language=JavaScript>
+var dom_to_set = 'bancolombia.corp';
+var prodEnv = 'Y'; 
+var SSO = (dom_to_set != "") && true;
+if (SSO) {
+	document.domain = dom_to_set;
+}
+if(prodEnv == 'Y')
+{
+	document.oncontextmenu = function ()
+	{
+		return false;
+	}
+}
+</SCRIPT>
+
+<SCRIPT language=javascript src="Renderer/javascripts/10217_cbe_core.js"></SCRIPT>
+
+<SCRIPT language=javascript src="Renderer/javascripts/1021710870_login_common_functions.js"></SCRIPT>
+
+<SCRIPT language=javascript src="Renderer/javascripts/1021710870_index.js"></SCRIPT>
+</HEAD>
+<BODY onresize=javascript:adjustDivs() onfocus=javascript:setFinAppFocus(); bgColor=#ffffff>
+<SCRIPT language=javascript>
+window.history.forward(1);
+var coreAppId = this.name;
+var langCode;
+
+/*Tablet Login*/
+/*var isTablet = (navigator.userAgent.match(/Android|iPhone/i)==null)?false:true;*/
+/*var isTablet = (navigator.userAgent.indexOf("MSIE") != -1)?false:true;*/
+var isTablet=((navigator.userAgent.indexOf("MSIE") != -1) || (navigator.userAgent.indexOf('Trident') != -1))?false:true;
+
+
+if(getLoginFrame != undefined && getLoginFrame() != undefined)
+{
+        langCode = getLoginFrame().getLangCode();
+}
+var finContextPath = "/finbranch";
+var rtId = "184fetkku9hfz";
+var callType = "null";
+
+printDiv(finConst.DEVICEFRAME, "dummy.jsp?rtId=" + "184fetkku9hfz", "hidden");
+printDiv(finConst.FINFRAME, "fincore.jsp?" + "LANGCODE" + "=" + langCode + "&rtId=" + "184fetkku9hfz", "visible");
+
+if(!isTablet)
+	printApplet(finConst.COREAPPLET, "applet/coreapplet.jsp?rtId=" + "184fetkku9hfz");
+printDiv(finConst.GLOBALJSFRAME, "global.jsp?rtId=" + "184fetkku9hfz", "hidden");
+</SCRIPT>
+
+<DIV id=DEVICEFRAME_div class=clsWin style="HEIGHT: 588px; WIDTH: 1358px; BACKGROUND: #ffffff; POSITION: absolute; COLOR: #000000; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; LEFT: 0px; MARGIN: 0px; Z-INDEX: 1; TOP: 0px; PADDING-RIGHT: 0px; VISIBILITY: hidden"><IFRAME id=DEVICEFRAME height="100%" border=0 src="dummy.jsp?rtId=184fetkku9hfz" frameBorder=0 width="100%" name=DEVICEFRAME></IFRAME></DIV>
+<DIV id=FINW_div class=clsWin style="HEIGHT: 588px; WIDTH: 1358px; BACKGROUND: #ffffff; POSITION: absolute; COLOR: #000000; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; LEFT: 0px; MARGIN: 0px; Z-INDEX: 1; TOP: 0px; PADDING-RIGHT: 0px; VISIBILITY: visible"><IFRAME id=FINW height="100%" border=0 src="fincore.jsp?LANGCODE=INFENG&amp;rtId=184fetkku9hfz" frameBorder=0 width="100%" name=FINW></IFRAME></DIV>
+<DIV id=coreapplet_div class=clsWin style="HEIGHT: 0px; WIDTH: 0px; BACKGROUND: #ffffff; POSITION: absolute; COLOR: #000000; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; LEFT: 0px; MARGIN: 0px; Z-INDEX: 1; TOP: 0px; PADDING-RIGHT: 0px; VISIBILITY: visible"><IFRAME id=coreapplet height="0%" border=0 src="applet/coreapplet.jsp?rtId=184fetkku9hfz" frameBorder=0 width="0%" name=coreapplet></IFRAME></DIV>
+<DIV id=GLOBALJSFRAME_div class=clsWin style="HEIGHT: 588px; WIDTH: 1358px; BACKGROUND: #ffffff; POSITION: absolute; COLOR: #000000; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; LEFT: 0px; MARGIN: 0px; Z-INDEX: 1; TOP: 0px; PADDING-RIGHT: 0px; VISIBILITY: hidden"><IFRAME id=GLOBALJSFRAME height="100%" border=0 src="global.jsp?rtId=184fetkku9hfz" frameBorder=0 width="100%" name=GLOBALJSFRAME></IFRAME></DIV></BODY></HTML>

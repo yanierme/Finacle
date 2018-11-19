@@ -6,7 +6,6 @@ import java.util.Map;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.server.handler.ClearElement;
 
 import com.bancolombia.soporte.finacle.screenplay.userinterfaces.Interface_Login_Finacle_Page;
 
@@ -39,7 +38,7 @@ public class Login_On_Finacle_Page implements Task {
 
 		while (bValue == true) {
 			
-		
+		 
 			actor.attemptsTo(Enter.theValue(password).into(Interface_Login_Finacle_Page.PASSWORD),
 					Click.on(Interface_Login_Finacle_Page.SUBMIT));
  
@@ -51,13 +50,12 @@ public class Login_On_Finacle_Page implements Task {
 						.sendKeys(Keys.ENTER);
 				try {
 					
-					Thread.sleep(1000);
+					Thread.sleep(500);
 				} catch (InterruptedException e) {
 					
 					e.printStackTrace();
 				} 
 				
-				actor.attemptsTo();
 				BrowseTheWeb.as(actor).getDriver().switchTo().alert().accept();
 				bValue = true;
 

@@ -25,7 +25,7 @@ public class Go_Account_Opening implements Task {
 		actor.attemptsTo(Enter.theValue(cifId).into(Interface_Account_Opening.CIF_ID));
 		actor.attemptsTo(Enter.theValue(schemeCode).into(Interface_Account_Opening.SCHEME_CODE));
 		actor.attemptsTo(Click.on(Interface_Account_Opening.IR));
-		
+		 
 	}
 
 	public static Go_Account_Opening solAccountOpening(List<Map<String, String>> dataAccountCDT, int i) {

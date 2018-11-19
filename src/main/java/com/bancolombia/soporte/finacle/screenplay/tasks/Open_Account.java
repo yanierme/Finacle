@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.bancolombia.soporte.finacle.screenplay.userinterfaces.Interface_Account_Opening_CDT;
+import com.bancolombia.soporte.finacle.screenplay.userinterfaces.Interface_MenuInitial_CoreFinacle;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -12,7 +13,7 @@ import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.SelectFromOptions;
 
 public class Open_Account implements Task {
-	
+
 	private String openingDate;
 	private String stament;
 	private String initialDeposit;
@@ -21,14 +22,14 @@ public class Open_Account implements Task {
 	private String frequency;
 
 	public Open_Account(List<Map<String, String>> dataAccountCDT, int i) {
-		 
+
 		this.openingDate = dataAccountCDT.get(i).get("opening_date");
 		this.stament = dataAccountCDT.get(i).get("stament");
 		this.initialDeposit = dataAccountCDT.get(i).get("initial_Amt");
 		this.ternureDay = dataAccountCDT.get(i).get("tenor");
 		this.interestRate = dataAccountCDT.get(i).get("rate");
 		this.frequency = dataAccountCDT.get(i).get("frecuency");
-		
+
 	}
 
 	@Override
@@ -43,8 +44,10 @@ public class Open_Account implements Task {
 				Enter.theValue(initialDeposit).into(Interface_Account_Opening_CDT.INITIAL_DEPOSIT),
 				Enter.theValue(ternureDay).into(Interface_Account_Opening_CDT.TENURE_DAYS),
 				Enter.theValue(interestRate).into(Interface_Account_Opening_CDT.INTEREST_RATE),
-				Enter.theValue(frequency).into(Interface_Account_Opening_CDT.FREQUENCY),
-				Click.on(Interface_Account_Opening_CDT.FLOWS), Click.on(Interface_Account_Opening_CDT.RELATED),
+				Enter.theValue(frequency).into(Interface_Account_Opening_CDT.FREQUENCY));
+ 
+		Interface_Account_Opening_CDT.FLOWS.resolveFor(actor).waitUntilVisible();
+		actor.attemptsTo(Click.on(Interface_Account_Opening_CDT.FLOWS), Click.on(Interface_Account_Opening_CDT.RELATED),
 				Click.on(Interface_Account_Opening_CDT.RENEWAL_AND_CLOSURE),
 				Click.on(Interface_Account_Opening_CDT.INTEREST_AND_TAX),
 				Click.on(Interface_Account_Opening_CDT.SCHEME), Click.on(Interface_Account_Opening_CDT.FLOWS),
