@@ -48,7 +48,6 @@ public class OpenCdtPhisicalForScreenStepDefinitons {
 	public void heWantsToOpenACDTInFinacleInThe(String solID) throws InterruptedException {
 
 		utilidades.selectFinacleCore(hisBrowser, "FINCORE");
-		utilidades.clicOnMessage(hisBrowser);
 		utilidades.selecFrame(hisBrowser, "CoreServer");
 		utilidades.GoToMenu(hisBrowser, "HCCS");
 		usuario.attemptsTo(Go_Sol_ID.solInPage(solID));

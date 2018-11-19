@@ -1,0 +1,106 @@
+<HTML><HEAD>
+<META content=no-cache http-equiv=PRAGMA>
+<META content=no-cache,no-store http-equiv=Cache-Control>
+<META content=-1 http-equiv=Expires>
+<META content=text/html;charset=utf-8 http-equiv=Content-Type>
+<SCRIPT language=JavaScript>
+var dom_to_set = 'bancolombia.corp';
+var prodEnv = 'Y'; 
+var SSO = (dom_to_set != "") && true;
+if (SSO) {
+	document.domain = dom_to_set;
+}
+if(prodEnv == 'Y')
+{
+	document.oncontextmenu = function ()
+	{
+		return false;
+	}
+}
+</SCRIPT>
+
+<SCRIPT language=javascript src="LoginResourceRenderer/javascripts/102170_login_finbranchResource_INFENG.js"></SCRIPT>
+<LINK title="Finacle Stylesheet" rel=STYLESHEET type=text/css href="Renderer/stylesheets/10217_services.css">
+<SCRIPT language=javascript src="Renderer/javascripts/1021710870_login_common_functions.js"></SCRIPT>
+
+<SCRIPT language=javascript src="Renderer/javascripts/10217_fincore_link.js"></SCRIPT>
+
+<SCRIPT language=javascript src="Renderer/javascripts/1021710870_core_banking.js"> </SCRIPT>
+
+<SCRIPT language=javascript>
+
+window.history.forward(1);
+
+var lmlConst =
+{
+ACTION_CODE : 'actionCode'
+,AUTH_ID : 'authId'
+,AUTH_PASSWD : 'authPasswd'
+,AUTH_SRVC_TOK : 'authServTok'
+,CLIENT_NAME : 'clientName'
+,LANG_CODE : 'langCode'
+,SSO_SERVICE_NAME:'ssoServiceName'
+,SSO_SESS_ID : 'ssoSessId'
+,SSO_SRVC_TOK : 'ssoServTok'
+,USER_ID : 'userId'
+,USER_PASSWD : 'userPasswd'
+,BANK_ID : 'bankId'
+,HOME_BANK_ID : 'homeBankId'
+,HOME_BANK_ALIAS : 'homeBankAlias'
+,TIME_ZONE : 'timeZone'
+,FAB_DC_ID : 'FABDCId'
+,CALENDAR_BASE: 'calendarBase'
+,IP_ADDRESS : 'ipAddress'
+,LML_CHNGCONTEXT_EVT : 'lml_chngcontext'
+,GLOBAL_ADMIN_FLG : 'globalAdminFlg'
+}
+
+var finContextPath = "/finbranch";
+var rtId = '1mdcau7mix9dd'; 
+var reqId = '1596czteu7fzi';
+var finSessId = 'O:3696';
+var fabSessId = '';
+var finSecTok = 'a3132c6273afe7ea81c977e25964ece6';
+var fabSecTok = '';
+var homeMenuUrl = 'onsmainblank/onsmainblank_ctrl.jsp?\&sessionid\=O:3696\&sectok\=a3132c6273afe7ea81c977e25964ece6\&finsessionid\=O:3696\&fabsessionid\=\&greetings\=\&totNumOfReports\=3567\&ipAddress\=null\&mo\=HOME\&mprec\=B\&rtId\=1mdcau7mix9dd';
+var nextAction = 1;
+var errArr = new Array(0);
+var loginLit = 'Login Status';
+var finLoginLit = 'Finacle Login Status';
+var fabLoginLit = 'FAB Login Status';
+var errMsgLit = 'Error Messages';
+var errLit = 'Error';
+var contLit = 'Do you want to continue?';
+var acptLit = 'Accept';
+var cnclLit = 'Cancel';
+var logoutLit = 'You have been successfully logged out of Finacle Core.';
+var chngContextLit = 'Change Context done Successfully';
+var finLoginStatLit = 'Successful';
+var fabLoginStatLit = 'Successful';
+var finalertDBInterval = '30';
+var finalertDisplayTime = '-1';
+var ipAddress = '';
+/*-- Finacle Lite release related changes --*/
+var finaclelitemode = 'N';
+var isFinacleLiteMode = false;
+var literalContext = '';
+var defaultLiteralContext = 'C';
+var isfinAlertReq  = true;
+var finCtxPath = "/finbranch";
+var iCalCount = 1;
+var calStringArr = new Array(1);
+
+            calStringArr[0] = '00';
+
+	
+
+
+</SCRIPT>
+</HEAD>
+<BODY class=cbody bgColor=#ffffff>
+<FORM class=cform method=post name=lmlform>
+<SCRIPT language=javascript>
+writeInputs();
+</SCRIPT>
+<INPUT type=hidden name=actionCode><INPUT type=hidden name=authId><INPUT type=hidden name=authPasswd><INPUT type=hidden name=authServTok><INPUT type=hidden name=clientName><INPUT type=hidden name=langCode><INPUT type=hidden name=ssoServiceName><INPUT type=hidden name=ssoSessId><INPUT type=hidden name=ssoServTok><INPUT type=hidden name=userId><INPUT type=hidden name=calendarBase><INPUT type=hidden name=userPasswd><INPUT type=hidden name=bankId><INPUT type=hidden name=homeBankId><INPUT type=hidden name=homeBankAlias><INPUT type=hidden name=timeZone><INPUT type=hidden name=FABDCId><INPUT type=hidden name=ipAddress><INPUT type=hidden name=finsessionid><INPUT type=hidden name=fabsessionid><INPUT type=hidden name=finSecTok><INPUT type=hidden name=fabSecTok><INPUT type=hidden name=globalAdminFlg><INPUT type=hidden value=1mdcau7mix9dd name=rtId><INPUT type=hidden value=1596czteu7fzi name=reqId></FORM>
+<FORM id=url_submit method=post action=onsmainblank/onsmainblank_ctrl.jsp target=FINW><INPUT id=sessionid type=hidden value=O:3696><INPUT id=sectok type=hidden value=a3132c6273afe7ea81c977e25964ece6><INPUT id=finsessionid type=hidden value=O:3696><INPUT id=fabsessionid type=hidden><INPUT id=greetings type=hidden><INPUT id=totNumOfReports type=hidden value=3567><INPUT id=ipAddress type=hidden value=null><INPUT id=mo type=hidden value=HOME><INPUT id=mprec type=hidden value=B><INPUT id=rtId type=hidden value=1mdcau7mix9dd><INPUT id=reqId type=hidden value=1596czteu7fzi></FORM></BODY></HTML>

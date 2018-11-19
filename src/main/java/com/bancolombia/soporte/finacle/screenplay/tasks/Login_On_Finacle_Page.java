@@ -2,12 +2,11 @@ package com.bancolombia.soporte.finacle.screenplay.tasks;
 
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-
 import com.bancolombia.soporte.finacle.screenplay.userinterfaces.Interface_Login_Finacle_Page;
-
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
@@ -45,7 +44,14 @@ public class Login_On_Finacle_Page implements Task {
 
 				BrowseTheWeb.as(actor).getDriver().findElement(By.xpath("//input[@name='Submit2']"))
 						.sendKeys(Keys.ENTER);
-
+//				
+//				try {
+//					Thread.sleep(2000);
+//				} catch (InterruptedException e) {
+//					// TODO Auto-generated catch block
+//					e.printStackTrace();
+//				}
+				BrowseTheWeb.as(actor).getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 				BrowseTheWeb.as(actor).getDriver().switchTo().alert().accept();
 				bValue = true;
 
@@ -53,7 +59,9 @@ public class Login_On_Finacle_Page implements Task {
 
 			else if (Interface_Login_Finacle_Page.USER_ID.resolveFor(actor).isVisible()) {
 
-				BrowseTheWeb.as(actor).getDriver().findElement(By.id("usertxt")).sendKeys(Keys.F5);
+				BrowseTheWeb.as(actor).getDriver().findElement(By.id("usertxt")).sendKeys(
+						Keys.F5);
+				BrowseTheWeb.as(actor).getDriver().switchTo().frame(1);
 				bValue = true;
 			}
 
