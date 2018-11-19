@@ -6,6 +6,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.matchers.WebElementStateMatchers;
 
 public class Go_Sol_ID implements Task {
 
@@ -19,9 +20,12 @@ public class Go_Sol_ID implements Task {
 
 	@Override
 	public <T extends Actor> void performAs(T actor) {
-
+		
+		
+		//then(actor).should(seeThat(the(Interface_Sol_ID.SUCURSAL), WebElementStateMatchers.isVisible()));
 		actor.attemptsTo(
 
+				
 				Enter.theValue(solID).into(Interface_Sol_ID.SUCURSAL), 
 				Click.on(Interface_Sol_ID.SOL_BUTTON)
 				
