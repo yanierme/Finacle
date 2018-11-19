@@ -23,3 +23,4 @@ public class Interface_Account_Opening_CDT {
 	public static final Target ACCOUNT_VALIDATIONM = Target.the("Account validation").locatedBy("//table[@class='resultpage']/tbody/tr/td[2]/font");
 	public static final Target OK = Target.the("Account validation").located(By.id("Back"));
 }
+ 

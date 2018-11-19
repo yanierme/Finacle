@@ -9,9 +9,6 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 
-
-
-
 public class Wait {
 
 	public static void main(String[] args) {

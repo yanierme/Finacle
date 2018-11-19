@@ -13,7 +13,7 @@ public class OpenTheBrowser implements Task {
 	@Override
 	@Step("{0} Opens the Browser on Finacle Home Page")
 	public <T extends Actor> void performAs(T actor) {
-		
+		 
 		actor.attemptsTo(Open.browserOn(new FinacleHomePage()));
 		
 		}

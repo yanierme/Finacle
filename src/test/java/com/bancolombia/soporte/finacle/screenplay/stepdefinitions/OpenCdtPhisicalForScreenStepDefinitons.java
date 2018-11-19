@@ -12,7 +12,6 @@ import com.bancolombia.soporte.finacle.screenplay.tasks.Login_On_Finacle_Page;
 import com.bancolombia.soporte.finacle.screenplay.tasks.OpenTheBrowser;
 import com.bancolombia.soporte.finacle.screenplay.tasks.Open_Account;
 import com.bancolombia.soporte.finacle.screenplay.utils.Utilidades_Finacle;
-
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -32,7 +31,7 @@ public class OpenCdtPhisicalForScreenStepDefinitons {
 	public void setUP() {
 		usuario.can(BrowseTheWeb.with(hisBrowser));
 	}
-
+ 
 	Utilidades_Finacle utilidades = new Utilidades_Finacle();
 
 	@Given("^that user is logged in finacle with your$")
@@ -40,14 +39,14 @@ public class OpenCdtPhisicalForScreenStepDefinitons {
 
 		usuario.wasAbleTo(OpenTheBrowser.on());
 		utilidades.selecFrame(hisBrowser, "loginFrame");
-		usuario.wasAbleTo(Login_On_Finacle_Page.loginInPage(dataUser));
+		usuario.wasAbleTo(Login_On_Finacle_Page.loginInPage(hisBrowser, dataUser));
 
 	}
 
 	@When("^he wants to open a CDT in finacle in the (.*)$")
 	public void heWantsToOpenACDTInFinacleInThe(String solID) throws InterruptedException {
 
-		utilidades.selectFinacleCore(hisBrowser, "FINCORE");
+		utilidades.selectFinacleCore(hisBrowser,"FINCORE");
 		utilidades.selecFrame(hisBrowser, "CoreServer");
 		utilidades.GoToMenu(hisBrowser, "HCCS");
 		usuario.attemptsTo(Go_Sol_ID.solInPage(solID));

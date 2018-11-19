@@ -1,0 +1,8 @@
+<HTML lang=EN><HEAD><TITLE>Finacle Universal Banking Solution</TITLE>
+<META content=IE=7 http-equiv=X-UA-Compatible>
+<SCRIPT>
+var pageDomain = 'bancolombia.corp';
+</SCRIPT>
+
+<SCRIPT type=text/javascript src="javascripts/ssodomain.js"></SCRIPT>
+</HEAD><FRAMESET rows="*, 0.1px"><FRAME noResize border=NO src="../SSOServlet?CALLTYPE=GET_LOGIN_PAGE&amp;LCLANG=INFENG" frameBorder=NO name=loginFrame><FRAME border=NO src="AppletFrame.jsp" frameBorder=NO name=appletFrame scrolling=no></FRAMESET></HTML>

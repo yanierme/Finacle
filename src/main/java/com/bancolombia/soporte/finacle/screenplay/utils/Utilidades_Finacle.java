@@ -20,12 +20,13 @@ public class Utilidades_Finacle extends PageObject {
 		if (frame == "loginFrame") {
 
 			hisBrowser.switchTo().frame(hisBrowser.findElement(By.name("loginFrame")));
+			
 		} else if (frame == "CoreServer") {
 
 			hisBrowser.switchTo().frame(hisBrowser.findElement(By.name("CoreServer")));
 			hisBrowser.switchTo().frame(hisBrowser.findElement(By.name("FINW")));
 		}
-
+ 
 	}
 
 	public void GoToMenu(WebDriver hisBrowser, String menu) throws InterruptedException {
@@ -34,7 +35,7 @@ public class Utilidades_Finacle extends PageObject {
 		hisBrowser.findElement(By.id("menuName")).clear();
 		hisBrowser.findElement(By.id("menuName")).sendKeys(menu);
 		hisBrowser.findElement(By.id("gotomenu")).click();
-	
+	 
 	}
 
 	public void selectFinacleCore(WebDriver hisBrowser, String option) throws InterruptedException {

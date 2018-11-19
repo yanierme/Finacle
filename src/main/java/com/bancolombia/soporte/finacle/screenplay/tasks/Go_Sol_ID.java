@@ -20,15 +20,9 @@ public class Go_Sol_ID implements Task {
 	@Override
 	public <T extends Actor> void performAs(T actor) {
 		
-		
-		//then(actor).should(seeThat(the(Interface_Sol_ID.SUCURSAL), WebElementStateMatchers.isVisible()));
-		actor.attemptsTo(
-
-				
-				Enter.theValue(solID).into(Interface_Sol_ID.SUCURSAL), 
-				Click.on(Interface_Sol_ID.SOL_BUTTON)
-				
-				);
+		Interface_Sol_ID.SUCURSAL.resolveFor(actor).waitUntilVisible();
+		actor.attemptsTo(Enter.theValue(solID).into(Interface_Sol_ID.SUCURSAL) ); 
+		actor.attemptsTo(Click.on(Interface_Sol_ID.SOL_BUTTON));
 
 	}
 

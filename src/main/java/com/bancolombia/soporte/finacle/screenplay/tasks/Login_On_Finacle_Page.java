@@ -2,11 +2,14 @@ package com.bancolombia.soporte.finacle.screenplay.tasks;
 
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.server.handler.ClearElement;
+
 import com.bancolombia.soporte.finacle.screenplay.userinterfaces.Interface_Login_Finacle_Page;
+
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
@@ -18,12 +21,13 @@ public class Login_On_Finacle_Page implements Task {
 	private String user;
 	private String password;
 	boolean bValue = true;
+	WebDriver hisBrowser;
 
-	public Login_On_Finacle_Page(List<Map<String, String>> dataUser) {
+	public Login_On_Finacle_Page(WebDriver hisBrowser , List<Map<String, String>> dataUser) {
 
 		this.user = dataUser.get(0).get("user");
 		this.password = dataUser.get(0).get("password");
-
+		this.hisBrowser = hisBrowser;
 	}
 
 	@Override
@@ -34,43 +38,47 @@ public class Login_On_Finacle_Page implements Task {
 		actor.attemptsTo(Enter.theValue(user).into(Interface_Login_Finacle_Page.USER_ID));
 
 		while (bValue == true) {
-
+			
+		
 			actor.attemptsTo(Enter.theValue(password).into(Interface_Login_Finacle_Page.PASSWORD),
 					Click.on(Interface_Login_Finacle_Page.SUBMIT));
-
+ 
 			bValue = false;
 
 			if (Interface_Login_Finacle_Page.ALREADY_LOGGED_IN.resolveFor(actor).isVisible()) {
 
 				BrowseTheWeb.as(actor).getDriver().findElement(By.xpath("//input[@name='Submit2']"))
 						.sendKeys(Keys.ENTER);
-//				
-//				try {
-//					Thread.sleep(2000);
-//				} catch (InterruptedException e) {
-//					// TODO Auto-generated catch block
-//					e.printStackTrace();
-//				}
-				BrowseTheWeb.as(actor).getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				try {
+					
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					
+					e.printStackTrace();
+				} 
+				
+				actor.attemptsTo();
 				BrowseTheWeb.as(actor).getDriver().switchTo().alert().accept();
 				bValue = true;
 
 			}
 
 			else if (Interface_Login_Finacle_Page.USER_ID.resolveFor(actor).isVisible()) {
-
-				BrowseTheWeb.as(actor).getDriver().findElement(By.id("usertxt")).sendKeys(
-						Keys.F5);
-				BrowseTheWeb.as(actor).getDriver().switchTo().frame(1);
+				
+				actor.attemptsTo(OpenTheBrowser.on());	
+				BrowseTheWeb.as(actor).getDriver().switchTo().frame(hisBrowser.findElement(By.name("loginFrame")));
+				actor.attemptsTo(Enter.theValue(user).into(Interface_Login_Finacle_Page.USER_ID));
 				bValue = true;
 			}
 
 		}
 	}
 
-	public static Login_On_Finacle_Page loginInPage(List<Map<String, String>> dataUser) {
+	
+	
+	public static Login_On_Finacle_Page loginInPage(WebDriver hisBrowser , List<Map<String, String>> dataUser ) {
 
-		return new Login_On_Finacle_Page(dataUser);
+		return new Login_On_Finacle_Page(hisBrowser,dataUser);
 	}
 
 }
