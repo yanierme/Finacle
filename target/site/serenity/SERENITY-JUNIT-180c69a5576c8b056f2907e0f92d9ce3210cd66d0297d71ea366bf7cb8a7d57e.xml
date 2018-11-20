@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Open Account phisical for screen" skipped="0" tests="1" time="10807.96" timestamp="2018-11-19 02:43:31"><testcase name="open account CDT in Finacle for screen"><error message="com.bancolombia.soporte.finacle.screenplay.tasks.Login_On_Finacle_Page.loginInPage(Ljava/util/List;)Lcom/bancolombia/soporte/finacle/screenplay/tasks/Login_On_Finacle_Page;" type="java.lang.NoSuchMethodError">com.bancolombia.soporte.finacle.screenplay.tasks.Login_On_Finacle_Page.loginInPage(Ljava/util/List;)Lcom/bancolombia/soporte/finacle/screenplay/tasks/Login_On_Finacle_Page;</error><system-err>com.bancolombia.soporte.finacle.screenplay.tasks.Login_On_Finacle_Page.loginInPage(Ljava/util/List;)Lcom/bancolombia/soporte/finacle/screenplay/tasks/Login_On_Finacle_Page;&#13;
-com.bancolombia.soporte.finacle.screenplay.stepdefinitions.OpenCdtPhisicalForScreenStepDefinitons.thatUserIsLoggedInFinacleWithYour(OpenCdtPhisicalForScreenStepDefinitons.java:42)&#13;
-✽.that user is logged in finacle with your(src/test/resources/com/bancolombia/soporte/finacle/features/open_cdt_phisical_for_screen.feature:8)&#13;
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Open Account phisical for screen" skipped="0" tests="1" time="78.84" timestamp="2018-11-20 09:27:13"><testcase name="open account CDT in Finacle for screen"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+com.bancolombia.soporte.finacle.screenplay.tasks.Open_Account.performAs(Open_Account.java:37)&#13;
+com.bancolombia.soporte.finacle.screenplay.stepdefinitions.OpenCdtPhisicalForScreenStepDefinitons.theUserEntersTheNextDetais(OpenCdtPhisicalForScreenStepDefinitons.java:66)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)&#13;
 </system-err></testcase></testsuite>

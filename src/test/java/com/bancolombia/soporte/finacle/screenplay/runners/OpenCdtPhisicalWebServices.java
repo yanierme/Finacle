@@ -14,6 +14,6 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 		tags="@AccountCDTPhisicalForWebServices"
 )
 
-public class OpenAccountFinacleWebServices {
+public class OpenCdtPhisicalWebServices {
 	
 }

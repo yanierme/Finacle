@@ -12,7 +12,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Managed;
 
-public class OpenAccountFinacleWebServicesStepDefinitions {
+public class OpenCdtPhisicalWebServicesStepDefinitions {
 	
 	@Managed(driver="iexplorer")
 	private WebDriver hisBrowser;
