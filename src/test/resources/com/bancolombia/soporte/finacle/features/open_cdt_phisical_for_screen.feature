@@ -13,4 +13,4 @@ Feature: Open Account phisical for screen
       | sol_id | cif_id         | scheme_Code | opening_date | stament | initial_Amt | tenor | rate | frecuency |
       |     04 | 20000000074012 | FI3         | 09-04-2018   | N       |    40000000 |    90 |  4,8 |        30 |
       |     04 | 20000000074012 | FI3         | 09-04-2018   | N       |    40000000 |    90 |  4,8 |        30 |
-    Then he should see the CDT created successfully
+    Then he should see the CDT for screen created successfully

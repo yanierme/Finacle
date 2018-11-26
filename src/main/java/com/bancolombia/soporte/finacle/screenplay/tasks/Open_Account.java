@@ -20,14 +20,14 @@ public class Open_Account implements Task {
 	private String interestRate;
 	private String frequency;
 
-	public Open_Account(List<Map<String, String>> dataAccountCDT, int i) {
+	public Open_Account(List<Map<String, String>> dataAccountCDT) {
 
-		this.openingDate = dataAccountCDT.get(i).get("opening_date");
-		this.stament = dataAccountCDT.get(i).get("stament");
-		this.initialDeposit = dataAccountCDT.get(i).get("initial_Amt");
-		this.ternureDay = dataAccountCDT.get(i).get("tenor");
-		this.interestRate = dataAccountCDT.get(i).get("rate");
-		this.frequency = dataAccountCDT.get(i).get("frecuency");
+		this.openingDate = dataAccountCDT.get(0).get("opening_date");
+		this.stament = dataAccountCDT.get(0).get("stament");
+		this.initialDeposit = dataAccountCDT.get(0).get("initial_Amt");
+		this.ternureDay = dataAccountCDT.get(0).get("tenor");
+		this.interestRate = dataAccountCDT.get(0).get("rate");
+		this.frequency = dataAccountCDT.get(0).get("frecuency");
 
 	}
 
@@ -54,9 +54,9 @@ public class Open_Account implements Task {
 
 	}
 
-	public static Open_Account openAccount(List<Map<String, String>> dataAccountCDT, int i) {
+	public static Open_Account openAccount(List<Map<String, String>> dataAccountCDT) {
 
-		return new Open_Account(dataAccountCDT, i);
+		return new Open_Account(dataAccountCDT);
 	}
 
 }

@@ -30,7 +30,7 @@ public class Login_On_Finacle_Page implements Task {
 	}
 
 	@Override
-	public <T extends Actor> void performAs(T actor)
+	public <T extends Actor> void performAs(T actor) 
 
 	{
 
@@ -63,7 +63,7 @@ public class Login_On_Finacle_Page implements Task {
 
 			else if (Interface_Login_Finacle_Page.USER_ID.resolveFor(actor).isVisible()) {
 				
-				actor.attemptsTo(OpenTheBrowser.on());	
+				actor.wasAbleTo(OpenTheBrowser.on("https://wsfinaclecdtperf.bancolombia.corp:11111/SSO/ui/SSOLogin.jsp"));	
 				BrowseTheWeb.as(actor).getDriver().switchTo().frame(hisBrowser.findElement(By.name("loginFrame")));
 				actor.attemptsTo(Enter.theValue(user).into(Interface_Login_Finacle_Page.USER_ID));
 				bValue = true;

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><FIXML xmlns:NS2="http://www.finacle.com/fixml"><Header>
+<RequestHeader>
+<MessageKey>
+<RequestUUID>db06050f-6h8c-11e6-98f5-0a9870yu7000</RequestUUID>
+<ServiceRequestId>TUAcctAdd</ServiceRequestId>
+<ServiceRequestVersion>10.2</ServiceRequestVersion>
+<ChannelId>CRM</ChannelId>
+<LanguageId>en_US</LanguageId>
+</MessageKey>
+<RequestMessageInfo>
+<BankId>1000</BankId>
+<TimeZone/>
+<EntityId/>
+<EntityType/>
+<ArmCorrelationId/>
+<MessageDateTime>2016-08-31T10:09:04.198</MessageDateTime>
+</RequestMessageInfo>
+<Security>
+<Token>
+<PasswordToken>
+<UserId/>
+<Password/>
+</PasswordToken>
+</Token>
+<FICertToken/>
+<RealUserLoginSessionId/>
+<RealUser/>
+<RealUserPwd/>
+<SSOTransferToken/>
+</Security>
+<CustomInfo><table><key/><value/></table></CustomInfo>
+</RequestHeader>
+</Header>
+<Body>
+<TUAcctAddRequest>
+<TUAcctAddRq>
+<CustId>20000000074012</CustId>
+<TuAcctId>
+<AcctType>
+<SchmCode>2</SchmCode>
+</AcctType>
+<AcctCurr>COP</AcctCurr>
+<BankInfo>
+<BranchId>BC000001</BranchId>
+</BankInfo>
+</TuAcctId>
+<TUAcctGenInfo>
+<AcctStmtMode>N</AcctStmtMode>
+</TUAcctGenInfo>
+<InitialDeposit>
+<amountValue>40000000</amountValue>
+<currencyCode>COP</currencyCode>
+</InitialDeposit>
+<TrnDtls>
+<TrnCreateMode>O</TrnCreateMode>
+<PmtType>T</PmtType>
+</TrnDtls>
+</TUAcctAddRq>
+<TUAcctAdd_CustomData>
+<titleNo>823470</titleNo>
+<interestData>
+<intRate>4.8</intRate>
+<spreadIntRate>0.000</spreadIntRate>
+<intPayFreq>30</intPayFreq>
+<codeRateIndex>0</codeRateIndex>
+</interestData>
+<fundSource>
+	<fundSourceCode1>5</fundSourceCode1>
+	<fundAmount1>40000000</fundAmount1>
+	<fundSourceCode2>2</fundSourceCode2>
+	<fundAmount2>10000000.00</fundAmount2>
+	<fundSourceCode3/>
+	<fundAmount3>0.00</fundAmount3>
+	<fundSourceCode4>N </fundSourceCode4>
+	<fundAmount4/>
+	<fundSourceCode5/>
+	<fundAmount5>0.00</fundAmount5>
+</fundSource>
+<paymentData>
+	<prinPayDistCode>E</prinPayDistCode>
+	<prinPayAcctType/>
+	<prinPayAcctNum/>
+	<intPayDistCode>E</intPayDistCode>
+	<intPayAcctType/>
+	<intPayAcctNum/>
+</paymentData>
+<linkageType>0</linkageType>
+<advisorCode>54</advisorCode>
+<referredCode/>
+<openingDate>2018-04-12T10:09:04.177395</openingDate>
+<depositTerm>
+<days>90</days>
+</depositTerm>
+<plan18>N</plan18>
+<NumberForCasaAcc/>
+<docTypeCasa/>
+<docNumberCasa/>
+<operationFlag>00</operationFlag>
+<channel>SU2</channel>
+<auditMessage>00000000029001970054</auditMessage>
+<transactionDate>2017-05-04T10:09:04.172338</transactionDate>
+<transactionName>abrirCDT</transactionName>
+</TUAcctAdd_CustomData>
+</TUAcctAddRequest>
+</Body>
+</FIXML>

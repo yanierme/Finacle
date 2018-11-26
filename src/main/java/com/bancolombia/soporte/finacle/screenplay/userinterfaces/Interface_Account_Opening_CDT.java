@@ -20,7 +20,7 @@ public class Interface_Account_Opening_CDT {
 	public static final Target RELATED = Target.the("Related").located(By.id("turelatedpartydetails"));
 	public static final Target RENEWAL_AND_CLOSURE = Target.the("Renewal").located(By.id("turen"));
 	public static final Target SUBMIT_ACCOUNT = Target.the("Submit account").located(By.id("Submit"));
-	public static final Target ACCOUNT_VALIDATIONM = Target.the("Account validation").locatedBy("//table[@class='resultpage']/tbody/tr/td[2]/font");
-	public static final Target OK = Target.the("Account validation").located(By.id("Back"));
+	
+	
 }
  

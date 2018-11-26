@@ -1,7 +1,0 @@
-<HTML><HEAD>
-<META content=INFENG http-equiv=Content-Language>
-<META content=text/html;charset=utf-8 http-equiv=Content-Type>
-<SCRIPT>
-var pageDomain = 'bancolombia.corp';
-</SCRIPT>
-</HEAD></HTML>

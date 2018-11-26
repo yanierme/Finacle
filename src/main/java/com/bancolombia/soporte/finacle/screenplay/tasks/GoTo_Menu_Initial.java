@@ -21,8 +21,8 @@ public class GoTo_Menu_Initial implements Task {
 
 		Interface_MenuInitial_CoreFinacle.MENU_VALIDATION.resolveFor(actor).waitUntilVisible();
 
-		actor.attemptsTo(Enter.theValue(menu).into(Interface_MenuInitial_CoreFinacle.SELECT_FINACLE_CORE),
-				Click.on(Interface_MenuInitial_CoreFinacle.FINACLE_CORE));
+		actor.attemptsTo(Enter.theValue(menu).into(Interface_MenuInitial_CoreFinacle.MENU),
+				Click.on(Interface_MenuInitial_CoreFinacle.GOTO_MENU));
 
 	}
 
