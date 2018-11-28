@@ -19,7 +19,7 @@ public class Go_Account_Opening implements Task {
 		this.cifId = dataAccountCDT.get(0).get("cif_id");
 		this.schemeCode = dataAccountCDT.get(0).get("scheme_Code");
 	}
-
+ 
 	@Override
 	public <T extends Actor> void performAs(T actor) {
 

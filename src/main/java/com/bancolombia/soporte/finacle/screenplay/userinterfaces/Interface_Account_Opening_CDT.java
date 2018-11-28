@@ -18,7 +18,7 @@ public class Interface_Account_Opening_CDT {
 	public static final Target FREQUENCY = Target.the("Payout Frequency (Days)").located(By.id("custIPF"));
 	public static final Target FLOWS = Target.the("general").located(By.id("tuflw"));
 	public static final Target RELATED = Target.the("Related").located(By.id("turelatedpartydetails"));
-	public static final Target RENEWAL_AND_CLOSURE = Target.the("Renewal").located(By.id("turen"));
+	public static final Target RENEWAL_AND_CLOSURE = Target.the("Renewal and closure").located(By.id("turen"));
 	public static final Target SUBMIT_ACCOUNT = Target.the("Submit account").located(By.id("Submit"));
 	
 	

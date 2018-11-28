@@ -46,7 +46,7 @@ public class OpenCdtPhisicalWebServicesStepDefinitions {
 	@When("^the User enters the next detais of the account$")
 	public void theUserEntersTheNextDetaisOfTheAccount(Map<String, String> dataUser)
 			throws ParserConfigurationException, SAXException, IOException, TransformerException, AWTException {
-
+ 
 		utilities.updateXml(dataUser);
 		usuario.attemptsTo(Go_FinacleXML.by());
 		utilities.swithWindows(hisBrowser);

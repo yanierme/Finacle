@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.io.StringReader;
 import java.util.Map;
 import java.util.Set;
+
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -19,10 +20,10 @@ import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.Select;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -35,7 +36,7 @@ public class Utilities_Finacle extends PageObject {
 
 	private String winHandleBefore;
 	private String contents;
-	private String xmlFilePath = "C:\\Users\\YANIER.MESTRA\\eclipse-workspace\\com.bancolombia.soporte.finacle\\src\\test\\resources\\com\\bancolombia\\soporte\\finacle\\FilesXml\\CDT_Fisicos.xml";
+	private String xmlFilePath = "src\\test\\resources\\com\\bancolombia\\soporte\\finacle\\FilesXml\\CDT_Fisicos.xml";
 
 	public void selecFrame(WebDriver hisBrowser, String frame) {
 
@@ -48,23 +49,10 @@ public class Utilities_Finacle extends PageObject {
 			hisBrowser.switchTo().frame(hisBrowser.findElement(By.name("CoreServer")));
 			hisBrowser.switchTo().frame(hisBrowser.findElement(By.name("FINW")));
 		}
+		
 
 	}
-	public void GoToMenu(WebDriver hisBrowser, String menu) throws InterruptedException {
-
-		hisBrowser.findElement(By.id("menuName")).sendKeys(menu);
-		hisBrowser.findElement(By.id("gotomenu")).click();
-		hisBrowser.switchTo().alert().accept();
-	}
-
-	public void selectFinacleCore(WebDriver hisBrowser, String option) throws InterruptedException {
-
-		Select element = new Select(hisBrowser.findElement(By.name("appSelect")));
-		element.selectByVisibleText(option);
-		hisBrowser.switchTo().alert().accept();
-
-	}
-
+	
 	public void enterKey() throws AWTException, InterruptedException {
 
 		Robot r = new Robot();
@@ -93,6 +81,7 @@ public class Utilities_Finacle extends PageObject {
 		winHandleBefore = hisBrowser.getWindowHandle();
 
 		for (String winHandle : hisBrowser.getWindowHandles()) {
+			hisBrowser.switchTo().window(winHandle);
 			hisBrowser.switchTo().window(winHandle);
 		}
 
@@ -135,7 +124,7 @@ public class Utilities_Finacle extends PageObject {
 		Set<String> keys = map.keySet();
 		String keysStr = String.join(",", keys);
 		String[] strKey = keysStr.split(",");
-
+ 
 		NodeList NodePartne = document.getElementsByTagName("FIXML");
 		Element NodeSon = (Element) NodePartne.item(0);
 

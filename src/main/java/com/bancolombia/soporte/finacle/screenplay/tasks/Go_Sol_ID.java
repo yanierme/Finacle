@@ -19,9 +19,13 @@ public class Go_Sol_ID implements Task {
 
 	@Override
 	public <T extends Actor> void performAs(T actor) {
-		
-		Interface_Sol_ID.SUCURSAL.resolveFor(actor).waitUntilVisible();
-		actor.attemptsTo(Enter.theValue(solID).into(Interface_Sol_ID.SUCURSAL) ); 
+
+		if (!Interface_Sol_ID.SUCURSAL.resolveFor(actor).isVisible()) {
+			
+			Interface_Sol_ID.SUCURSAL.resolveFor(actor).waitUntilVisible();
+		}
+
+		actor.attemptsTo(Enter.theValue(solID).into(Interface_Sol_ID.SUCURSAL));
 		actor.attemptsTo(Click.on(Interface_Sol_ID.SOL_BUTTON));
 
 	}

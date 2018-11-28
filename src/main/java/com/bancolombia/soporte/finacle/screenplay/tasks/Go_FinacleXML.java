@@ -15,7 +15,7 @@ public class Go_FinacleXML implements Task {
 
 	}
 
-	public static Go_FinacleXML by() {
+	public static Go_FinacleXML by() { 
 
 		return new Go_FinacleXML();
 	}

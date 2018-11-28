@@ -44,12 +44,28 @@ public class Open_Account implements Task {
 				Enter.theValue(ternureDay).into(Interface_Account_Opening_CDT.TENURE_DAYS),
 				Enter.theValue(interestRate).into(Interface_Account_Opening_CDT.INTEREST_RATE),
 				Enter.theValue(frequency).into(Interface_Account_Opening_CDT.FREQUENCY));
- 
-		Interface_Account_Opening_CDT.FLOWS.resolveFor(actor).waitUntilVisible();
-		actor.attemptsTo(Click.on(Interface_Account_Opening_CDT.FLOWS), Click.on(Interface_Account_Opening_CDT.RELATED),
+
+		if (!Interface_Account_Opening_CDT.FLOWS.resolveFor(actor).isVisible()) {
+
+			Interface_Account_Opening_CDT.FLOWS.resolveFor(actor).waitUntilVisible();
+		}
+
+		actor.attemptsTo(Click.on(Interface_Account_Opening_CDT.FLOWS));
+		actor.attemptsTo(Click.on(Interface_Account_Opening_CDT.RELATED),
 				Click.on(Interface_Account_Opening_CDT.RENEWAL_AND_CLOSURE),
-				Click.on(Interface_Account_Opening_CDT.INTEREST_AND_TAX),
-				Click.on(Interface_Account_Opening_CDT.SCHEME), Click.on(Interface_Account_Opening_CDT.FLOWS),
+				Click.on(Interface_Account_Opening_CDT.INTEREST_AND_TAX));
+
+		if (!Interface_Account_Opening_CDT.SCHEME.resolveFor(actor).isVisible()) {
+
+			Interface_Account_Opening_CDT.SCHEME.resolveFor(actor).waitUntilVisible();
+		}
+		actor.attemptsTo(Click.on(Interface_Account_Opening_CDT.SCHEME));
+
+		if (!Interface_Account_Opening_CDT.FLOWS.resolveFor(actor).isVisible()) {
+
+			Interface_Account_Opening_CDT.FLOWS.resolveFor(actor).waitUntilVisible();
+		}
+		actor.attemptsTo(Click.on(Interface_Account_Opening_CDT.FLOWS),
 				Click.on(Interface_Account_Opening_CDT.SUBMIT_ACCOUNT));
 
 	}

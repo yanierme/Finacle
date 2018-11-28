@@ -1,17 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Open Account phisical for web services" skipped="0" tests="1" time="14.84" timestamp="2018-11-26 08:55:46"><testcase name="open account CDT in Finacle for web services"><error message="Expected condition failed: waiting for By.xpath: //*[@name='clearBut'] to be displayed (tried for 5 second(s) with 100 milliseconds interval)&#10;Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'&#10;System info: host: 'SBMEDLAPBANYM5', ip: '10.25.153.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">Expected condition failed: waiting for By.xpath: //*[@name='clearBut'] to be displayed (tried for 5 second(s) with 100 milliseconds interval)
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'SBMEDLAPBANYM5', ip: '10.25.153.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: driver.version: unknown</error><system-err>Expected condition failed: waiting for By.xpath: //*[@name='clearBut'] to be displayed (tried for 5 second(s) with 100 milliseconds interval)
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'SBMEDLAPBANYM5', ip: '10.25.153.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: driver.version: unknown&#13;
-com.bancolombia.soporte.finacle.screenplay.tasks.Go_OpenCDTForXml.performAs(Go_OpenCDTForXml.java:14)&#13;
-com.bancolombia.soporte.finacle.screenplay.stepdefinitions.OpenCdtPhisicalWebServicesStepDefinitions.theUserEntersTheNextDetaisOfTheAccount(OpenCdtPhisicalWebServicesStepDefinitions.java:53)&#13;
-cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
-org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
-org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
-org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)&#13;
-org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)&#13;
-org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)&#13;
-org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)&#13;
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Open Account phisical for web services" skipped="0" tests="1" time="15.73" timestamp="2018-11-28 12:42:15"><testcase name="open account CDT in Finacle for web services"><failure message="Expected net.serenitybdd.screenplay.QuestionSubject@7c37f145&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">Expected net.serenitybdd.screenplay.QuestionSubject@7c37f145
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;</failure><system-err>Expected net.serenitybdd.screenplay.QuestionSubject@7c37f145
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;&#13;
+com.bancolombia.soporte.finacle.screenplay.stepdefinitions.OpenCdtPhisicalWebServicesStepDefinitions.heShouldSeeTheCDTForWebServicescreatedSuccessfully(OpenCdtPhisicalWebServicesStepDefinitions.java:62)&#13;
+✽.he should see the CDT for web servicescreated successfully(src/test/resources/com/bancolombia/soporte/finacle/features/open_cdt_phisical_web_services.feature:19)&#13;
 </system-err></testcase></testsuite>

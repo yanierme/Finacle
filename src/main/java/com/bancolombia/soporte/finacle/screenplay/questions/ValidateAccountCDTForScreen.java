@@ -16,7 +16,7 @@ public class ValidateAccountCDTForScreen implements Question<Boolean> {
 
 		this.validationCdt = validationCdt;
 
-	}
+	} 
 
 	@Override
 	public Boolean answeredBy(Actor actor) {

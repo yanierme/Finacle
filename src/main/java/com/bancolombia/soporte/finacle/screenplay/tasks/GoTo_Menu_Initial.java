@@ -1,6 +1,6 @@
 package com.bancolombia.soporte.finacle.screenplay.tasks;
 
-import com.bancolombia.soporte.finacle.screenplay.userinterfaces.Interface_MenuInitial_CoreFinacle;
+import com.bancolombia.soporte.finacle.screenplay.userinterfaces.Interface_GoMenuInitial;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -19,10 +19,14 @@ public class GoTo_Menu_Initial implements Task {
 	@Override
 	public <T extends Actor> void performAs(T actor) {
 
-		Interface_MenuInitial_CoreFinacle.MENU_VALIDATION.resolveFor(actor).waitUntilVisible();
+		if (!Interface_GoMenuInitial.MENU_VALIDATION.resolveFor(actor).isVisible()) {
 
-		actor.attemptsTo(Enter.theValue(menu).into(Interface_MenuInitial_CoreFinacle.MENU),
-				Click.on(Interface_MenuInitial_CoreFinacle.GOTO_MENU));
+			Interface_GoMenuInitial.MENU_VALIDATION.resolveFor(actor).waitUntilVisible();
+
+		}
+
+		actor.attemptsTo(Enter.theValue(menu).into(Interface_GoMenuInitial.MENU),
+				Click.on(Interface_GoMenuInitial.GOTO_MENU));
 
 	}
 

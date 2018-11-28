@@ -12,5 +12,8 @@ public class Interface_Login_Finacle_Page
 	public static final Target USER_VALIDATION   =  Target.the("user validation").locatedBy("//input[@name='TZDetails']");
 	public static final Target ALREADY_LOGGED_IN  =  Target.the("already logged in").locatedBy("//input[@name='Submit2']");
 	public static final Target FRAME_LOGIN  =  Target.the("Frame login").locatedBy("//*[@name='loginFrame']");
+	
+	
 	 
+	
 }
