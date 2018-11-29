@@ -1,4 +1,4 @@
-Feature: Open Account phisical for screen
+Feature:Inquire account CDT for screen
   As a web user
   I want to login in Finacle
   to Consult a CDT on screen the Finacle

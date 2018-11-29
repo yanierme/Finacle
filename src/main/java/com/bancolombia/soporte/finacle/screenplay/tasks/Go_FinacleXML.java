@@ -4,6 +4,7 @@ import com.bancolombia.soporte.finacle.screenplay.userinterfaces.Interface_GoXML
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 
 public class Go_FinacleXML implements Task {
@@ -17,7 +18,7 @@ public class Go_FinacleXML implements Task {
 
 	public static Go_FinacleXML by() { 
 
-		return new Go_FinacleXML();
+		return Tasks.instrumented(Go_FinacleXML.class);
 	}
 
 }

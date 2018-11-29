@@ -4,6 +4,7 @@ import com.bancolombia.soporte.finacle.screenplay.userinterfaces.Interface_GoMen
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 
@@ -22,7 +23,7 @@ public class GoTo_Menu_Initial implements Task {
 		if (!Interface_GoMenuInitial.MENU_VALIDATION.resolveFor(actor).isVisible()) {
 
 			Interface_GoMenuInitial.MENU_VALIDATION.resolveFor(actor).waitUntilVisible();
-
+			actor.attemptsTo(Wait.inMillisecons(500));
 		}
 
 		actor.attemptsTo(Enter.theValue(menu).into(Interface_GoMenuInitial.MENU),
@@ -31,7 +32,7 @@ public class GoTo_Menu_Initial implements Task {
 	}
 
 	public static GoTo_Menu_Initial on(String menu) {
-		return new GoTo_Menu_Initial(menu);
+		return Tasks.instrumented(GoTo_Menu_Initial.class, menu);
 	}
 
 }

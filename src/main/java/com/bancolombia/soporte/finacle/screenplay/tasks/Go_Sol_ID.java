@@ -4,6 +4,7 @@ import com.bancolombia.soporte.finacle.screenplay.userinterfaces.Interface_Sol_I
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 
@@ -32,7 +33,7 @@ public class Go_Sol_ID implements Task {
 
 	public static Go_Sol_ID solInPage(String solID) {
 
-		return new Go_Sol_ID(solID);
+		return Tasks.instrumented(Go_Sol_ID.class,solID);
 	}
 
 }

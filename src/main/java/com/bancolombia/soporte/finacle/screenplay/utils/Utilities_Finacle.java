@@ -36,7 +36,8 @@ public class Utilities_Finacle extends PageObject {
 
 	private String winHandleBefore;
 	private String contents;
-	private String xmlFilePath = "src\\test\\resources\\com\\bancolombia\\soporte\\finacle\\FilesXml\\CDT_Fisicos.xml";
+	private String xmlFilePath;
+	
 
 	public void selecFrame(WebDriver hisBrowser, String frame) {
 
@@ -113,26 +114,47 @@ public class Utilities_Finacle extends PageObject {
 		return dataXmlResult;
 
 	}
+	
+	public void fileXmlAction(Map<String, String> dataAccount) {
+			
+		Set<String> keys = dataAccount.keySet();
+		String keysStr = String.join(",", keys);
+		String[] strKey = keysStr.split(",");
+		
+		String action = dataAccount.get(strKey[0]);
 
-	public void updateXml(Map<String, String> map)
+		if (action.equals("query")) {
+			
+			xmlFilePath = "src\\test\\resources\\com\\bancolombia\\soporte\\finacle\\FilesXml\\InquireFromTitleNo.xml";
+			
+		} else if(action.equals("openPhisical")) {
+			
+			xmlFilePath = "src\\test\\resources\\com\\bancolombia\\soporte\\finacle\\FilesXml\\CDT_Fisicos.xml";
+		}
+		
+	}
+	
+	public void updateXml(Map<String, String> dataAccount)
 			throws ParserConfigurationException, SAXException, IOException, TransformerException {
-
+		
 		DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
 		Document document = documentBuilder.parse(xmlFilePath);
-
-		Set<String> keys = map.keySet();
-		String keysStr = String.join(",", keys);
-		String[] strKey = keysStr.split(",");
  
 		NodeList NodePartne = document.getElementsByTagName("FIXML");
 		Element NodeSon = (Element) NodePartne.item(0);
-
-		for (int i = 0; i < strKey.length; i++) {
-
+		
+		Set<String> keys = dataAccount.keySet();
+		String keysStr = String.join(",", keys);
+		String[] strKey = keysStr.split(",");
+		
+		for (int i = 1; i < strKey.length; i++) {
+			
+			 
 			NodeList tag_1 = NodeSon.getElementsByTagName(strKey[i]);
 			Element value = (Element) tag_1.item(0);
-			value.setTextContent(map.get(strKey[i]));
+			
+			value.setTextContent(dataAccount.get(strKey[i]));
 		}
 
 		TransformerFactory transformerFactory = TransformerFactory.newInstance();

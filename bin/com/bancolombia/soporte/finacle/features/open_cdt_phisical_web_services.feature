@@ -7,6 +7,7 @@ Feature: Open Account phisical for web services
   Scenario: open account CDT in Finacle for web services
     Given that user is the page of finacle integrator
     When the User enters the next detais of the account
+      | action      | openPhisical                         |
       | RequestUUID | db06050f-6h8c-11e6-98f5-0a9870yu7000 |
       | CustId      |                       20000000074012 |
       | amountValue |                             40000000 |

@@ -7,6 +7,7 @@ import com.bancolombia.soporte.finacle.screenplay.userinterfaces.Interface_Accou
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.SelectFromOptions;
@@ -72,7 +73,7 @@ public class Open_Account implements Task {
 
 	public static Open_Account openAccount(List<Map<String, String>> dataAccountCDT) {
 
-		return new Open_Account(dataAccountCDT);
+		return Tasks.instrumented(Open_Account.class, dataAccountCDT);
 	}
 
 }

@@ -7,6 +7,7 @@ import com.bancolombia.soporte.finacle.screenplay.userinterfaces.Interface_Inque
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 
@@ -30,7 +31,7 @@ public class Inqueri_CDT implements Task {
 
 	public static Inqueri_CDT the(List<Map<String, String>> numberTitle) {
 
-		return new Inqueri_CDT(numberTitle);
+		return Tasks.instrumented(Inqueri_CDT.class, numberTitle);
 	}
 
 }

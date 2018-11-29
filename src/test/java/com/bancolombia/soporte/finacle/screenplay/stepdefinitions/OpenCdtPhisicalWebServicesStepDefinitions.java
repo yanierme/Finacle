@@ -27,6 +27,7 @@ public class OpenCdtPhisicalWebServicesStepDefinitions {
 
 	@Managed(driver = "iexplorer")
 	private WebDriver hisBrowser;
+	
 
 	private Actor usuario = Actor.named("Usuario");
 
@@ -47,6 +48,7 @@ public class OpenCdtPhisicalWebServicesStepDefinitions {
 	public void theUserEntersTheNextDetaisOfTheAccount(Map<String, String> dataUser)
 			throws ParserConfigurationException, SAXException, IOException, TransformerException, AWTException {
  
+		utilities.fileXmlAction(dataUser);
 		utilities.updateXml(dataUser);
 		usuario.attemptsTo(Go_FinacleXML.by());
 		utilities.swithWindows(hisBrowser);

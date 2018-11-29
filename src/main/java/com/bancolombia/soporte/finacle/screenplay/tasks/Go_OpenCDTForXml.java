@@ -4,6 +4,7 @@ import com.bancolombia.soporte.finacle.screenplay.userinterfaces.Interface_GoXML
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 
 public class Go_OpenCDTForXml implements Task {
@@ -18,7 +19,7 @@ public class Go_OpenCDTForXml implements Task {
 
 	public static Go_OpenCDTForXml on() {
 
-		return new Go_OpenCDTForXml();
+		return Tasks.instrumented(Go_OpenCDTForXml.class);
 	}
  
 }

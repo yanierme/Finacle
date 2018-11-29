@@ -2,15 +2,13 @@ package com.bancolombia.soporte.finacle.screenplay.tasks;
 
 import java.util.List;
 import java.util.Map;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-
 import com.bancolombia.soporte.finacle.screenplay.userinterfaces.Interface_Login_Finacle_Page;
-
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
@@ -48,13 +46,7 @@ public class Login_On_Finacle_Page implements Task {
 				BrowseTheWeb.as(actor).getDriver().findElement(By.xpath("//input[@name='Submit2']"))
 						.sendKeys(Keys.ENTER);
 
-				try {
-
-					Thread.sleep(500);
-				} catch (InterruptedException e) {
-
-					e.printStackTrace();
-				}
+				actor.attemptsTo(Wait.inMillisecons(500));
 
 				BrowseTheWeb.as(actor).getDriver().switchTo().alert().accept();
 				bValue = true;
@@ -76,7 +68,7 @@ public class Login_On_Finacle_Page implements Task {
 
 	public static Login_On_Finacle_Page loginInPage(WebDriver hisBrowser, List<Map<String, String>> dataUser) {
 
-		return new Login_On_Finacle_Page(hisBrowser, dataUser);
+		return Tasks.instrumented(Login_On_Finacle_Page.class, hisBrowser, dataUser);
 	}
 
 }

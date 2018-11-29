@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Open Account phisical for web services" skipped="0" tests="1" time="15.73" timestamp="2018-11-28 12:42:15"><testcase name="open account CDT in Finacle for web services"><failure message="Expected net.serenitybdd.screenplay.QuestionSubject@7c37f145&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">Expected net.serenitybdd.screenplay.QuestionSubject@7c37f145
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Open Account phisical for web services" skipped="0" tests="1" time="16.14" timestamp="2018-11-29 02:10:14"><testcase name="open account CDT in Finacle for web services"><failure message="Expected net.serenitybdd.screenplay.QuestionSubject@3440e9cd&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">Expected net.serenitybdd.screenplay.QuestionSubject@3440e9cd
 Expected: is &lt;true&gt;
-     but: was &lt;false&gt;</failure><system-err>Expected net.serenitybdd.screenplay.QuestionSubject@7c37f145
+     but: was &lt;false&gt;</failure><system-err>Expected net.serenitybdd.screenplay.QuestionSubject@3440e9cd
 Expected: is &lt;true&gt;
      but: was &lt;false&gt;&#13;
-com.bancolombia.soporte.finacle.screenplay.stepdefinitions.OpenCdtPhisicalWebServicesStepDefinitions.heShouldSeeTheCDTForWebServicescreatedSuccessfully(OpenCdtPhisicalWebServicesStepDefinitions.java:62)&#13;
-✽.he should see the CDT for web servicescreated successfully(src/test/resources/com/bancolombia/soporte/finacle/features/open_cdt_phisical_web_services.feature:19)&#13;
+com.bancolombia.soporte.finacle.screenplay.stepdefinitions.OpenCdtPhisicalWebServicesStepDefinitions.heShouldSeeTheCDTForWebServicescreatedSuccessfully(OpenCdtPhisicalWebServicesStepDefinitions.java:64)&#13;
+✽.he should see the CDT for web servicescreated successfully(src/test/resources/com/bancolombia/soporte/finacle/features/open_cdt_phisical_web_services.feature:20)&#13;
 </system-err></testcase></testsuite>

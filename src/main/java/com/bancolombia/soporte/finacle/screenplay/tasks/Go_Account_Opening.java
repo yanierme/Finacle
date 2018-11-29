@@ -6,6 +6,7 @@ import java.util.Map;
 import com.bancolombia.soporte.finacle.screenplay.userinterfaces.Interface_Account_Opening;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 
@@ -32,7 +33,7 @@ public class Go_Account_Opening implements Task {
 
 	public static Go_Account_Opening solAccountOpening(List<Map<String, String>> dataAccountCDT) {
 
-		return new Go_Account_Opening(dataAccountCDT);
+		return Tasks.instrumented(Go_Account_Opening.class,dataAccountCDT);
 	}
 
 }

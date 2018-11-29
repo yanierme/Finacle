@@ -4,6 +4,7 @@ import com.bancolombia.soporte.finacle.screenplay.userinterfaces.Interface_GoMen
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
@@ -20,15 +21,14 @@ public class GoTo_Menu implements Task {
 	@Override
 	public <T extends Actor> void performAs(T actor) {
 
-		actor.attemptsTo(Enter.theValue(menu).into(Interface_GoMenu.MENU),
-				Click.on(Interface_GoMenu.GOTO_MENU));
-		
+		actor.attemptsTo(Enter.theValue(menu).into(Interface_GoMenu.MENU), Click.on(Interface_GoMenu.GOTO_MENU));
+
 		BrowseTheWeb.as(actor).getDriver().switchTo().alert().accept();
 
 	}
 
 	public static GoTo_Menu on(String menu) {
-		return new GoTo_Menu(menu);
+		return Tasks.instrumented(GoTo_Menu.class, menu);
 	}
 
 }
