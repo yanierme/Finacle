@@ -2,9 +2,7 @@ package com.bancolombia.soporte.finacle.screenplay.stepdefinitions;
 
 import java.util.List;
 import java.util.Map;
-
 import org.openqa.selenium.WebDriver;
-
 import com.bancolombia.soporte.finacle.screenplay.questions.ValidateAccountCDTForScreen;
 import com.bancolombia.soporte.finacle.screenplay.tasks.GoTo_Menu;
 import com.bancolombia.soporte.finacle.screenplay.tasks.GoTo_Menu_Initial;
@@ -15,7 +13,6 @@ import com.bancolombia.soporte.finacle.screenplay.tasks.OpenTheBrowser;
 import com.bancolombia.soporte.finacle.screenplay.tasks.Open_Account;
 import com.bancolombia.soporte.finacle.screenplay.tasks.SelectFinacleCore;
 import com.bancolombia.soporte.finacle.screenplay.utils.Utilities_Finacle;
-
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -44,7 +41,6 @@ public class OpenCdtPhisicalForScreenStepDefinitons {
 	public void thatUserIsLoggedInFinacleWithYour(List<Map<String, String>> dataUser) throws Exception {
 		
 		yanier.wasAbleTo(OpenTheBrowser.on("https://wsfinaclecdtperf.bancolombia.corp:11111/SSO/ui/SSOLogin.jsp"));
-		utilities.selecFrame(hisBrowser, "loginFrame");
 		yanier.wasAbleTo(Login_On_Finacle_Page.loginInPage(hisBrowser, dataUser));
 			
 	}
@@ -65,7 +61,7 @@ public class OpenCdtPhisicalForScreenStepDefinitons {
 		yanier.attemptsTo(GoTo_Menu.on("HOAACTU"));
 		yanier.attemptsTo(Go_Account_Opening.solAccountOpening(dataAccountCDT));
 		yanier.attemptsTo(Open_Account.openAccount(dataAccountCDT));
-		utilities.enterKey();
+		
 
 	}
 

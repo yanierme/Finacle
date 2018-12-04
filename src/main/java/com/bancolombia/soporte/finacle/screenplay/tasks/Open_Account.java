@@ -1,9 +1,11 @@
 package com.bancolombia.soporte.finacle.screenplay.tasks;
 
+import java.awt.AWTException;
 import java.util.List;
 import java.util.Map;
 
 import com.bancolombia.soporte.finacle.screenplay.userinterfaces.Interface_Account_Opening_CDT;
+import com.bancolombia.soporte.finacle.screenplay.utils.Utilities_Finacle;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -13,7 +15,8 @@ import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.SelectFromOptions;
 
 public class Open_Account implements Task {
-
+	
+	Utilities_Finacle utilities; 
 	private String openingDate;
 	private String stament;
 	private String initialDeposit;
@@ -68,6 +71,14 @@ public class Open_Account implements Task {
 		}
 		actor.attemptsTo(Click.on(Interface_Account_Opening_CDT.FLOWS),
 				Click.on(Interface_Account_Opening_CDT.SUBMIT_ACCOUNT));
+		
+		
+		try {
+			utilities.enterKey();
+		} catch (AWTException | InterruptedException e) {
+		 
+			e.printStackTrace();
+		}
 
 	}
 

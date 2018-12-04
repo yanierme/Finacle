@@ -35,9 +35,7 @@ import net.serenitybdd.core.pages.PageObject;
 public class Utilities_Finacle extends PageObject {
 
 	private String winHandleBefore;
-	private String contents;
 	private String xmlFilePath;
-	
 
 	public void selecFrame(WebDriver hisBrowser, String frame) {
 
@@ -50,45 +48,30 @@ public class Utilities_Finacle extends PageObject {
 			hisBrowser.switchTo().frame(hisBrowser.findElement(By.name("CoreServer")));
 			hisBrowser.switchTo().frame(hisBrowser.findElement(By.name("FINW")));
 		}
-		
 
 	}
-	
+
 	public void enterKey() throws AWTException, InterruptedException {
 
 		Robot r = new Robot();
 		r.keyPress(KeyEvent.VK_ENTER);
 	}
 
-	public void loadXMLToString() throws IOException {
 
-		contents = FileUtils.readFileToString(new File(xmlFilePath), "UTF-8");
-	}
-
-	public void copyPaste() throws AWTException {
-
-		Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
-		StringSelection stringSelection = new StringSelection(contents);
-		clipboard.setContents(stringSelection, stringSelection);
-		Robot robot = new Robot();
-		robot.keyPress(java.awt.event.KeyEvent.VK_CONTROL);
-		robot.keyPress(java.awt.event.KeyEvent.VK_V);
-		robot.keyRelease(java.awt.event.KeyEvent.VK_V);
-		robot.keyRelease(java.awt.event.KeyEvent.VK_CONTROL);
-	}
 
 	public void swithWindows(WebDriver hisBrowser) {
 
 		winHandleBefore = hisBrowser.getWindowHandle();
 
 		for (String winHandle : hisBrowser.getWindowHandles()) {
-			hisBrowser.switchTo().window(winHandle);
+
 			hisBrowser.switchTo().window(winHandle);
 		}
 
 	}
 
 	public String getWinHandleBefore() {
+		
 		return winHandleBefore;
 	}
 
@@ -115,54 +98,65 @@ public class Utilities_Finacle extends PageObject {
 
 	}
 	
-	public void fileXmlAction(Map<String, String> dataAccount) {
-			
-		Set<String> keys = dataAccount.keySet();
-		String keysStr = String.join(",", keys);
-		String[] strKey = keysStr.split(",");
-		
-		String action = dataAccount.get(strKey[0]);
+
+	public String fileXmlAction(String action) {
 
 		if (action.equals("query")) {
-			
+
 			xmlFilePath = "src\\test\\resources\\com\\bancolombia\\soporte\\finacle\\FilesXml\\InquireFromTitleNo.xml";
-			
-		} else if(action.equals("openPhisical")) {
-			
+		
+		}else if (action.equals("opening Physical")) {
+
 			xmlFilePath = "src\\test\\resources\\com\\bancolombia\\soporte\\finacle\\FilesXml\\CDT_Fisicos.xml";
 		}
 		
+		return xmlFilePath;
+
 	}
 	
-	public void updateXml(Map<String, String> dataAccount)
+	public void copyPaste(String xmlFilePath) throws AWTException, IOException {
+
+		String contents = FileUtils.readFileToString(new File(xmlFilePath), "UTF-8");
+
+		Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+		StringSelection stringSelection = new StringSelection(contents);
+		clipboard.setContents(stringSelection, stringSelection);
+		Robot robot = new Robot();
+		robot.keyPress(java.awt.event.KeyEvent.VK_CONTROL);
+		robot.keyPress(java.awt.event.KeyEvent.VK_V);
+		robot.keyRelease(java.awt.event.KeyEvent.VK_V);
+		robot.keyRelease(java.awt.event.KeyEvent.VK_CONTROL);
+	}
+
+	public void updateXml(Map<String, String> dataAccount, String fileXml)
 			throws ParserConfigurationException, SAXException, IOException, TransformerException {
-		
+
 		DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
-		Document document = documentBuilder.parse(xmlFilePath);
- 
+		Document document = documentBuilder.parse(fileXml);
+
 		NodeList NodePartne = document.getElementsByTagName("FIXML");
 		Element NodeSon = (Element) NodePartne.item(0);
-		
+
 		Set<String> keys = dataAccount.keySet();
 		String keysStr = String.join(",", keys);
 		String[] strKey = keysStr.split(",");
-		
+
 		for (int i = 1; i < strKey.length; i++) {
-			
-			 
+
 			NodeList tag_1 = NodeSon.getElementsByTagName(strKey[i]);
 			Element value = (Element) tag_1.item(0);
-			
+
 			value.setTextContent(dataAccount.get(strKey[i]));
 		}
 
 		TransformerFactory transformerFactory = TransformerFactory.newInstance();
 		Transformer transformer = transformerFactory.newTransformer();
 		DOMSource domSource = new DOMSource(document);
-		StreamResult streamResult = new StreamResult(new File(xmlFilePath));
+		StreamResult streamResult = new StreamResult(new File(fileXml));
 		transformer.transform(domSource, streamResult);
 
 	}
+
 
 }

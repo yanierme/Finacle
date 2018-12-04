@@ -32,10 +32,10 @@ public class InqueriCDTonScreenStepDefinitons {
 
 	Utilities_Finacle utilities = new Utilities_Finacle();
 
-	@When("^the User enters the next detais of the CDT$")
+	@When("^the User enters the next detais the inquire$")
 	public void theUserEntersTheNextDetaisOfTheCDT(List<Map<String, String>> numberTitle) throws InterruptedException {
 
-		yanier.wasAbleTo(SelectFinacleCore.in());
+		yanier.attemptsTo(SelectFinacleCore.in());
 		utilities.selecFrame(hisBrowser, "CoreServer");
 		yanier.attemptsTo(GoTo_Menu_Initial.on("CDTINQ"));
 		yanier.attemptsTo(Inqueri_CDT.the(numberTitle));

@@ -3,15 +3,19 @@ package com.bancolombia.soporte.finacle.screenplay.stepdefinitions;
 import java.awt.AWTException;
 import java.io.IOException;
 import java.util.Map;
+
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
+
 import org.openqa.selenium.WebDriver;
 import org.xml.sax.SAXException;
+
 import com.bancolombia.soporte.finacle.screenplay.questions.ValidateAccountCDTForWebServices;
-import com.bancolombia.soporte.finacle.screenplay.tasks.Go_FinacleXML;
-import com.bancolombia.soporte.finacle.screenplay.tasks.Go_OpenCDTForXml;
+import com.bancolombia.soporte.finacle.screenplay.tasks.Update_FileXml;
+import com.bancolombia.soporte.finacle.screenplay.tasks.RunXml;
 import com.bancolombia.soporte.finacle.screenplay.tasks.OpenTheBrowser;
 import com.bancolombia.soporte.finacle.screenplay.utils.Utilities_Finacle;
+
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -27,7 +31,6 @@ public class OpenCdtPhisicalWebServicesStepDefinitions {
 
 	@Managed(driver = "iexplorer")
 	private WebDriver hisBrowser;
-	
 
 	private Actor usuario = Actor.named("Usuario");
 
@@ -44,17 +47,12 @@ public class OpenCdtPhisicalWebServicesStepDefinitions {
 
 	}
 
-	@When("^the User enters the next detais of the account$")
-	public void theUserEntersTheNextDetaisOfTheAccount(Map<String, String> dataUser)
+	@When("^the User enters the next detais of the (.*)$")
+	public void theUserEntersTheNextDetais(String action, Map<String, String> dataUser)
 			throws ParserConfigurationException, SAXException, IOException, TransformerException, AWTException {
- 
-		utilities.fileXmlAction(dataUser);
-		utilities.updateXml(dataUser);
-		usuario.attemptsTo(Go_FinacleXML.by());
-		utilities.swithWindows(hisBrowser);
-		usuario.attemptsTo(Go_OpenCDTForXml.on());
-		utilities.loadXMLToString();
-		utilities.copyPaste();
+
+		usuario.attemptsTo(Update_FileXml.with(action, dataUser));
+		usuario.attemptsTo(RunXml.with(action, hisBrowser));
 
 	}
 

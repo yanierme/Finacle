@@ -31,7 +31,7 @@ public class Login_On_Finacle_Page implements Task {
 	public <T extends Actor> void performAs(T actor)
 
 	{
-
+		BrowseTheWeb.as(actor).getDriver().switchTo().frame(hisBrowser.findElement(By.name("loginFrame")));
 		actor.attemptsTo(Enter.theValue(user).into(Interface_Login_Finacle_Page.USER_ID));
 
 		while (bValue == true) {

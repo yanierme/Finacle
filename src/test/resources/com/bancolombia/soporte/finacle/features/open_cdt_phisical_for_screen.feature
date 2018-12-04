@@ -1,4 +1,4 @@
-Feature: Open Account phisical for screen
+Feature: Open Account physical for screen
   As a web user
   I want to login in Finacle
   to create a CDT pishical for screen in Finacle

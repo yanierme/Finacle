@@ -4,7 +4,6 @@ import org.openqa.selenium.WebDriver;
 
 import com.bancolombia.soporte.finacle.screenplay.utils.Utilities_Finacle;
 
-import cucumber.api.java.en.Then;
 import net.serenitybdd.screenplay.Actor;
 import net.thucydides.core.annotations.Managed;
 
@@ -18,11 +17,11 @@ public class InqueriCDTWebServicesStepDefinitons {
 
 	Utilities_Finacle utilities = new Utilities_Finacle();
 
- 	@Then("^you should see the CDT information on the xml$")
-	public void youShouldSeeTheCDTInformationOnTheXml()  {
-	    // Write code here that turns the phrase above into concrete actions
-	   
-	}
-
+// 	@Then("^you should see the CDT information on the xml$")
+//	public void youShouldSeeTheCDTInformationOnTheXml()  {
+//	    // Write code here that turns the phrase above into concrete actions
+//	   
+//	}
+//
 
 }
