@@ -6,6 +6,7 @@ import java.io.IOException;
 import org.openqa.selenium.WebDriver;
 
 import com.bancolombia.soporte.finacle.screenplay.userinterfaces.Interface_GoXML;
+import com.bancolombia.soporte.finacle.screenplay.userinterfaces.Interface_ValidationAccountForwebServices;
 import com.bancolombia.soporte.finacle.screenplay.utils.Utilities_Finacle;
 
 import net.serenitybdd.screenplay.Actor;
@@ -15,7 +16,8 @@ import net.serenitybdd.screenplay.actions.Click;
 
 public class RunXml implements Task {
 	
-	String action;
+	private String action;
+	
 	Utilities_Finacle utilities; 
 	WebDriver hisBrowser;
 	
@@ -41,6 +43,8 @@ public class RunXml implements Task {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		actor.attemptsTo(Click.on(Interface_ValidationAccountForwebServices.SUBMIT));
 
 	}
 

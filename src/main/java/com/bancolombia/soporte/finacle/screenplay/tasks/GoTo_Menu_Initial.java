@@ -10,7 +10,7 @@ import net.serenitybdd.screenplay.actions.Enter;
 
 public class GoTo_Menu_Initial implements Task {
 
-	String menu;
+	private String menu;
 
 	public GoTo_Menu_Initial(String menu) {
 

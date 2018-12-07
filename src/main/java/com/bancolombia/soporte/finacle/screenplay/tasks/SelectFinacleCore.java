@@ -17,7 +17,7 @@ public class SelectFinacleCore implements Task {
 				Click.on(Interface_Select_Finacle_Core.FINCORE));
 		BrowseTheWeb.as(actor).getDriver().switchTo().alert().accept();
 
-	}
+	} 
 
 	public static SelectFinacleCore in() {
 

@@ -17,17 +17,17 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Managed;
 
-public class InqueriCDTonScreenStepDefinitons {
+public class InqueriCdtonScreenStepDefinitons {
 
 	@Managed(driver = "iexplorer")
 	private WebDriver hisBrowser;
 
-	private Actor yanier = Actor.named("yanier");
+	private Actor luis = Actor.named("luis");
 
 	@Before
 	public void setUP() {
 
-		yanier.can(BrowseTheWeb.with(hisBrowser));
+		luis.can(BrowseTheWeb.with(hisBrowser));
 	}
 
 	Utilities_Finacle utilities = new Utilities_Finacle();
@@ -35,10 +35,10 @@ public class InqueriCDTonScreenStepDefinitons {
 	@When("^the User enters the next detais the inquire$")
 	public void theUserEntersTheNextDetaisOfTheCDT(List<Map<String, String>> numberTitle) throws InterruptedException {
 
-		yanier.attemptsTo(SelectFinacleCore.in());
+		luis.attemptsTo(SelectFinacleCore.in());
 		utilities.selecFrame(hisBrowser, "CoreServer");
-		yanier.attemptsTo(GoTo_Menu_Initial.on("CDTINQ"));
-		yanier.attemptsTo(Inqueri_CDT.the(numberTitle));
+		luis.attemptsTo(GoTo_Menu_Initial.on("CDTINQ"));
+		luis.attemptsTo(Inqueri_CDT.the(numberTitle));
 
 	}
 

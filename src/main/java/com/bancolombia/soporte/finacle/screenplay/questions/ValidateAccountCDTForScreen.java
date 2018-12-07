@@ -11,7 +11,7 @@ public class ValidateAccountCDTForScreen implements Question<Boolean> {
 	private String numberCDT;
 	private String resultSucceful;
 	
-		
+		 
 	public ValidateAccountCDTForScreen(String validationCdt) {
 
 		this.validationCdt = validationCdt;

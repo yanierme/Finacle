@@ -9,8 +9,8 @@ Feature: Open Account physical for screen
       | user      | password      |
       | usercdt17 | Amb13nt32017* |
     When he wants to work in finacle for branch office BC000001
-    And the User enters the next detais
+    And the User enters the next detail the openning physical
       | sol_id | cif_id         | scheme_Code | opening_date | stament | initial_Amt | tenor | rate | frecuency |
       |     04 | 20000000074012 | FI3         | 09-04-2018   | N       |    40000000 |    90 |  4,8 |        30 |
-      |     04 | 20000000074012 | FI3         | 09-04-2018   | N       |    40000000 |    90 |  4,8 |        30 |
+ 
     Then he should see the CDT for screen created successfully

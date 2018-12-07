@@ -8,12 +8,12 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-		features="src/test/resources/com/bancolombia/soporte/finacle/features/open_cdt_phisical_web_services.feature",
+		features="src/test/resources/com/bancolombia/soporte/finacle/features/interest_payment.feature",
 		glue="com.bancolombia.soporte.finacle.screenplay.stepdefinitions",
 		snippets=SnippetType.CAMELCASE,
-		tags="@AccountCDTPhisicalForWebServices"
+		tags="@interestPayment"
 )
 
-public class OpenCdtPhisicalWebServices {
+public class InterestPayment {
 	
 }

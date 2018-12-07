@@ -16,13 +16,14 @@ import net.serenitybdd.screenplay.actions.SelectFromOptions;
 
 public class Open_Account implements Task {
 	
-	Utilities_Finacle utilities; 
 	private String openingDate;
 	private String stament;
 	private String initialDeposit;
 	private String ternureDay;
 	private String interestRate;
 	private String frequency;
+	
+	Utilities_Finacle utilities; 
 
 	public Open_Account(List<Map<String, String>> dataAccountCDT) {
 

@@ -11,7 +11,6 @@ import java.io.IOException;
 import java.io.StringReader;
 import java.util.Map;
 import java.util.Set;
-
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -20,8 +19,8 @@ import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
-
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.w3c.dom.Document;
@@ -36,6 +35,7 @@ public class Utilities_Finacle extends PageObject {
 
 	private String winHandleBefore;
 	private String xmlFilePath;
+	private String path= "src\\test\\resources\\com\\bancolombia\\soporte\\finacle\\FilesXml\\";
 
 	public void selecFrame(WebDriver hisBrowser, String frame) {
 
@@ -43,8 +43,7 @@ public class Utilities_Finacle extends PageObject {
 
 			hisBrowser.switchTo().frame(hisBrowser.findElement(By.name("loginFrame")));
 
-		} else if (frame == "CoreServer") {
-
+		} else if (frame == "CoreServer") { 
 			hisBrowser.switchTo().frame(hisBrowser.findElement(By.name("CoreServer")));
 			hisBrowser.switchTo().frame(hisBrowser.findElement(By.name("FINW")));
 		}
@@ -91,23 +90,28 @@ public class Utilities_Finacle extends PageObject {
 
 		} else {
 
-			dataXmlResult = "No Response Gender";
+			dataXmlResult = "No Response";
 		}
 
 		return dataXmlResult;
 
 	}
-	
+	 
 
 	public String fileXmlAction(String action) {
 
 		if (action.equals("query")) {
 
-			xmlFilePath = "src\\test\\resources\\com\\bancolombia\\soporte\\finacle\\FilesXml\\InquireFromTitleNo.xml";
+			xmlFilePath = path + "InquireFromTitleNo.xml";
 		
+			
 		}else if (action.equals("opening Physical")) {
 
-			xmlFilePath = "src\\test\\resources\\com\\bancolombia\\soporte\\finacle\\FilesXml\\CDT_Fisicos.xml";
+			xmlFilePath = path +"CDT_Fisicos.xml";
+			
+		}else if (action.equals("interest Payment")) {
+
+			xmlFilePath = path +"RequestGMF.xml";
 		}
 		
 		return xmlFilePath;
@@ -135,19 +139,25 @@ public class Utilities_Finacle extends PageObject {
 		DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
 		Document document = documentBuilder.parse(fileXml);
 
-		NodeList NodePartne = document.getElementsByTagName("FIXML");
-		Element NodeSon = (Element) NodePartne.item(0);
+		NodeList nodePartne = document.getElementsByTagName("FIXML");
+		Element nodeSon = (Element) nodePartne.item(0);
 
 		Set<String> keys = dataAccount.keySet();
 		String keysStr = String.join(",", keys);
 		String[] strKey = keysStr.split(",");
 
-		for (int i = 1; i < strKey.length; i++) {
+		for (int i = 0; i < strKey.length; i++) {
+			
+			String valueElemnet = dataAccount.get(strKey[i]);
+			if (strKey[i].equals("RequestUUID")) {
+				
+				valueElemnet = generateRequestId(valueElemnet);
+			}
 
-			NodeList tag_1 = NodeSon.getElementsByTagName(strKey[i]);
+			NodeList tag_1 = nodeSon.getElementsByTagName(strKey[i]);
 			Element value = (Element) tag_1.item(0);
 
-			value.setTextContent(dataAccount.get(strKey[i]));
+			value.setTextContent(valueElemnet);
 		}
 
 		TransformerFactory transformerFactory = TransformerFactory.newInstance();
@@ -156,6 +166,34 @@ public class Utilities_Finacle extends PageObject {
 		StreamResult streamResult = new StreamResult(new File(fileXml));
 		transformer.transform(domSource, streamResult);
 
+	}
+	
+	public String generateRequestId(String value) {
+			
+		String[] parts = value.split("-");
+		String[] parts2 = value.split("_");
+		String id = null;
+		
+		if (parts[0].equals("db06050f")) {
+			
+			String generatedString = RandomStringUtils.randomAlphanumeric(12);
+			id = parts[0] +"-" + parts[1]+"-" + parts[2]+"-" + parts[3]+"-" +generatedString;
+			
+		} else if (parts2[0].equals("Req")){
+			
+			String generatedString = RandomStringUtils.randomNumeric(13);
+			id = parts2[0] +"_" +generatedString;
+		}
+		
+	 	
+		return id;
+		
+	}
+	
+	public void robotUrl() {
+	
+		
+		
 	}
 
 

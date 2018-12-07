@@ -22,17 +22,17 @@ import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Managed;
 
-public class OpenCdtPhisicalForScreenStepDefinitons {
+public class OpenCdtPhysicalForScreenStepDefinitons {
 
 	@Managed(driver = "iexplorer")
 	private WebDriver hisBrowser;
 
-	private Actor yanier = Actor.named("yanier");
+	private Actor luis = Actor.named("luis");
 
 	@Before
 	public void setUP() {
 		
-		yanier.can(BrowseTheWeb.with(hisBrowser));
+		luis.can(BrowseTheWeb.with(hisBrowser));
 	}
 
 	Utilities_Finacle utilities = new Utilities_Finacle();
@@ -40,27 +40,27 @@ public class OpenCdtPhisicalForScreenStepDefinitons {
 	@Given("^that user is logged in finacle with your$")
 	public void thatUserIsLoggedInFinacleWithYour(List<Map<String, String>> dataUser) throws Exception {
 		
-		yanier.wasAbleTo(OpenTheBrowser.on("https://wsfinaclecdtperf.bancolombia.corp:11111/SSO/ui/SSOLogin.jsp"));
-		yanier.wasAbleTo(Login_On_Finacle_Page.loginInPage(hisBrowser, dataUser));
+		luis.wasAbleTo(OpenTheBrowser.on("https://wsfinaclecdtperf.bancolombia.corp:11111/SSO/ui/SSOLogin.jsp"));
+		luis.wasAbleTo(Login_On_Finacle_Page.loginInPage(hisBrowser, dataUser));
 			
 	}
   
 	@When("^he wants to work in finacle for branch office (.*)$")
 	public void heWantsToWorkInFinacleForBranchOffice(String solID) throws InterruptedException {
 		
-		yanier.wasAbleTo(SelectFinacleCore.in());
+		luis.wasAbleTo(SelectFinacleCore.in());
 		utilities.selecFrame(hisBrowser, "CoreServer");
-		yanier.attemptsTo(GoTo_Menu_Initial.on("HCCS"));
-		yanier.attemptsTo(Go_Sol_ID.solInPage(solID));
+		luis.attemptsTo(GoTo_Menu_Initial.on("HCCS"));
+		luis.attemptsTo(Go_Sol_ID.solInPage(solID));
 
 	}
 
-	@When("^the User enters the next detais$")
-	public void theUserEntersTheNextDetais(List<Map<String, String>> dataAccountCDT) throws Exception {
+	@When("^the User enters the next detail the openning physical$")
+	public void theUserEntersTheNextDetailTheOpenningPhysical(List<Map<String, String>> dataAccountCDT) throws Exception {
 
-		yanier.attemptsTo(GoTo_Menu.on("HOAACTU"));
-		yanier.attemptsTo(Go_Account_Opening.solAccountOpening(dataAccountCDT));
-		yanier.attemptsTo(Open_Account.openAccount(dataAccountCDT));
+		luis.attemptsTo(GoTo_Menu.on("HOAACTU"));
+		luis.attemptsTo(Go_Account_Opening.solAccountOpening(dataAccountCDT));
+		luis.attemptsTo(Open_Account.openAccount(dataAccountCDT));
 		
 
 	}
@@ -68,6 +68,6 @@ public class OpenCdtPhisicalForScreenStepDefinitons {
 	@Then("^he should see the CDT for screen created (.*)$")
 	public void heShouldSeeTheCDTCreated(String validationCdt) {
 		
-		yanier.should(GivenWhenThen.seeThat(ValidateAccountCDTForScreen.successful(validationCdt)));
+		luis.should(GivenWhenThen.seeThat(ValidateAccountCDTForScreen.successful(validationCdt)));
 	}
 }

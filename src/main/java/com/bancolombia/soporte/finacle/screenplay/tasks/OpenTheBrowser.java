@@ -8,7 +8,7 @@ import net.thucydides.core.annotations.Step;
 
 public class OpenTheBrowser implements Task {
 
-	String url;
+	private String url;
 
 	public OpenTheBrowser(String url) {
 

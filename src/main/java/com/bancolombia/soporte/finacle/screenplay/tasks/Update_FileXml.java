@@ -14,10 +14,12 @@ import net.serenitybdd.screenplay.actions.Click;
 
 public class Update_FileXml implements Task {
 
+	private String action;
+	private String fileXml;
+	private Map<String, String> dataUser;
+	
 	Utilities_Finacle utilities_Finacle;
-	String action;
-	Map<String, String> dataUser;
-	String fileXml;
+	
 
 	public Update_FileXml(String action, Map<String, String> dataUser) {
 		 

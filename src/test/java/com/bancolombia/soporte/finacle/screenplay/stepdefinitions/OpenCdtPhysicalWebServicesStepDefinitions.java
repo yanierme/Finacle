@@ -25,7 +25,7 @@ import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Managed;
 
-public class OpenCdtPhisicalWebServicesStepDefinitions {
+public class OpenCdtPhysicalWebServicesStepDefinitions {
 
 	Utilities_Finacle utilities;
 
@@ -33,7 +33,7 @@ public class OpenCdtPhisicalWebServicesStepDefinitions {
 	private WebDriver hisBrowser;
 
 	private Actor usuario = Actor.named("Usuario");
-
+ 
 	@Before
 	public void setUP() {
 		usuario.can(BrowseTheWeb.with(hisBrowser));
@@ -56,10 +56,10 @@ public class OpenCdtPhisicalWebServicesStepDefinitions {
 
 	}
 
-	@Then("^he should see the CDT for web servicescreated successfully$")
-	public void heShouldSeeTheCDTForWebServicescreatedSuccessfully() throws Exception {
+	@Then("^he should see the (.*)$")
+	public void heShouldSeeThe(String action) throws Exception {
 
-		usuario.should(GivenWhenThen.seeThat(ValidateAccountCDTForWebServices.successful()));
+		usuario.should(GivenWhenThen.seeThat(ValidateAccountCDTForWebServices.successful(action)));
 	}
 
 }

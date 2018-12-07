@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="interest payment for web services" skipped="0" tests="1" time="13.9" timestamp="2018-12-05 08:04:12"><testcase name="interest payment"><failure message="Expected net.serenitybdd.screenplay.QuestionSubject@642a16aa&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">Expected net.serenitybdd.screenplay.QuestionSubject@642a16aa
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;</failure><system-err>Expected net.serenitybdd.screenplay.QuestionSubject@642a16aa
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;&#13;
+com.bancolombia.soporte.finacle.screenplay.stepdefinitions.OpenCdtPhisicalWebServicesStepDefinitions.heShouldSeeThe(OpenCdtPhisicalWebServicesStepDefinitions.java:62)&#13;
+✽.he should see the interest Payment(src/test/resources/com/bancolombia/soporte/finacle/features/interest_payment.feature:12)&#13;
+</system-err></testcase></testsuite>
