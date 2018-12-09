@@ -6,6 +6,7 @@ import net.serenitybdd.screenplay.targets.Target;
 
 public class Interface_GoMenu {
 
+	// Interface Go_MENU
 	public static final Target MENU = Target.the("Select Core finacle").located(By.id("menuName"));
 	public static final Target GOTO_MENU = Target.the("option Core finacle").located(By.id("gotomenu"));
 }
